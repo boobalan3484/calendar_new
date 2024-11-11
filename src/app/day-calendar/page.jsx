@@ -9,13 +9,13 @@ function page() {
   return (
     <>
       <div className="container">
-        <div className="row my-4 border">
+        <div className="row my-4">
           <div className="col-12">
             <h1 className="calender-title">Today’s Tamil Daily Calendar 2024</h1>
           </div>
         </div>
         <div className="row main-section">
-          <div className="mb-5 col-12 col-lg-6 my-auto">
+          <div className="mb-5 col-12 col-lg-6 d-flex justify-content-center align-items-center">
             <div className="date-container">
               <h1 className="text-center">11-06-2002</h1>
               <h6 className="text-center">
@@ -65,20 +65,16 @@ function page() {
           </div>
 
           <div className="col-12">
-            <div className="d-flex justify-content-start align-items-center gap-2 flex-wrap">
-              <div className="star-container">
-                <div className="star-cards">
-                  <h5>நட்சத்திரம்</h5>
-                  <p className="p-1 p-md-3">சுவாதி மறுநாள் அதிகாலை 4:18 மணி வரை</p>
-                </div>
+            <div className="sec-2 d-flex gap-2 justify-content-start align-items-center gap-2">
+              <div className="star-cards">
+                <h5>நட்சத்திரம்</h5>
+                <p className="p-1 p-md-3">சுவாதி மறுநாள் அதிகாலை 4:18 மணி வரை</p>
               </div>
-              <div className="star-container">
-                <div className="star-cards">
-                  <h5>நட்சத்திரம்</h5>
-                  <p className="p-1 p-md-3">சுவாதி மறுநாள் அதிகாலை 4:18 மணி வரை</p>
-                </div>
+              <div className="star-cards">
+                <h5>நட்சத்திரம்</h5>
+                <p className="p-1 p-md-3">சுவாதி மறுநாள் அதிகாலை 4:18 மணி வரை</p>
               </div>
-              <div className="good-time">
+              <div className="vudhaya-section">
                 <h5>இன்றைய உதய ஓரை</h5>
                 <div className="horai-grid m-1 m-md-3">
                   <div className="d-flex justify-content-center align-items-center">
@@ -94,24 +90,18 @@ function page() {
                   </div>
                 </div>
               </div>
-              <div className="star-container">
-                <div className="star-cards">
-                  <h5>நட்சத்திரம்</h5>
-                  <p className="p-1 p-md-3">சுவாதி மறுநாள் அதிகாலை 4:18 மணி வரை</p>
-                </div>
+              <div className="star-cards">
+                <h5>நட்சத்திரம்</h5>
+                <p className="p-1 p-md-3">சுவாதி மறுநாள் அதிகாலை 4:18 மணி வரை</p>
               </div>
-              <div className="star-container">
-                <div className="star-cards">
-                  <h5>நட்சத்திரம்</h5>
-                  <p className="p-1 p-md-3">சுவாதி மறுநாள் அதிகாலை 4:18 மணி வரை</p>
-                </div>
+              <div className="star-cards">
+                <h5>நட்சத்திரம்</h5>
+                <p className="p-1 p-md-3">சுவாதி மறுநாள் அதிகாலை 4:18 மணி வரை</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-
 
       {/* pagenation style start */}
       <div className="container pagenation-section p-4 my-5">

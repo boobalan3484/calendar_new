@@ -40,3 +40,7 @@ p{
   margin:0px !important;
   padding:0px !important;
 }
+
+ul, ol, li, dl {
+  list-style: none !important;
+}

@@ -14,7 +14,6 @@
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .16);
     background-color: #fff;
     padding: 30px;
-    border: 2px solid red;
 }
 
 .date-container h1 {
@@ -43,11 +42,24 @@
 }
 
 .good-time,
-.star-cards {
+.star-cards ,.vudhaya-section{
     border: 2px solid #c7c7c7;
     border-radius: 5px;
     background: #fff;
-    min-width: auto;
+    /* min-width: auto; */
+    /* border:2px solid orange; */
+}
+
+.vudhaya-section{
+    flex-grow: 1;
+}
+
+.good-time{
+    width:250px;
+}
+
+.star-cards{
+    width:auto;
 }
 
 .star-cards > p {
@@ -55,7 +67,7 @@
 }
 
 .good-time h5,
-.star-cards h5 {
+.star-cards h5,.vudhaya-section h5{
     background: #e92227;
     margin: 0;
     padding: 8px 0px;
@@ -67,7 +79,7 @@
 }
 
 .good-time p,
-.star-cards p {
+.star-cards p ,.vudhaya-section p{
     text-align: center;
     color: #707070;
     font-size: 12px;
@@ -110,6 +122,8 @@
 
 .star-container {
     margin-bottom: 10px;
+   /* width:auto; */
+    /* flex-grow:1; */
 }
 
 .star-cards h5 {
@@ -119,7 +133,7 @@
 .horai-grid {
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
     border-radius: 5px;
     border: .5px solid #aaa;
     margin: 5px 20px;
@@ -146,6 +160,8 @@
     font-weight: 500;
 }
 
+
+
 @media (max-width: 992px) {
     .calender-title {
         font-size: 1.3rem;
@@ -157,10 +173,20 @@
 
     .time-container {
         flex-direction: column;
+        /* border:2px solid orange; */
     }
 
-    .good-time {
+    .sec-2{
+        flex-wrap: wrap;
+    }
+    .star-cards{
+        /* width:90%; */
+    }
+    .good-time,.vudhaya-section{
         min-width: 100%;
+    }
+    .vudhaya-section{
+        margin-bottom:3px;
     }
 
     .left-con {
@@ -195,11 +221,15 @@
     }
 
     .horai-grid {
-        flex-direction: column;
+        flex-direction:row;
     }
 
     .good-time h5 {
         font-size: 12px;
+    }
+    .vudhaya-section h5{
+        font-size: 12px;
+
     }
 
     .calender-time h5 {

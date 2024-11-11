@@ -4,13 +4,10 @@ import '@/style/CalendarSection.css'
 
 import calendarData from '../../public/data/month2025.json'; // Adjust the path as necessary
 
-const CalendarSection = () => {
+const WeeklyCalendar = () => {
 
     const [currentMonthIndex, setCurrentMonthIndex] = useState(0); // Default to the first month
-
-    const handleMonthChange = (index) => {
-        setCurrentMonthIndex(index);
-    };
+    const [currentWeekIndex, setCurrentWeekIndex] = useState(0); // Default to the first week
 
     const calendar = calendarData.cal[currentMonthIndex]; // Get the current month's data
     const daysInMonth = calendar.days;
@@ -19,11 +16,9 @@ const CalendarSection = () => {
     const weekDays = calendarData.calendarDays;
     const startDayIndex = weekDays.findIndex(day => day === daysInMonth[0].tamilday);
 
-    // Fill the first week with empty slots up to the starting day
+    // Create weeks from the days array
     const weeks = [];
     let week = new Array(startDayIndex).fill(null); // Fill with `null` up to `startDayIndex`
-
-    // Create an array of weeks (each week being an array of days)
     daysInMonth.forEach((day, index) => {
         week.push(day);
         if (week.length === 7 || index === daysInMonth.length - 1) {
@@ -31,6 +26,18 @@ const CalendarSection = () => {
             week = [];
         }
     });
+
+    const handlePrevWeek = () => {
+        if (currentWeekIndex > 0) {
+            setCurrentWeekIndex((prevIndex) => prevIndex - 1);
+        }
+    };
+
+    const handleNextWeek = () => {
+        if (currentWeekIndex < weeks.length - 1) {
+            setCurrentWeekIndex((prevIndex) => prevIndex + 1);
+        }
+    };
 
     const specialDayImages = {
         "அமாவாசை": "/images/1.png",
@@ -41,39 +48,26 @@ const CalendarSection = () => {
         "சதுர்த்தி": "/images/6.png",
     };
 
-    const handlePrevMonth = () => {
-        if (currentMonthIndex > 0) {
-            setCurrentMonthIndex((prevIndex) => prevIndex - 1);
-        }
-    };
-
-    const handleNextMonth = () => {
-        if (currentMonthIndex < calendarData.cal.length - 1) {
-            setCurrentMonthIndex((prevIndex) => prevIndex + 1);
-        }
-    };
-
     return (
         <div className='calendar-section my-4'>
             <div className="calendar-wrapper">
                 <div>
                     <div className="row align-items-center calendar-header pb-4">
                         <div className="col left">
-                            <div onClick={handlePrevMonth}>
+                            <div onClick={handlePrevWeek} disabled={currentWeekIndex === 0}>
                                 <img src="/icon/droparrow_left.png" alt="left arrow" />
                             </div>
                         </div>
                         <div className="col middle">
-
                             <div className="title-month">
-                                {calendar.month_name}
+                                {calendar.month_name} - வாரம் {currentWeekIndex + 1}
                             </div>
                             <div className="title-desc">
                                 {calendar.month_name_tamil}
                             </div>
                         </div>
                         <div className="col right">
-                            <div onClick={handleNextMonth}>
+                            <div onClick={handleNextWeek} disabled={currentWeekIndex === weeks.length - 1}>
                                 <img src="/icon/droparrow_right.png" alt="right arrow" />
                             </div>
                         </div>
@@ -110,52 +104,52 @@ const CalendarSection = () => {
                                     color: '#fff'
                                 }} className='week-day'>
                                     {dayName}
-                                    </div>
-                            ))}
-                            {weeks.map((week, weekIndex) => (
-                                <div key={weekIndex} style={{ display: 'contents' }}>
-                                    {week.map((day, dayIndex) => (
-                                        <div className="day" valign="bottom"
-                                            key={dayIndex}
-                                        >
-                                            {day ? (
-                                                <>
-                                                    <span className="tamil_month top-position">{day.tamilmonth}</span>
-                                                    <div className="date-grid">
-                                                        <span className="tamil_date">{day.tamil_date}</span>
-                                                        {day.special_day && day.special_day.length > 0 && (
-                                                            <>
-                                                                {day.special_day.map((special, idx) => (
-                                                                    <span className="special-event-img" key={idx}>
-                                                                        {specialDayImages[special.name] ? (
-                                                                            <img src={specialDayImages[special.name]} alt={special.name} />
-                                                                        )
-                                                                            :
-                                                                            (
-                                                                                <>
-                                                                                </>
-                                                                                // <span>{special.name}</span>
-                                                                            )
-                                                                        }
-                                                                    </span>
-                                                                ))}
-                                                            </>
-                                                        )}
-                                                        <span className="english_date">{day.date}</span>
-                                                    </div>
-
-                                                </>
-                                            ) : null}
-                                        </div>
-                                    ))}
                                 </div>
                             ))}
-                        </div>
+                            {/* {weeks[currentWeekIndex].map((day, dayIndex) => ( */}
+                            {weeks[currentWeekIndex].map((day, dayIndex) => (
+                                // <div key={dayIndex} style={{ display: 'contents' }}>
+                                // {week.map((day, dayIndex) => (
+                                <div className="day" valign="bottom"
+                                    key={dayIndex}
+                                >
+                                    {day ? (
+                                        <>
+                                            <span className="tamil_month top-position">{day.tamilmonth}</span>
+                                            <div className="date-grid">
+                                                <span className="tamil_date">{day.tamil_date}</span>
+                                                {day.special_day && day.special_day.length > 0 && (
+                                                    <>
+                                                        {day.special_day.map((special, idx) => (
+                                                            <span className="special-event-img" key={idx}>
+                                                                {specialDayImages[special.name] ? (
+                                                                    <img src={specialDayImages[special.name]} alt={special.name} />
+                                                                )
+                                                                    :
+                                                                    (
+                                                                        <>
+                                                                        </>
+                                                                        // <span>{special.name}</span>
+                                                                    )
+                                                                }
+                                                            </span>
+                                                        ))}
+                                                    </>
+                                                )}
+                                                <span className="english_date">{day.date}</span>
+                                            </div>
+                                        </>
+                                    ) : null}
+                                </div>
+                            ))}
+                        {/* </div> */}
+                        {/* ))} */}
                     </div>
                 </div>
             </div>
+        </div>
         </div >
     )
 }
 
-export default CalendarSection
+export default WeeklyCalendar

@@ -117,12 +117,12 @@ function page() {
                   type="button" role="tab" aria-controls="nav-contact" aria-selected="false">மாத ராசிபலன்</button>
               </div>
             </nav>
-            <div className="">
+            {/* <div className="">
               <div id='hexagon'>
                 <GiAries className='Aries' />
-                {/* <img src="" alt="" /> */}
+                <img src="" alt="" />
               </div>
-            </div>
+            </div> */}
             <div className="tab-content" id="nav-tabContent">
               {/* today data */}
               <div className="tab-pane py-3 fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabIndex="0">

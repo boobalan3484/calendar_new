@@ -188,16 +188,111 @@
 //   );
 // }
 
+// 'use client'
+// import { useState } from 'react';
+// import calendarData from '../../public/data/month2025.json'; // Adjust the path as necessary
+
+// export default function Test() {
+//   const [currentMonthIndex, setCurrentMonthIndex] = useState(0); // Default to the first month
+
+//   const handleMonthChange = (index) => {
+//     setCurrentMonthIndex(index);
+//   };
+
+//   const calendar = calendarData.cal[currentMonthIndex]; // Get the current month's data
+//   const daysInMonth = calendar.days;
+
+//   // Determine the starting day of the month (e.g., "Fri" is the 5th index in a week starting from Sunday)
+//   const weekDays = calendarData.calendarDays;
+//   const startDayIndex = weekDays.findIndex(day => day === daysInMonth[0].tamilday);
+
+//   // Fill the first week with empty slots up to the starting day
+//   const weeks = [];
+//   let week = new Array(startDayIndex).fill(null); // Fill with `null` up to `startDayIndex`
+
+//   // Create an array of weeks (each week being an array of days)
+//   daysInMonth.forEach((day, index) => {
+//     week.push(day);
+//     if (week.length === 7 || index === daysInMonth.length - 1) {
+//       weeks.push(week);
+//       week = [];
+//     }
+//   });
+
+//   // Render the component
+//   return (
+//     <div>
+//       <h1>{calendar.month_name_tamil} ({calendar.month_name})</h1>
+
+//       {/* Dropdown or buttons for changing the month */}
+//       {/* <div>
+//         {calendarData.cal.map((month, index) => (
+//           <button
+//             key={index}
+//             onClick={() => handleMonthChange(index)}
+//             style={{
+//               margin: '5px',
+//               padding: '10px',
+//               backgroundColor: currentMonthIndex === index ? '#ddd' : '#fff'
+//             }}
+//           >
+//             {month.month_name_tamil}
+//           </button>
+//         ))}
+//       </div> */}
+
+//       {/* Render calendar grid */}
+//       <div style={{ display: 'grid', gridTemplateColumns: `repeat(7, 1fr)`, gap: '5px', marginTop: '20px' }}>
+//         {/* Render day names */}
+//         {weekDays.map((dayName, index) => (
+//           <div key={index} style={{ fontWeight: 'bold', textAlign: 'center' }}>{dayName}</div>
+//         ))}
+
+//         {/* Render weeks */}
+//         {weeks.map((week, weekIndex) => (
+//           <div key={weekIndex} style={{ display: 'contents' }}>
+//             {week.map((day, dayIndex) => (
+//               <div
+//                 key={dayIndex}
+//                 style={{
+//                   border: '1px solid #ddd',
+//                   padding: '10px',
+//                   textAlign: 'center',
+//                   backgroundColor: day ? '#fff' : '#f0f0f0' // Highlight empty slots
+//                 }}
+//               >
+//                 {day ? (
+//                   <>
+//                     <p><strong>{day.date}</strong></p>
+//                     <p>{day.tamilmonth}</p>
+//                     {/* <p>{day.tamil_date}</p> */}
+//                     {/* {day.special_day && day.special_day.length > 0 && (
+//                       <div style={{ color: 'red' }}>
+//                         {day.special_day.map((special, idx) => (
+//                           <p key={idx}>{special.name}</p>
+//                         ))}
+//                       </div>
+//                     )} */}
+//                   </>
+//                 ) : null}
+//               </div>
+//             ))}
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
 'use client'
 import { useState } from 'react';
+// import calendarData from '../data/calendarData.json'; // Adjust the path as necessary
 import calendarData from '../../public/data/month2025.json'; // Adjust the path as necessary
+
 
 export default function Test() {
   const [currentMonthIndex, setCurrentMonthIndex] = useState(0); // Default to the first month
-
-  const handleMonthChange = (index) => {
-    setCurrentMonthIndex(index);
-  };
+  const [currentWeekIndex, setCurrentWeekIndex] = useState(0); // Default to the first week
 
   const calendar = calendarData.cal[currentMonthIndex]; // Get the current month's data
   const daysInMonth = calendar.days;
@@ -206,11 +301,9 @@ export default function Test() {
   const weekDays = calendarData.calendarDays;
   const startDayIndex = weekDays.findIndex(day => day === daysInMonth[0].tamilday);
 
-  // Fill the first week with empty slots up to the starting day
+  // Create weeks from the days array
   const weeks = [];
   let week = new Array(startDayIndex).fill(null); // Fill with `null` up to `startDayIndex`
-
-  // Create an array of weeks (each week being an array of days)
   daysInMonth.forEach((day, index) => {
     week.push(day);
     if (week.length === 7 || index === daysInMonth.length - 1) {
@@ -219,64 +312,75 @@ export default function Test() {
     }
   });
 
-  // Render the component
+  const handlePrevWeek = () => {
+    if (currentWeekIndex > 0) {
+      setCurrentWeekIndex((prevIndex) => prevIndex - 1);
+    }
+  };
+
+  const handleNextWeek = () => {
+    if (currentWeekIndex < weeks.length - 1) {
+      setCurrentWeekIndex((prevIndex) => prevIndex + 1);
+    }
+  };
+
+  // Image mapping for special days
+  const specialDayImages = {
+    "அமாவாசை": "/images/amavasai.png",
+    "பௌர்ணமி": "/images/fullmoon.png",
+    "சதுர்த்தி": "/images/chaturthi.png",
+    "சஸ்டி": "/images/sashti.png",
+    "கிருத்திகை": "/images/karthigai.png"
+  };
+
   return (
     <div>
-      <h1>{calendar.month_name_tamil} ({calendar.month_name})</h1>
+      <h1>{calendar.month_name_tamil} ({calendar.month_name}) - Week {currentWeekIndex + 1}</h1>
 
-      {/* Dropdown or buttons for changing the month */}
-      {/* <div>
-        {calendarData.cal.map((month, index) => (
-          <button
-            key={index}
-            onClick={() => handleMonthChange(index)}
-            style={{
-              margin: '5px',
-              padding: '10px',
-              backgroundColor: currentMonthIndex === index ? '#ddd' : '#fff'
-            }}
-          >
-            {month.month_name_tamil}
-          </button>
-        ))}
-      </div> */}
+      {/* Prev and Next buttons for weeks */}
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
+        <button onClick={handlePrevWeek} disabled={currentWeekIndex === 0}>&lt; Prev Week</button>
+        <button onClick={handleNextWeek} disabled={currentWeekIndex === weeks.length - 1}>Next Week &gt;</button>
+      </div>
 
-      {/* Render calendar grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: `repeat(7, 1fr)`, gap: '5px', marginTop: '20px' }}>
+      {/* Render weekly calendar grid */}
+      <div style={{ display: 'grid', gridTemplateColumns: `repeat(7, 1fr)`, gap: '5px' }}>
         {/* Render day names */}
         {weekDays.map((dayName, index) => (
           <div key={index} style={{ fontWeight: 'bold', textAlign: 'center' }}>{dayName}</div>
         ))}
 
-        {/* Render weeks */}
-        {weeks.map((week, weekIndex) => (
-          <div key={weekIndex} style={{ display: 'contents' }}>
-            {week.map((day, dayIndex) => (
-              <div
-                key={dayIndex}
-                style={{
-                  border: '1px solid #ddd',
-                  padding: '10px',
-                  textAlign: 'center',
-                  backgroundColor: day ? '#fff' : '#f0f0f0' // Highlight empty slots
-                }}
-              >
-                {day ? (
-                  <>
-                    <p><strong>{day.date}</strong></p>
-                    <p>{day.tamilmonth}</p>
-                    {/* <p>{day.tamil_date}</p> */}
-                    {/* {day.special_day && day.special_day.length > 0 && (
-                      <div style={{ color: 'red' }}>
-                        {day.special_day.map((special, idx) => (
-                          <p key={idx}>{special.name}</p>
-                        ))}
-                      </div>
-                    )} */}
-                  </>
-                ) : null}
-              </div>
-            ))}
+        {/* Render current week */}
+        {weeks[currentWeekIndex].map((day, dayIndex) => (
+          <div
+            key={dayIndex}
+            style={{
+              border: '1px solid #ddd',
+              padding: '10px',
+              textAlign: 'center',
+              backgroundColor: day ? '#fff' : '#f0f0f0' // Highlight empty slots
+            }}
+          >
+            {day ? (
+              <>
+                <p><strong>{day.date}</strong></p>
+                <p>{day.tamilday}</p>
+                {day.special_day && day.special_day.length > 0 && (
+                  <div>
+                    {day.special_day.map((special, idx) => (
+                      <img
+                        key={idx}
+                        src={specialDayImages[special.name]}
+                        alt={special.name}
+                        style={{ width: '20px', height: '20px' }}
+                      />
+                    ))}
+                  </div>
+                )}
+              </>
+            ) : (
+              <p>&nbsp;</p> // Empty cell placeholder
+            )}
           </div>
         ))}
       </div>

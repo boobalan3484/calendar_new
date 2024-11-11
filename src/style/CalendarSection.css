@@ -207,12 +207,13 @@ thead {
 }
 
 .date-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: -webkit-max-content -webkit-max-content auto;
     grid-template-columns: max-content max-content auto;
     align-items: flex-end;
     grid-gap: 5px;
     padding-bottom: 10px;
+    justify-content: space-between;
 }
 
 .tamil_date {

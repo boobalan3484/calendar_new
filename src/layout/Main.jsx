@@ -8,7 +8,8 @@ const Main = () => {
         <main>
             <Header />
             <Content />
-            <Test />
+            {/* <Test /> */}
+            
         </main>
     )
 }

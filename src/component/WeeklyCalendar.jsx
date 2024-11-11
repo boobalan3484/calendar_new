@@ -9,35 +9,53 @@ const WeeklyCalendar = () => {
     const [currentMonthIndex, setCurrentMonthIndex] = useState(0); // Default to the first month
     const [currentWeekIndex, setCurrentWeekIndex] = useState(0); // Default to the first week
 
-    const calendar = calendarData.cal[currentMonthIndex]; // Get the current month's data
-    const daysInMonth = calendar.days;
+    // Helper function to create weeks from days in the month
+    const createWeeks = (daysInMonth) => {
+        const weekDays = calendarData.calendarDays;
+        const startDayIndex = weekDays.findIndex(day => day === daysInMonth[0].tamilday);
+        const weeks = [];
+        let week = new Array(startDayIndex).fill(null); // Fill with `null` for initial empty slots
 
-    // Determine the starting day of the month (e.g., "Fri" is the 5th index in a week starting from Sunday)
-    const weekDays = calendarData.calendarDays;
-    const startDayIndex = weekDays.findIndex(day => day === daysInMonth[0].tamilday);
+        daysInMonth.forEach((day, index) => {
+            week.push(day);
+            if (week.length === 7 || index === daysInMonth.length - 1) {
+                weeks.push(week);
+                week = [];
+            }
+        });
+        return weeks;
+    };
 
-    // Create weeks from the days array
-    const weeks = [];
-    let week = new Array(startDayIndex).fill(null); // Fill with `null` up to `startDayIndex`
-    daysInMonth.forEach((day, index) => {
-        week.push(day);
-        if (week.length === 7 || index === daysInMonth.length - 1) {
-            weeks.push(week);
-            week = [];
-        }
-    });
+    // Get the current month's data and create weeks from it
+    const calendar = calendarData.cal[currentMonthIndex];
+    const weeks = createWeeks(calendar.days);
 
+    // Function to handle moving to the previous week
     const handlePrevWeek = () => {
         if (currentWeekIndex > 0) {
-            setCurrentWeekIndex((prevIndex) => prevIndex - 1);
+            setCurrentWeekIndex(currentWeekIndex - 1);
+        } else if (currentMonthIndex > 0) {
+            // Move to the last week of the previous month
+            setCurrentMonthIndex(currentMonthIndex - 1);
+            setCurrentWeekIndex(createWeeks(calendarData.cal[currentMonthIndex - 1].days).length - 1);
         }
     };
 
+    // Function to handle moving to the next week
     const handleNextWeek = () => {
         if (currentWeekIndex < weeks.length - 1) {
-            setCurrentWeekIndex((prevIndex) => prevIndex + 1);
+            setCurrentWeekIndex(currentWeekIndex + 1);
+        } else if (currentMonthIndex < calendarData.cal.length - 1) {
+            // Move to the first week of the next month
+            setCurrentMonthIndex(currentMonthIndex + 1);
+            setCurrentWeekIndex(0);
         }
     };
+
+    // Determine if buttons should be disabled
+    const isPrevDisabled = currentMonthIndex === 0 && currentWeekIndex === 0;
+    const isNextDisabled = currentMonthIndex === calendarData.cal.length - 1 &&
+        currentWeekIndex === weeks.length - 1;
 
     const specialDayImages = {
         "அமாவாசை": "/images/1.png",
@@ -54,20 +72,23 @@ const WeeklyCalendar = () => {
                 <div>
                     <div className="row align-items-center calendar-header pb-4">
                         <div className="col left">
-                            <div onClick={handlePrevWeek} disabled={currentWeekIndex === 0}>
+                            <div onClick={handlePrevWeek} disabled={isPrevDisabled}>
                                 <img src="/icon/droparrow_left.png" alt="left arrow" />
                             </div>
                         </div>
                         <div className="col middle">
                             <div className="title-month">
-                                {calendar.month_name} - வாரம் {currentWeekIndex + 1}
+                                {calendar.month_name}
                             </div>
                             <div className="title-desc">
                                 {calendar.month_name_tamil}
                             </div>
+                            <h6 className="fw-semibold">
+                                வாரம் {currentWeekIndex + 1}
+                            </h6>
                         </div>
                         <div className="col right">
-                            <div onClick={handleNextWeek} disabled={currentWeekIndex === weeks.length - 1}>
+                            <div onClick={handleNextWeek} disabled={isNextDisabled}>
                                 <img src="/icon/droparrow_right.png" alt="right arrow" />
                             </div>
                         </div>
@@ -98,7 +119,7 @@ const WeeklyCalendar = () => {
 
                     <div className="calendar-container">
                         <div style={{ display: 'grid', gridTemplateColumns: `repeat(7, 1fr)`, gap: '5px', marginTop: '20px' }} className='calendar'>
-                            {weekDays.map((dayName, index) => (
+                            {calendarData.calendarDays.map((dayName, index) => (
                                 <div key={index} style={{
                                     fontWeight: 'bold', textAlign: 'center', backgroundColor: '#929292',
                                     color: '#fff'
@@ -106,10 +127,7 @@ const WeeklyCalendar = () => {
                                     {dayName}
                                 </div>
                             ))}
-                            {/* {weeks[currentWeekIndex].map((day, dayIndex) => ( */}
                             {weeks[currentWeekIndex].map((day, dayIndex) => (
-                                // <div key={dayIndex} style={{ display: 'contents' }}>
-                                // {week.map((day, dayIndex) => (
                                 <div className="day" valign="bottom"
                                     key={dayIndex}
                                 >
@@ -142,12 +160,12 @@ const WeeklyCalendar = () => {
                                     ) : null}
                                 </div>
                             ))}
-                        {/* </div> */}
-                        {/* ))} */}
+                            {/* </div> */}
+                            {/* ))} */}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div >
     )
 }

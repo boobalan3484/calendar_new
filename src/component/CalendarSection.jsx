@@ -41,6 +41,21 @@ const CalendarSection = () => {
         "சதுர்த்தி": "/images/6.png",
     };
 
+    const monthData = {
+        1: "ஜனவரி",
+        2: "பிப்ரவரி",
+        3: "மார்ச்",
+        4: "ஏப்ரல்",
+        5: "மே",
+        6: "ஜூன்",
+        7: "ஜூலை",
+        8: "ஆகஸ்ட்",
+        9: "செப்டம்பர்",
+        10: "அக்டோபர்",
+        11: "நவம்பர்",
+        12: "டிசம்பர்",
+    };
+
     const handlePrevMonth = () => {
         if (currentMonthIndex > 0) {
             setCurrentMonthIndex((prevIndex) => prevIndex - 1);
@@ -52,6 +67,13 @@ const CalendarSection = () => {
             setCurrentMonthIndex((prevIndex) => prevIndex + 1);
         }
     };
+
+
+    // Handle click on month
+    // const handleMonthClick = (month) => {
+    //     setCurrentMonthIndex((month) => month + 1);
+    // };
+
 
     return (
         <div className='calendar-section my-4'>
@@ -79,78 +101,72 @@ const CalendarSection = () => {
                         </div>
                     </div>
                     <div className="month-list">
-                        <div className="month-popup">
-                            <div className="months">
-                                <a href="" data-id="1" className="month_common month_1 ">ஜனவரி</a>
-                            </div>
-                            <div className="months">
-                                <a href="" data-id="2" className="month_common month_1 ">ஜனவரி</a>
-                            </div>
-                            <div className="months">
-                                <a href="" data-id="3" className="month_common month_1 ">ஜனவரி</a>
-                            </div>
-                            <div className="months">
-                                <a href="" data-id="4" className="month_common month_1 ">ஜனவரி</a>
-                            </div>
-                            <div className="months">
-                                <a href="" data-id="5" className="month_common month_1 ">ஜனவரி</a>
-                            </div>
-                            <div className="months">
-                                <a href="" data-id="6" className="month_common month_1 active">ஜனவரி</a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div className="calendar-container">
-                        <div style={{ display: 'grid', gridTemplateColumns: `repeat(7, 1fr)`, gap: '5px', marginTop: '20px' }} className='calendar'>
-                            {weekDays.map((dayName, index) => (
-                                <div key={index} style={{
-                                    fontWeight: 'bold', textAlign: 'center', backgroundColor: '#929292',
-                                    color: '#fff'
-                                }} className='week-day'>
-                                    {dayName}
-                                    </div>
-                            ))}
-                            {weeks.map((week, weekIndex) => (
-                                <div key={weekIndex} style={{ display: 'contents' }}>
-                                    {week.map((day, dayIndex) => (
-                                        <div className="day" valign="bottom"
-                                            key={dayIndex}
-                                        >
-                                            {day ? (
-                                                <>
-                                                    <span className="tamil_month top-position">{day.tamilmonth}</span>
-                                                    <div className="date-grid">
-                                                        <span className="tamil_date">{day.tamil_date}</span>
-                                                        {day.special_day && day.special_day.length > 0 && (
-                                                            <>
-                                                                {day.special_day.map((special, idx) => (
-                                                                    <span className="special-event-img" key={idx}>
-                                                                        {specialDayImages[special.name] ? (
-                                                                            <img src={specialDayImages[special.name]} alt={special.name} />
-                                                                        )
-                                                                            :
-                                                                            (
-                                                                                <>
-                                                                                </>
-                                                                                // <span>{special.name}</span>
-                                                                            )
-                                                                        }
-                                                                    </span>
-                                                                ))}
-                                                            </>
-                                                        )}
-                                                        <span className="english_date">{day.date}</span>
-                                                    </div>
-
-                                                </>
-                                            ) : null}
-                                        </div>
-                                    ))}
+                        <div className="month-popup" >
+                            {Object.keys(monthData).map(month => (
+                                <div className="months" key={month}>
+                                    <a
+                                        data-id={month}
+                                        className="month_common month_1"
+                                        onClick={(e) => {
+                                            e.preventDefault(); // Prevent default anchor behavior
+                                            handleMonthClick(month); // Update selected month on click
+                                        }}>
+                                        {monthData[month]}
+                                    </a>
                                 </div>
                             ))}
                         </div>
+                    </div>
+                </div>
+
+                <div className="calendar-container">
+                    <div style={{ display: 'grid', gridTemplateColumns: `repeat(7, 1fr)`, gap: '5px', marginTop: '20px' }} className='calendar'>
+                        {weekDays.map((dayName, index) => (
+                            <div key={index} style={{
+                                fontWeight: 'bold', textAlign: 'center', backgroundColor: '#929292',
+                                color: '#fff'
+                            }} className='week-day'>
+                                {dayName}
+                            </div>
+                        ))}
+                        {weeks.map((week, weekIndex) => (
+                            <div key={weekIndex} style={{ display: 'contents' }}>
+                                {week.map((day, dayIndex) => (
+                                    <div className="day" valign="bottom"
+                                        key={dayIndex}
+                                    >
+                                        {day ? (
+                                            <>
+                                                <span className="tamil_month top-position">{day.tamilmonth}</span>
+                                                <div className="date-grid">
+                                                    <span className="tamil_date">{day.tamil_date}</span>
+                                                    {day.special_day && day.special_day.length > 0 && (
+                                                        <>
+                                                            {day.special_day.map((special, idx) => (
+                                                                <span className="special-event-img" key={idx}>
+                                                                    {specialDayImages[special.name] ? (
+                                                                        <img src={specialDayImages[special.name]} alt={special.name} />
+                                                                    )
+                                                                        :
+                                                                        (
+                                                                            <>
+                                                                            </>
+                                                                            // <span>{special.name}</span>
+                                                                        )
+                                                                    }
+                                                                </span>
+                                                            ))}
+                                                        </>
+                                                    )}
+                                                    <span className="english_date">{day.date}</span>
+                                                </div>
+
+                                            </>
+                                        ) : null}
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

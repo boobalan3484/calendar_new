@@ -25,21 +25,33 @@
 .share {
     text-align: right;
     display: inline-block;
-    vertical-align: middle; 
+    vertical-align: middle;
 
 }
 
-.calandar-icons span {
+.share.calandar-icons span {
     display: none;
     font-size: 11px;
     padding-top: 2px;
 }
 
-.share.calandar-icons a{
-    margin: 6px 6px;
+.share.calandar-icons a {
+    margin: 6px 12px;
 }
 
-a{
+.share.calandar-icons a:hover {
+    color: #e92227;
+}
+
+.share.calandar-icons a:hover span{
+    position: absolute;
+    display: flex;
+    color: #e92227;
+}
+
+
+
+a {
     color: #404040;
     text-decoration: none;
     display: inline-block;

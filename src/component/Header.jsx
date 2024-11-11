@@ -6,24 +6,24 @@ import { FaCalendarDays } from "react-icons/fa6";
 const Header = () => {
     return (
         <header className='header'>
-            <div className='container header-wrapper'>
+            <div className='container header-wrapper py-3'>
                 <div className="logo">
                     <h3 className='fw-bold'> Logo.</h3>
                 </div>
                 <div className="share calandar-icons">
-                    <a href="/" className="day-icon">
+                    <a href="/" className="day-icon" title='Day'>
                         {/* <i className="icon-day"></i> */}
-                        <FaCalendarDay />
+                        <FaCalendarDay className='fs-3'/>
                         <span>இன்று</span>
                     </a>
-                    <a href="/weekly-calendar" className="week-icon">
+                    <a href="/weekly-calendar" className="week-icon" title='Weekly'>
                         {/* <i className="icon-weekly"></i> */}
-                        <FaCalendarWeek />
+                        <FaCalendarWeek className='fs-3'/>
                         <span>வாரம்</span>
                     </a>
-                    <a href="/monthly-calendar" className="active month-icon">
+                    <a href="/monthly-calendar" className="month-icon" title='Monthly'>
                         {/* <i className="icon-monthly"></i> */}
-                        <FaCalendarDays />
+                        <FaCalendarDays className='fs-3'/>
 
                         <span>மாதம்</span>
                     </a>

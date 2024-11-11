@@ -1,0 +1,70 @@
+.pagenation-section {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, .16);
+}
+
+
+.tab-pane {
+    /* border: 2px solid red; */
+}
+
+.pagenation-title-1 {
+    color: #707070;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bolder;
+}
+
+.pagenation-title-2 {
+    color: #707070;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bolder;
+}
+
+.pagenation-desc {
+    color: #707070 !important;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+/*  */
+
+#hexagon {
+    width: 100px;
+    height: 57.735px;
+    background: red;
+    position: relative;
+    /* border:2px solid green; */
+}
+
+#hexagon::before {
+    content: "";
+    position: absolute;
+    top: -28.810px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 28.8675px solid red;
+}
+
+#hexagon::after {
+    content: "";
+    position: absolute;
+    bottom: -28.8675px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 28.8675px solid red;
+}
+
+.Aries{
+    font-size:40px;
+    border: 2px solid yellow;
+}

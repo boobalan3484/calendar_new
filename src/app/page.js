@@ -1,12 +1,8 @@
 
 export default function Home() {
   return (
-    <div>
-
-      <p> ewyoqutgfodjgfjgi
-        wyeugfuydgfukyJAG
-      </p>
-
-    </div>
+   <>
+   <h2>Home Page</h2>
+   </>
   );
 }

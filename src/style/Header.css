@@ -6,9 +6,12 @@
 
 .header-wrapper {
     position: relative;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: grid; */
+    /* grid-template-columns: auto auto; */
+    /* grid-gap: 20px; */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -30,7 +33,7 @@
 }
 
 .share.calandar-icons span {
-    display: none;
+    /* display: none; */
     font-size: 11px;
     padding-top: 2px;
 }
@@ -43,11 +46,11 @@
     color: #e92227;
 }
 
-.share.calandar-icons a:hover span{
+/* .share.calandar-icons a:hover span{
     position: absolute;
     display: flex;
     color: #e92227;
-}
+} */
 
 
 
@@ -55,4 +58,9 @@ a {
     color: #404040;
     text-decoration: none;
     display: inline-block;
+}
+
+.logo{
+    width: 120px;
+    /* height: 100px; */
 }

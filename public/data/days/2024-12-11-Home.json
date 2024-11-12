@@ -1,0 +1,337 @@
+{
+    "dailyInfo": {
+        "Karanan": "06.00-07.30",
+        "Sunrise": "06.19",
+        "StarDetails": "இன்று காலை 09.57 வரை ரேவதி பின்பு அஸ்வினி",
+        "KaranamDetails": "இன்று அதிகாலை 01.13 வரை கரசை பின்பு பிற்பகல் 12.03 வரை வணிசை பின்பு இரவு 10.54 வரை பத்திரை பின்பு பவம்",
+        "Sulam": "வடக்கு",
+        "Parikaram": "பால் ",
+        "Namyogam": "இன்று மாலை 05.36 வரை வரீயான் பின்பு பரிகம்",
+        "Amirthathiyogam": "இன்று காலை 06.18 வரை சித்தயோகம் பின்பு மரணயோகம்",
+        "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
+        "Jeevan": "இன்று காலை 09.57 வரை உயிரற்றவை பின்பு முழு வாழ்க்க",
+        "MainDays": "ஏகாதசி",
+        "SubDays": "சர்வதேச மலைகள் தினம், மகாகவி பாரதியார் பிறந்த தினம்",
+        "DayDetails": "வளர்பிறை சம நோக்கு நாள்",
+        "Pirai": "வளர்பிறை"
+    },
+    "homedates": {
+        "tamilDate": 26,
+        "tamilMonth": "கார்த்திகை",
+        "tamilYear": "குரோதி",
+        "engMonth": "டிசம்பர்",
+        "engweekDay": "Wednesday",
+        "tamilWeekDay": "புதன்",
+        "humanFormat": "டிசம்பர் 11, 2024"
+    },
+    "panchangam": {
+        "info": "{\"nakshatra\":\"இன்று காலை 09:57 வரை ரேவதி பின்பு அஸ்வினி\",\"nakshatraTime\":\"\",\"tithi\":\"இன்று அதிகாலை 01:13 வரை தசமி, இரவு 10:54 வரை ஏகாதசி, பின்பு துவாதசி\",\"tithiTime\":\"\",\"yogam\":\"மரண\",\"chandrastram\":\"பூரம்\"}"
+    },
+    "panchangamInfo": {
+        "tmonth": "கார்த்திகை",
+        "tyear": "குரோதி",
+        "tdate": 26,
+        "dayAuspicious": null,
+        "nneram_mrg": "10:45 - 11:45",
+        "nneram_eve": "04:45 - 05:45",
+        "gneram_mrg": "11:15 - 12:00",
+        "gneram_eve": null,
+        "muhurtham": "N",
+        "festival_info": "",
+        "thithiimages": "bothside_arrow,valarpirai,ekadasi,,"
+    },
+    "chandrastamamRasi": {
+        "rashi_name": "சிம்மம்",
+        "start_date": "09.12.2024",
+        "end_date": "11.12.2024",
+        "start_time": "09:12 AM",
+        "end_time": "11:50 AM"
+    },
+    "chandrastamam": [
+        {
+            "details": "இன்று, மாலை 07.45, வரை, பூரம், பின்பு, உத்திரம்"
+        }
+    ],
+    "sunmoon": {
+        "sun_rise": "07:03 AM",
+        "sun_set": "05:25 PM",
+        "moon_rise": "02:05 PM",
+        "moon_set": "03:32 AM, டிசம்பர்12"
+    },
+    "rasiDaily": [
+        {
+            "name": "மேஷம்",
+            "info": "ஊக்கம்"
+        },
+        {
+            "name": "ரிஷபம்",
+            "info": "அமைதி"
+        },
+        {
+            "name": "மிதுனம்",
+            "info": "ஓய்வு"
+        },
+        {
+            "name": "கடகம்",
+            "info": "பக்தி"
+        },
+        {
+            "name": "சிம்மம்",
+            "info": "தனம்"
+        },
+        {
+            "name": "கன்னி ",
+            "info": "போட்டி"
+        },
+        {
+            "name": "துலாம்",
+            "info": "அசதி"
+        },
+        {
+            "name": "விருச்சிகம் ",
+            "info": "சினம்"
+        },
+        {
+            "name": "தனுசு",
+            "info": "நற்செயல்"
+        },
+        {
+            "name": "மகரம்",
+            "info": "பணிவு"
+        },
+        {
+            "name": "கும்பம்",
+            "info": "ஆர்வம்"
+        },
+        {
+            "name": "மீனம்",
+            "info": "சாதனை"
+        }
+    ],
+    "customData": {
+        "ragu_m": "",
+        "ragu_e": "12:00 PM - 01:30 PM",
+        "yama_m": "07:30 AM - 09:00 AM",
+        "yama_e": "",
+        "kuligai_m": "10:30 AM - 12:00 PM",
+        "kuligai_e": ""
+    },
+    "gpanchangamDay": [
+        {
+            "hora_name": "லாபம்",
+            "hora_time": "06:24 AM - 07:49 AM"
+        },
+        {
+            "hora_name": "தனம்",
+            "hora_time": "07:49 AM - 09:13 AM"
+        },
+        {
+            "hora_name": "சுகம்",
+            "hora_time": "09:13 AM - 10:37 AM"
+        },
+        {
+            "hora_name": "ரோகம்",
+            "hora_time": "10:37 AM - 12:02 PM"
+        },
+        {
+            "hora_name": "விஷம்",
+            "hora_time": "12:02 PM - 13:26 PM"
+        },
+        {
+            "hora_name": "உதி",
+            "hora_time": "13:26 PM - 14:50 PM"
+        },
+        {
+            "hora_name": "அம்ரிதா",
+            "hora_time": "14:50 PM - 16:15 PM"
+        },
+        {
+            "hora_name": "ரோகம்",
+            "hora_time": "16:15 PM - 17:39 PM"
+        }
+    ],
+    "gpanchangamNight": [
+        {
+            "hora_name": "உதி",
+            "hora_time": "17:39 PM - 19:15 PM"
+        },
+        {
+            "hora_name": "அம்ரிதா",
+            "hora_time": "19:15 PM - 20:51 PM"
+        },
+        {
+            "hora_name": "ரோகம்",
+            "hora_time": "20:51 PM - 22:26 PM"
+        },
+        {
+            "hora_name": "லாபம்",
+            "hora_time": "22:26 PM - 00:02 AM"
+        },
+        {
+            "hora_name": "தனம்",
+            "hora_time": "00:02 AM - 01:38 AM"
+        },
+        {
+            "hora_name": "சுகம்",
+            "hora_time": "01:38 AM - 03:13 AM"
+        },
+        {
+            "hora_name": "ரோகம்",
+            "hora_time": "03:13 AM - 04:49 AM"
+        },
+        {
+            "hora_name": "விஷம்",
+            "hora_time": "04:49 AM - 06:25 AM"
+        }
+    ],
+    "horaDay": [
+        {
+            "hora_name": "புதன்",
+            "hora_time": "06:24 AM - 07:21 AM"
+        },
+        {
+            "hora_name": "சந்திரன்",
+            "hora_time": "07:21 AM - 08:17 AM"
+        },
+        {
+            "hora_name": "சனி",
+            "hora_time": "08:17 AM - 09:13 AM"
+        },
+        {
+            "hora_name": "வியாழன்",
+            "hora_time": "09:13 AM - 10:09 AM"
+        },
+        {
+            "hora_name": "செவ்வாய்",
+            "hora_time": "10:09 AM - 11:05 AM"
+        },
+        {
+            "hora_name": "சூரியன்",
+            "hora_time": "11:05 AM - 12:02 PM"
+        },
+        {
+            "hora_name": "சுக்ரன்",
+            "hora_time": "12:02 PM - 12:58 PM"
+        },
+        {
+            "hora_name": "புதன்",
+            "hora_time": "12:58 PM - 13:54 PM"
+        },
+        {
+            "hora_name": "சந்திரன்",
+            "hora_time": "13:54 PM - 14:50 PM"
+        },
+        {
+            "hora_name": "சனி",
+            "hora_time": "14:50 PM - 15:47 PM"
+        },
+        {
+            "hora_name": "வியாழன்",
+            "hora_time": "15:47 PM - 16:43 PM"
+        },
+        {
+            "hora_name": "செவ்வாய்",
+            "hora_time": "16:43 PM - 17:39 PM"
+        }
+    ],
+    "horaNight": [
+        {
+            "hora_name": "சூரியன்",
+            "hora_time": "17:39 PM - 18:43 PM"
+        },
+        {
+            "hora_name": "சுக்ரன்",
+            "hora_time": "18:43 PM - 19:47 PM"
+        },
+        {
+            "hora_name": "புதன்",
+            "hora_time": "19:47 PM - 20:51 PM"
+        },
+        {
+            "hora_name": "சந்திரன்",
+            "hora_time": "20:51 PM - 21:54 PM"
+        },
+        {
+            "hora_name": "சனி",
+            "hora_time": "21:54 PM - 22:58 PM"
+        },
+        {
+            "hora_name": "வியாழன்",
+            "hora_time": "22:58 PM - 00:02 AM"
+        },
+        {
+            "hora_name": "செவ்வாய்",
+            "hora_time": "00:02 AM - 01:06 AM"
+        },
+        {
+            "hora_name": "சூரியன்",
+            "hora_time": "01:06 AM - 02:10 AM"
+        },
+        {
+            "hora_name": "சுக்ரன்",
+            "hora_time": "02:10 AM - 03:13 AM"
+        },
+        {
+            "hora_name": "புதன்",
+            "hora_time": "03:13 AM - 04:17 AM"
+        },
+        {
+            "hora_name": "சந்திரன்",
+            "hora_time": "04:17 AM - 05:21 AM"
+        },
+        {
+            "hora_name": "சனி",
+            "hora_time": "05:21 AM - 06:25 AM"
+        }
+    ],
+    "panchangamDetail": {
+        "Panchangam": [
+            {
+                "name": "திதி",
+                "value": "ஏகாதஶீ - 25:11:42 வரை"
+            },
+            {
+                "name": "நக்ஷத்திரம்",
+                "value": "ரேவதி - 11:48:41 வரை"
+            },
+            {
+                "name": "கரணம்",
+                "value": "வணிஜ - 14:29:58 வரை, விஷ்டி - 25:11:42 வரை"
+            },
+            {
+                "name": "பக்ஷம்",
+                "value": "வளர்பிறை"
+            },
+            {
+                "name": "யோகம்",
+                "value": "வாரீயந - 18:47:12 வரை"
+            },
+            {
+                "name": "கிழமை",
+                "value": "புதன் கிழமை"
+            }
+        ],
+        "MangalaNeram": [
+            {
+                "name": "அபிஜித்",
+                "value": "யாருமிலர்"
+            }
+        ],
+        "Dishai": [
+            {
+                "name": "திசை சூலம்",
+                "value": "வடக்கு"
+            }
+        ],
+        "Moon": [
+            {
+                "name": "தர பல",
+                "value": "அஸ்வினி, பரணி, ரோஹிணி, திருவாதிரை, பூசம், ஆயில்யம், மகம், பூரம், ஹஸ்தம், சுவாதி, அனுஷம், கேட்டை, மூலம், பூராடம், திருவோணம், சதயம், உத்திரட்டாதி, ரேவதி"
+            },
+            {
+                "name": "சந்திர பல",
+                "value": "வ்ருஷப, மிதுந, கன்னி, துலா, மகர, மீனம்"
+            }
+        ]
+    }
+}

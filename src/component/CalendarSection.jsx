@@ -1,29 +1,57 @@
 'use client'
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import '@/style/CalendarSection.css'
 
 import calendarData from '../../public/data/month2025.json'; // Adjust the path as necessary
+import MonthList from './MonthList';
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 
 const CalendarSection = () => {
 
-    const [currentMonthIndex, setCurrentMonthIndex] = useState(0); // Default to the first month
+    const [calendarData, setCalendarData] = useState(null);
+    const [currentMonthIndex, setCurrentMonthIndex] = useState(0);
 
-    const handleMonthChange = (index) => {
-        setCurrentMonthIndex(index);
-    };
+    useEffect(() => {
+        // Fetch data from the JSON file
+        fetch('/data/month2025.json') // Adjust the path as necessary
+            .then((response) => response.json())
+            .then((data) => {
+                setCalendarData(data); // Store the fetched data in state
 
-    const calendar = calendarData.cal[currentMonthIndex]; // Get the current month's data
+                // Get today's date
+                const today = new Date();
+                const currentMonth = today.getMonth() + 1; // Months are 0-indexed, so add 1
+                const currentMonthIndex = data.cal.findIndex(
+                    month => parseInt(month.month) === currentMonth
+                );
+
+                if (currentMonthIndex !== -1) {
+                    setCurrentMonthIndex(currentMonthIndex); // Set the current month as active
+                }
+            })
+            .catch((error) => {
+                console.error('Error fetching the calendar data:', error);
+            });
+    }, []);
+
+    if (!calendarData) {
+        return <p>Loading...</p>; // Show loading indicator while data is being fetched
+    }
+
+    const calendar = calendarData.cal[currentMonthIndex];
     const daysInMonth = calendar.days;
 
-    // Determine the starting day of the month (e.g., "Fri" is the 5th index in a week starting from Sunday)
     const weekDays = calendarData.calendarDays;
     const startDayIndex = weekDays.findIndex(day => day === daysInMonth[0].tamilday);
 
-    // Fill the first week with empty slots up to the starting day
-    const weeks = [];
-    let week = new Array(startDayIndex).fill(null); // Fill with `null` up to `startDayIndex`
 
-    // Create an array of weeks (each week being an array of days)
+    const today = new Date();
+    const currentDate = today.getDate();
+    const currentMonth = today.getMonth() + 1;
+
+    const weeks = [];
+    let week = new Array(startDayIndex).fill(null);
+
     daysInMonth.forEach((day, index) => {
         week.push(day);
         if (week.length === 7 || index === daysInMonth.length - 1) {
@@ -41,21 +69,6 @@ const CalendarSection = () => {
         "சதுர்த்தி": "/images/6.png",
     };
 
-    const monthData = {
-        1: "ஜனவரி",
-        2: "பிப்ரவரி",
-        3: "மார்ச்",
-        4: "ஏப்ரல்",
-        5: "மே",
-        6: "ஜூன்",
-        7: "ஜூலை",
-        8: "ஆகஸ்ட்",
-        9: "செப்டம்பர்",
-        10: "அக்டோபர்",
-        11: "நவம்பர்",
-        12: "டிசம்பர்",
-    };
-
     const handlePrevMonth = () => {
         if (currentMonthIndex > 0) {
             setCurrentMonthIndex((prevIndex) => prevIndex - 1);
@@ -68,82 +81,103 @@ const CalendarSection = () => {
         }
     };
 
-
-    // Handle click on month
-    // const handleMonthClick = (month) => {
-    //     setCurrentMonthIndex((month) => month + 1);
-    // };
-
+    const handleMonthChange = (index) => {
+        setCurrentMonthIndex(index);
+    };
 
     return (
-        <div className='calendar-section my-4'>
-            <div className="calendar-wrapper">
+        <div className='calendar-section p-3 py-xl-2 px-xl-5'>
+            <div className=" p-1 py-xl-2 px-xl-5">
                 <div>
-                    <div className="row align-items-center calendar-header pb-4">
-                        <div className="col left">
+                    <div className="row align-items-center justify-content-center calendar-header pb-2 position-relative">
+                        {/* <div className="col left px-0">
                             <div onClick={handlePrevMonth}>
                                 <img src="/icon/droparrow_left.png" alt="left arrow" />
                             </div>
-                        </div>
-                        <div className="col middle">
+                        </div> */}
+                        <div className="col text-center middle">
 
-                            <div className="title-month">
+                            <div className="title-month p-0 m-0">
                                 {calendar.month_name}
                             </div>
                             <div className="title-desc">
                                 {calendar.month_name_tamil}
                             </div>
                         </div>
-                        <div className="col right">
+                        {/* <div className="col right px-0">
                             <div onClick={handleNextMonth}>
                                 <img src="/icon/droparrow_right.png" alt="right arrow" />
                             </div>
+                        </div> */}
+                          {/* Arrows */}
+                          <div className="day_calendar arrows w-100">
+                            <div className="left-arrow">
+                                <a onClick={handlePrevMonth}>
+                                    <span className=' bg-secondary rounded-circle text-white '>
+                                        <FaAngleLeft />
+                                    </span>
+                                </a>
+                            </div>
+                            <div className="right-arrow">
+                                <a onClick={handleNextMonth}>
+                                    <span className='p-2 bg-secondary rounded-circle text-white'>
+                                        <FaAngleRight />
+                                    </span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div className="month-list">
-                        <div className="month-popup" >
-                            {Object.keys(monthData).map(month => (
-                                <div className="months" key={month}>
-                                    <a
-                                        data-id={month}
-                                        className="month_common month_1"
-                                        onClick={(e) => {
-                                            e.preventDefault(); // Prevent default anchor behavior
-                                            handleMonthClick(month); // Update selected month on click
-                                        }}>
-                                        {monthData[month]}
-                                    </a>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    {/* <MonthList
+                        handleMonthChange={handleMonthChange}
+                    /> */}
                 </div>
 
-                <div className="calendar-container">
-                    <div style={{ display: 'grid', gridTemplateColumns: `repeat(7, 1fr)`, gap: '5px', marginTop: '20px' }} className='calendar'>
+                <div className="calendar-container mt-2">
+                    <div style={{ display: 'grid', gridTemplateColumns: `repeat(7, 1fr)`, gap: '5px' }} className='calendar'>
                         {weekDays.map((dayName, index) => (
-                            <div key={index} style={{
-                                fontWeight: 'bold', textAlign: 'center', backgroundColor: '#929292',
-                                color: '#fff'
-                            }} className='week-day'>
+                            <div key={index} style={{fontWeight: 'bold', textAlign: 'center', backgroundColor: '#929292', color: '#fff'}}
+                                className='week-day d-flex justify-content-center align-items-center'
+                            >
                                 {dayName}
                             </div>
                         ))}
                         {weeks.map((week, weekIndex) => (
-                            <div key={weekIndex} style={{ display: 'contents' }}>
+                            <div key={weekIndex} style={{ display: 'contents' }}
+                            //  className={`week ${week.some(day => day?.date == currentDate) ? 'current-week' : ''}`}
+                            >
                                 {week.map((day, dayIndex) => (
-                                    <div className="day" valign="bottom"
+                                    <div
+                                        // className="day" 
+                                        valign="bottom"
                                         key={dayIndex}
+                                        className={`day day-cell ${day && parseInt(day.date) === currentDate && currentMonthIndex === currentMonth - 1 ? 'highlight-today' : ''}`}
                                     >
                                         {day ? (
                                             <>
-                                                <span className="tamil_month top-position">{day.tamilmonth}</span>
+                                                <span className="tamil_month position-relative">{day.tamilmonth}</span>
+                                                {day.special_day && day.special_day.length > 0 && (
+                                                        <>
+                                                            {day.special_day.map((special, idx) => (
+                                                                <span className="d-block d-lg-none special-event-img position-absolute end-0 top-0" key={idx}>
+                                                                    {specialDayImages[special.name] ? (
+                                                                        <img src={specialDayImages[special.name]} alt={special.name} />
+                                                                    )
+                                                                        :
+                                                                        (
+                                                                            <>
+                                                                            </>
+                                                                        )
+                                                                    }
+                                                                </span>
+                                                            ))}
+                                                        </>
+                                                    )}
                                                 <div className="date-grid">
                                                     <span className="tamil_date">{day.tamil_date}</span>
                                                     {day.special_day && day.special_day.length > 0 && (
                                                         <>
                                                             {day.special_day.map((special, idx) => (
-                                                                <span className="special-event-img" key={idx}>
+                                                                <span className="special-event-img d-none d-lg-block position-absolute end-50 top-50" key={idx}>
                                                                     {specialDayImages[special.name] ? (
                                                                         <img src={specialDayImages[special.name]} alt={special.name} />
                                                                     )

@@ -3,6 +3,7 @@ import React, { Fragment, useState } from 'react'
 import '@/style/CalendarSection.css'
 
 import calendarData from '../../public/data/month2025.json'; // Adjust the path as necessary
+import MonthList from './MonthList';
 
 const WeeklyCalendar = () => {
 
@@ -66,9 +67,13 @@ const WeeklyCalendar = () => {
         "சதுர்த்தி": "/images/6.png",
     };
 
+    const handleMonthChange = (index) => {
+        setCurrentMonthIndex(index);
+    };
+
     return (
-        <div className='calendar-section my-4'>
-            <div className="calendar-wrapper">
+        <div className='calendar-section my-4 p-3 py-xl-4 px-xl-4'>
+            <div className="calendar-wrapper p-1 py-xl-4 px-xl-4">
                 <div>
                     <div className="row align-items-center calendar-header pb-4">
                         <div className="col left">
@@ -93,7 +98,7 @@ const WeeklyCalendar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="month-list">
+                    {/* <div className="month-list">
                         <div className="month-popup">
                             <div className="months">
                                 <a href="" data-id="1" className="month_common month_1 ">ஜனவரி</a>
@@ -115,15 +120,16 @@ const WeeklyCalendar = () => {
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
+
+                    <MonthList
+                        handleMonthChange={handleMonthChange}
+                    />
 
                     <div className="calendar-container">
                         <div style={{ display: 'grid', gridTemplateColumns: `repeat(7, 1fr)`, gap: '5px', marginTop: '20px' }} className='calendar'>
                             {calendarData.calendarDays.map((dayName, index) => (
-                                <div key={index} style={{
-                                    fontWeight: 'bold', textAlign: 'center', backgroundColor: '#929292',
-                                    color: '#fff'
-                                }} className='week-day'>
+                                <div key={index} style={{ fontWeight: 'bold', textAlign: 'center', backgroundColor: '#929292', color: '#fff'}} className='week-day d-flex justify-content-center align-items-center'>
                                     {dayName}
                                 </div>
                             ))}
@@ -133,10 +139,29 @@ const WeeklyCalendar = () => {
                                 >
                                     {day ? (
                                         <>
-                                            <span className="tamil_month top-position">{day.tamilmonth}</span>
+                                            <span className="tamil_month position-arelative">{day.tamilmonth}</span>
+                                            {day.special_day && day.special_day.length > 0 && (
+                                                    <>
+                                                        {day.special_day.map((special, idx) => (
+                                                            <span className="special-event-img position-absolute end-0 top-0" key={idx}>
+                                                                {specialDayImages[special.name] ? (
+                                                                    <img src={specialDayImages[special.name]} alt={special.name} />
+                                                                )
+                                                                    :
+                                                                    (
+                                                                        <>
+                                                                        </>
+                                                                        // <span>{special.name}</span>
+                                                                    )
+                                                                }
+                                                            </span>
+                                                        ))}
+                                                    </>
+                                                )}
+                                            
                                             <div className="date-grid">
                                                 <span className="tamil_date">{day.tamil_date}</span>
-                                                {day.special_day && day.special_day.length > 0 && (
+                                                {/* {day.special_day && day.special_day.length > 0 && (
                                                     <>
                                                         {day.special_day.map((special, idx) => (
                                                             <span className="special-event-img" key={idx}>
@@ -153,7 +178,7 @@ const WeeklyCalendar = () => {
                                                             </span>
                                                         ))}
                                                     </>
-                                                )}
+                                                )} */}
                                                 <span className="english_date">{day.date}</span>
                                             </div>
                                         </>

@@ -234,7 +234,7 @@ const DayCalendar = () => {
                                 <p className="px-2">{dayData.dailyInfo.Namyogam}</p>
                             </div>
                             <div className="star-cards star-card-flex gap-2 star-cards-bg border rounded-0">
-                                <h5 className='rounded-0'>அமிர்த யோகம்</h5>
+                                <h5 className='rounded-0'>அமிர்தயோகம்</h5>
                                 <p className="px-2">{dayData.dailyInfo.Amirthathiyogam}</p>
                             </div>
                             <div className="star-cards star-card-flex gap-2 star-cards-bg border rounded-0">
@@ -242,7 +242,7 @@ const DayCalendar = () => {
                                 <p className="px-2">{dayData.dailyInfo.Jeevan}</p>
                             </div>
                             <div className="star-cards star-card-flex gap-2 star-cards-bg border rounded-0">
-                                <h5 className='rounded-0'>நேந்திரம்</h5>
+                                <h5 className='rounded-0'>நேத்திரம்</h5>
                                 <p className="px-2">{dayData.dailyInfo.Nethiram}</p>
                             </div>
                         </div>

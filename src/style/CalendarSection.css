@@ -28,7 +28,8 @@
     font-weight: 700;
     /* font-size: clamp(42px, 8vw, 20px); */
     /* font-size: clamp(1rem, -1.5rem + 8vw, 3rem); */
-    font-size: clamp(1.25rem, -0.4688rem + 5.5vw, 2.625rem);
+    /* font-size: clamp(1.25rem, -0.4688rem + 5.5vw, 2.625rem); */
+    font-size: clamp(1rem, -0.5625rem + 5vw, 2.25rem);
     /* line-height: 42px; */
 }
 
@@ -332,4 +333,26 @@ tr {
     color: #007bff;
     /* Highlight color for the current month */
     font-weight: bold;
+}
+
+/* ==================================== */
+
+.day-cell {
+    /* padding: 10px; */
+    /* border: 1px solid #ccc; */
+    /* text-align: center; */
+}
+
+.day-cell.highlight-today {
+    background-color: #ffeb3b; /* Highlight the current date with yellow */
+}
+
+.sunday {
+    color: red; /* Red color for Sunday */
+}
+
+.special-day-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
 }

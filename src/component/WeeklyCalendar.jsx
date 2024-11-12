@@ -98,38 +98,13 @@ const WeeklyCalendar = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="month-list">
-                        <div className="month-popup">
-                            <div className="months">
-                                <a href="" data-id="1" className="month_common month_1 ">ஜனவரி</a>
-                            </div>
-                            <div className="months">
-                                <a href="" data-id="2" className="month_common month_1 ">ஜனவரி</a>
-                            </div>
-                            <div className="months">
-                                <a href="" data-id="3" className="month_common month_1 ">ஜனவரி</a>
-                            </div>
-                            <div className="months">
-                                <a href="" data-id="4" className="month_common month_1 ">ஜனவரி</a>
-                            </div>
-                            <div className="months">
-                                <a href="" data-id="5" className="month_common month_1 ">ஜனவரி</a>
-                            </div>
-                            <div className="months">
-                                <a href="" data-id="6" className="month_common month_1 active">ஜனவரி</a>
-                            </div>
-                        </div>
-
-                    </div> */}
-
-                    <MonthList
+                    {/* <MonthList
                         handleMonthChange={handleMonthChange}
-                    />
-
+                    /> */}
                     <div className="calendar-container">
                         <div style={{ display: 'grid', gridTemplateColumns: `repeat(7, 1fr)`, gap: '5px', marginTop: '20px' }} className='calendar'>
                             {calendarData.calendarDays.map((dayName, index) => (
-                                <div key={index} style={{ fontWeight: 'bold', textAlign: 'center', backgroundColor: '#929292', color: '#fff'}} className='week-day d-flex justify-content-center align-items-center'>
+                                <div key={index} style={{ fontWeight: 'bold', textAlign: 'center', backgroundColor: '#929292', color: '#fff' }} className='week-day d-flex justify-content-center align-items-center'>
                                     {dayName}
                                 </div>
                             ))}
@@ -141,24 +116,24 @@ const WeeklyCalendar = () => {
                                         <>
                                             <span className="tamil_month position-arelative">{day.tamilmonth}</span>
                                             {day.special_day && day.special_day.length > 0 && (
-                                                    <>
-                                                        {day.special_day.map((special, idx) => (
-                                                            <span className="special-event-img position-absolute end-0 top-0" key={idx}>
-                                                                {specialDayImages[special.name] ? (
-                                                                    <img src={specialDayImages[special.name]} alt={special.name} />
+                                                <>
+                                                    {day.special_day.map((special, idx) => (
+                                                        <span className="special-event-img position-absolute end-0 top-0" key={idx}>
+                                                            {specialDayImages[special.name] ? (
+                                                                <img src={specialDayImages[special.name]} alt={special.name} />
+                                                            )
+                                                                :
+                                                                (
+                                                                    <>
+                                                                    </>
+                                                                    // <span>{special.name}</span>
                                                                 )
-                                                                    :
-                                                                    (
-                                                                        <>
-                                                                        </>
-                                                                        // <span>{special.name}</span>
-                                                                    )
-                                                                }
-                                                            </span>
-                                                        ))}
-                                                    </>
-                                                )}
-                                            
+                                                            }
+                                                        </span>
+                                                    ))}
+                                                </>
+                                            )}
+
                                             <div className="date-grid">
                                                 <span className="tamil_date">{day.tamil_date}</span>
                                                 {/* {day.special_day && day.special_day.length > 0 && (

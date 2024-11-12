@@ -56,7 +56,7 @@
 }
 
 .good-time {
-    width: 250px;
+    width: 100%;
     border: 2px solid #c7c7c7;
     border-radius: 8px;
     /* background: #fff; */
@@ -140,6 +140,7 @@
 
 .star-cards-bg h5 {
     background-color: #e37221 !important;
+    font-weight: bold;
 }
 
 .star-cards h5 {
@@ -202,7 +203,7 @@
     }
 
     .time-container {
-        flex-direction: column;
+        /* flex-direction: column; */
         /* border:2px solid orange; */
     }
 
@@ -216,7 +217,7 @@
 
     .good-time,
     .vudhaya-section {
-        min-width: 100%;
+        /* min-width: 100%; */
     }
 
     .vudhaya-section {
@@ -228,7 +229,7 @@
     }
 
     .calender-time {
-        min-width: 100%;
+        /* min-width: 100%; */
         margin-bottom: 10px;
     }
 
@@ -275,7 +276,7 @@
 
 .day_calendar.arrows {
     position: absolute;
-    top: 10%;
+    top: 4%;
     width: 90%;
     margin: auto;
 }

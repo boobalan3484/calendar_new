@@ -2,7 +2,7 @@ import Main from '@/layout/Main';
 import React from 'react'
 
 export const metadata = {
-  title: "Tamil Weekly Calendar",
+  title: "Makkal Calendar | Tamil Weekly Calendar",
   // description: "Creote | Business Landing Page",
 };
 

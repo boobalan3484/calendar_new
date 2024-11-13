@@ -274,12 +274,12 @@ const CalendarSection = () => {
     });
 
     const specialDayImages = {
-        "அமாவாசை": "/images/1.png",
-        "பௌர்ணமி": "/images/2.png",
-        "ஏகாதசி": "/images/3.png",
-        "சஷ்டி": "/images/4.png",
-        "பிரதோஷம்": "/images/5.png",
-        "சதுர்த்தி": "/images/6.png",
+        "அமாவாசை": "/images/special_days/1.png",
+        "பௌர்ணமி": "/images/special_days/2.png",
+        "ஏகாதசி": "/images/special_days/3.png",
+        "சஷ்டி": "/images/special_days/4.png",
+        "பிரதோஷம்": "/images/special_days/5.png",
+        "சதுர்த்தி": "/images/special_days/6.png",
     };
 
     const handlePrevMonth = () => {

@@ -5,7 +5,7 @@ import { FaCalendarDay } from "react-icons/fa6";
 import { FaCalendarDays } from "react-icons/fa6";
 const Header = () => {
     return (
-        <header className='header'>
+        <header className='header p-0'>
             <div className='container header-wrapper py-1'>
                 <div className="logo">
                     <img src="/images/Makkal_Naalkaati_Logo.png" alt="" />

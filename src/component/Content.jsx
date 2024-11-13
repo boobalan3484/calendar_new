@@ -8,7 +8,7 @@ import DayCalendar from './DayCalendar'
 
 const Content = () => {
     return (
-        <main className=' mt-2 my-2'>
+        <main className={`d-flex h-100 justify-content-center align-items-center ${Reusable ({ one: 'my-4', two:'my-2', three:'my-2'})}`}>
             <div className='container-xl'>
                 {Reusable({ one: <DayCalendar />, two: <WeeklyCalendar />, three: <CalendarSection /> })}
             </div>

@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from '@/component/Header'
 import Content from '@/component/Content'
-import Test from '@/component/Test'
+// import Test from '@/component/Test'
+// import ThithiData from '@/component/ThithiData'
 
 const Main = () => {
     return (
@@ -9,7 +10,9 @@ const Main = () => {
             <Header />
             <Content />
             {/* <Test /> */}
+            {/* <ThithiData /> */}
         </main>
+
     )
 }
 

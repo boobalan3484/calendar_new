@@ -1,4 +1,6 @@
-import Main from '@/layout/Main';
+import Header from '@/component/Header';
+import WeeklyCalendar from '@/component/WeeklyCalendar';
+// import Main from '@/layout/Main';
 import React from 'react'
 
 export const metadata = {
@@ -9,7 +11,12 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <Main />
+      <Header />
+      <main className={`d-flex h-100 justify-content-center align-items-center my-2`}>
+        <div className='container-xl'>
+          <WeeklyCalendar />
+        </div>
+      </main>
     </div>
   )
 }

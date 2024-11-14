@@ -2,6 +2,7 @@ import CalendarSection from '@/component/CalendarSection';
 import Header from '@/component/Header';
 // import Main from '@/layout/Main';
 import React from 'react'
+import '@/style/CalendarSection.css'
 
 export const metadata = {
   title: "Makkal Calendar | Tamil Monthly Calendar",

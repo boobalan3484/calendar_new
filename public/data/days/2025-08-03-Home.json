@@ -9,7 +9,7 @@
         "Namyogam": "இன்று காலை 06:48 வரை சுப்பிரம் பின்பு பிராம்யம்",
         "Amirthathiyogam": "இன்று காலை 06.02 வரை சித்தயோகம் பின்பு மரணயோகம்",
         "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
-        "Jeevan": "இன்று அதிகாலை 05.57 வரை அரை வாழ்க்கை பின்பு மாலை 0",
+        "Jeevan": "இன்று அதிகாலை 05.57 வரை அரை வாழ்க்கை பின்பு மாலை 06.18 வரை உயிரற்றவை பின்பு அரை வாழ்க்கை",
         "MainDays": "தசமி(இன்று காலை 09.46 முதல் நாளை காலை 11.33 வரை)",
         "SubDays": "ஆடிப்பெருக்கு, நண்பர்கள் தினம், தேசிய சகோதரிகள் தினம்",
         "DayDetails": "வளர்பிறை கீழ் நோக்கு நாள்",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 18,
         "dayAuspicious": null,
-        "nneram_mrg": "07:45 - 08:45",
-        "nneram_eve": "03:15 - 04:15",
-        "gneram_mrg": "01:45 - 02:45",
-        "gneram_eve": null,
+        "nneram_mrg": "07.45-08.45",
+        "nneram_eve": "03.15-04.15",
+        "gneram_mrg": "01.45-02.45",
+        "gneram_eve": "01.30-02.30",
         "muhurtham": "N",
         "festival_info": "ஆடிப்பெருக்கு,",
         "thithiimages": "downarrow,valarpirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று காலை 07.24 வரை ரேவதி பின்பு அஸ்வினி "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "05:43 AM",
         "sun_set": "07:11 PM",
@@ -105,6 +109,11 @@
         "yama_e": "12:00 PM - 01:30 PM",
         "kuligai_m": "",
         "kuligai_e": "03:00 PM - 04:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "4.30 PM-6.00 PM",
+        "yama": "12.00 PM-1.30 PM",
+        "kuligai": "3.00 PM-4.30 PM"
     },
     "gpanchangamDay": [
         {

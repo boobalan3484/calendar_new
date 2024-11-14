@@ -9,7 +9,7 @@
         "Namyogam": "இன்று இரவு 10:16 வரை சாத்தியம் பின்பு சுபம்",
         "Amirthathiyogam": "இன்று அதிகாலை 05.57 வரை சித்தயோகம் பின்பு மரணயோகம்",
         "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
-        "Jeevan": "இன்று மாலை 04.25 வரை முழுவாழ்க்கை பின்பு இரவு 10.4",
+        "Jeevan": "இன்று மாலை 04.25 வரை முழுவாழ்க்கை பின்பு இரவு 10.45 வரை உயிரற்றவை பின்பு முழு வாழ்க்கை",
         "MainDays": "ஏகாதசி",
         "SubDays": "மொஹரம் பண்டிகை, உலக ஜூனோசிஸ் தினம், பரிதிமாற் கலைஞர் பிறந்த தினம்",
         "DayDetails": "வளர்பிறை கீழ் நோக்கு நாள்",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 22,
         "dayAuspicious": null,
-        "nneram_mrg": "07:45 - 08:45",
-        "nneram_eve": "03:15 - 04:15",
-        "gneram_mrg": "10:45 - 11:45",
-        "gneram_eve": null,
+        "nneram_mrg": "07.45-08.45",
+        "nneram_eve": "03.15-04.15",
+        "gneram_mrg": "10.45-11.45",
+        "gneram_eve": "01.30-02.30",
         "muhurtham": "N",
         "festival_info": "மொஹரம் பண்டிகை,",
         "thithiimages": "downarrow,valarpirai,ekadasi,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று முழுவதும் ரேவதி "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "05:28 AM",
         "sun_set": "07:23 PM",
@@ -105,6 +109,11 @@
         "yama_e": "12:00 PM - 01:30 PM",
         "kuligai_m": "",
         "kuligai_e": "03:00 PM - 04:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "4.30 PM-6.00 PM",
+        "yama": "12.00 PM-1.30 PM",
+        "kuligai": "3.00 PM-4.30 PM"
     },
     "gpanchangamDay": [
         {

@@ -9,7 +9,7 @@
         "Namyogam": "இன்று அதிகாலை 04:00 வரை பிராம்யம் பின்பு ஐந்திரம்",
         "Amirthathiyogam": "இன்று காலை 06.01 வரை மரணயோகம் பின்பு அமிர்தயோகம்",
         "Nethiram": "இன்று முழுவதும் குருட்டு",
-        "Jeevan": "இன்று மாலை 06,40 வரை அரை வாழ்க்கை பின்பு உயிரற்றவை",
+        "Jeevan": "இன்று மாலை 06.40 வரை அரை வாழ்க்கை பின்பு உயிரற்றவை",
         "MainDays": "சிவராத்திரி, சுபமுகூர்த்தம்",
         "SubDays": "நாமக்கல் கவிஞர் வெ.இராமலிங்க பிள்ளை பிறந்த தினம்",
         "DayDetails": "தேய்பிறை மேல் நோக்கு நாள்",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 2,
         "dayAuspicious": null,
-        "nneram_mrg": "07:45 - 08:45",
-        "nneram_eve": "03:15 - 04:15",
-        "gneram_mrg": "10:45 - 11:45",
-        "gneram_eve": null,
+        "nneram_mrg": "07.45-08.45",
+        "nneram_eve": "03.15-04.15",
+        "gneram_mrg": "10.45-11.45",
+        "gneram_eve": "01.30-02.30",
         "muhurtham": "Y",
         "festival_info": "",
         "thithiimages": "uparrow,theipirai,shivaratri,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று இரவு 07.37 வரை அவிட்டம் பின்பு சதயம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "06:24 AM",
         "sun_set": "05:48 PM",
@@ -105,6 +109,11 @@
         "yama_e": "12:00 PM - 01:30 PM",
         "kuligai_m": "",
         "kuligai_e": "03:00 PM - 04:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "4.30 PM-6.00 PM",
+        "yama": "12.00 PM-1.30 PM",
+        "kuligai": "3.00 PM-4.30 PM"
     },
     "gpanchangamDay": [
         {

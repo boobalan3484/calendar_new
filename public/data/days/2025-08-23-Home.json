@@ -3,7 +3,7 @@
         "Karanan": "12.00-01.30",
         "Sunrise": "06.05",
         "StarDetails": "இன்று அதிகாலை 01.51 வரை ஆயில்யம் பின்பு மகம்",
-        "KaranamDetails": "இன்று அதிகாலை 12.41 வரை சதுஷ்பாதம் பின்பு பிற்பகல் 12 29 வரை நாகவம் பின்பு கிமிஸ்துக்கினம்",
+        "KaranamDetails": "இன்று அதிகாலை 12.41 வரை சதுஷ்பாதம் பின்பு பிற்பகல் 12.29 வரை நாகவம் பின்பு கிமிஸ்துக்கினம்",
         "Sulam": "கிழக்கு",
         "Parikaram": "தயிர்",
         "Namyogam": "இன்று பிற்பகல் 02:52 வரை பரிகம் பின்பு சிவம்",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 7,
         "dayAuspicious": null,
-        "nneram_mrg": "07:45 - 08:45",
-        "nneram_eve": "04:45 - 05:45",
-        "gneram_mrg": "10:45 - 11:45",
-        "gneram_eve": null,
+        "nneram_mrg": "07.45-08.45",
+        "nneram_eve": "04.45-05.45",
+        "gneram_mrg": "10.45-11.45",
+        "gneram_eve": "09.30-10.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "downarrow,blackmoon,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று அதிகாலை 01.51 வரை பூராடம் பின்பு உத்திராடம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "05:54 AM",
         "sun_set": "06:53 PM",
@@ -105,6 +109,11 @@
         "yama_e": "01:30 PM - 03:00 PM",
         "kuligai_m": "06:00 AM - 07:30 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "9.00 AM-10.30 AM",
+        "yama": "1.30 PM-3.00 PM",
+        "kuligai": "6.00 AM-7.30 AM"
     },
     "gpanchangamDay": [
         {

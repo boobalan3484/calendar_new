@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 16,
         "dayAuspicious": null,
-        "nneram_mrg": "12:30 - 01:30",
+        "nneram_mrg": "12.30-01.30",
         "nneram_eve": "-",
         "gneram_mrg": "-",
-        "gneram_eve": null,
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "N",
         "festival_info": "காந்தி ஜெயந்தி, விஜய தசமி,கரி நாள்",
         "thithiimages": "uparrow,valarpirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று காலை 06.52 வரை மிருகசீரிடம் பின்பு திருவாதிரை "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "06:14 AM",
         "sun_set": "06:06 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "09:00 AM - 10:30 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "1.30 PM-3.00 PM",
+        "yama": "6.00 AM-7.30 AM",
+        "kuligai": "9.00 AM-10.30 AM"
     },
     "gpanchangamDay": [
         {

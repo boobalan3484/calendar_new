@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 24,
         "dayAuspicious": null,
-        "nneram_mrg": "10:45 - 11:45",
-        "nneram_eve": "04:45 - 05:45",
-        "gneram_mrg": "01:45 - 02:45",
-        "gneram_eve": null,
+        "nneram_mrg": "10.45-11.45",
+        "nneram_eve": "04.45-05.45",
+        "gneram_mrg": "01.45-02.45",
+        "gneram_eve": "07.30-08.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "uparrow,theipirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று இரவு 09.07 வரை மகம் பின்பு பூரம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "06:03 AM",
         "sun_set": "06:34 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "",
         "kuligai_e": "12:00 PM - 01:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "3.00 PM-4.30 PM",
+        "yama": "9.00 AM-10.30 AM",
+        "kuligai": "12.00 PM-1.30 PM"
     },
     "gpanchangamDay": [
         {

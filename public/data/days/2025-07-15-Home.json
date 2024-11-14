@@ -9,7 +9,7 @@
         "Namyogam": "இன்று மாலை 03:08 வரை சௌபாக்யம் பின்பு சோபனம்",
         "Amirthathiyogam": "இன்று அதிகாலை 05.59 வரை சித்தயோகம் பின்பு மரணயோகம்",
         "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
-        "Jeevan": "இன்று காலை 06.46 வரை முழு வாழ்க்கை பின்பு உயிரற்றவ",
+        "Jeevan": "இன்று காலை 06.46 வரை முழு வாழ்க்கை பின்பு உயிரற்றவை",
         "MainDays": "-",
         "SubDays": "கல்வி வளர்ச்சி தினம், உலக இளைஞர் திறன் தினம், கல்விக்கண் திறந்த காமராஜர் பிறந்த தினம், தமிழ் அறிஞர் மறைமலை அடிகள் பிறந்த தினம்",
         "DayDetails": "தேய்பிறை மேல் நோக்கு நாள்",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 31,
         "dayAuspicious": null,
-        "nneram_mrg": "07:45 - 08:45",
-        "nneram_eve": "04:45 - 05:45",
-        "gneram_mrg": "10:45 - 11:45",
-        "gneram_eve": null,
+        "nneram_mrg": "07.45-08.45",
+        "nneram_eve": "04.45-05.45",
+        "gneram_mrg": "10.45-11.45",
+        "gneram_eve": "07.30-08.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "uparrow,theipirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று காலை 07:17 வரை பூசம் பின்பு ஆயில்யம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "05:33 AM",
         "sun_set": "07:21 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "",
         "kuligai_e": "12:00 PM - 01:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "3.00 PM-4.30 PM",
+        "yama": "9.00 AM-10.30 AM",
+        "kuligai": "12.00 PM-1.30 PM"
     },
     "gpanchangamDay": [
         {

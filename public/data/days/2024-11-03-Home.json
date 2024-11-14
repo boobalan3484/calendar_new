@@ -10,9 +10,9 @@
         "Amirthathiyogam": "இன்று காலை 06.03 வரை சித்தயோகம் பின்பு மரணயோகம்",
         "Nethiram": "இன்று முழுவதும் குருட்டு ",
         "Jeevan": "இன்று காலை 06.14 வரை உயிரற்றவை பின்பு அரை வாழ்க்கை",
-        "MainDays": "சந்திர தரிசனம்",
+        "MainDays": "சந்திர தரிசனம் வ",
         "SubDays": "-",
-        "DayDetails": "ளர்பிறை சம நோக்கு நாள்",
+        "DayDetails": "வளர்பிறை சம நோக்கு நாள்",
         "Pirai": "வளர்பிறை"
     },
     "homedates": {
@@ -32,10 +32,10 @@
         "tyear": "குரோதி",
         "tdate": 17,
         "dayAuspicious": null,
-        "nneram_mrg": "07:45 - 08:45",
-        "nneram_eve": "03:15 - 04:15",
-        "gneram_mrg": "01:45 - 02:45",
-        "gneram_eve": null,
+        "nneram_mrg": "07.45-08.45",
+        "nneram_eve": "03.15-04.15",
+        "gneram_mrg": "01.45-02.45",
+        "gneram_eve": "01.30-02.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "bothside_arrow,valarpirai,,,"
@@ -49,7 +49,7 @@
     },
     "chandrastamam": [
         {
-            "details": "இன்று, காலை 06.14, வரை, ரேவதி, பின்பு, அஸ்வினி"
+            "details": "இன்று காலை 06.14 வரை ரேவதி பின்பு அஸ்வினி "
         }
     ],
     "sunmoon": {
@@ -115,6 +115,11 @@
         "yama_e": "12:00 PM - 01:30 PM",
         "kuligai_m": "",
         "kuligai_e": "03:00 PM - 04:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "4.30 PM-6.00 PM",
+        "yama": "12.00 PM-1.30 PM",
+        "kuligai": "3.00 PM-4.30 PM"
     },
     "gpanchangamDay": [
         {

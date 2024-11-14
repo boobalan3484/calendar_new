@@ -78,6 +78,10 @@
                         {
                             "name": "சஷ்டி",
                             "icon": "சஷ்டி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -86,7 +90,18 @@
                     "tamil_date": "22",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
+                    "tamilday": "வெள்ளி",
+                    "special_day": [
+                        {
+                            "name": "திருவோணம்",
+                            "icon": "திருவோணம்"
+                        },
+
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "9",
@@ -95,10 +110,6 @@
                     "day": "Sat",
                     "tamilday": "சனி",
                     "special_day": [
-                        {
-                            "name": "திருவோணம்",
-                            "icon": "திருவோணம்"
-                        },
                         {
                             "name": "அஷ்டமி",
                             "icon": "அஷ்டமி"
@@ -137,7 +148,6 @@
                             "icon": "ஏகாதசி"
                         }
                     ]
-
                 },
                 {
                     "date": "13",
@@ -190,7 +200,13 @@
                     "tamil_date": "2",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "18",
@@ -217,14 +233,30 @@
                     "tamil_date": "5",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "21",
                     "tamil_date": "6",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
+                    "tamilday": "வியாழன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        },
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        }
+                    ]
                 },
                 {
                     "date": "22",
@@ -284,7 +316,13 @@
                     "tamil_date": "12",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "28",
@@ -296,6 +334,10 @@
                         {
                             "name": "பிரதோஷம்",
                             "icon": "பிரதோஷம்"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -309,6 +351,10 @@
                         {
                             "name": "மாத சிவராத்திரி",
                             "icon": "மாத_சிவராத்திரி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -317,7 +363,13 @@
                     "tamil_date": "15",
                     "tamilmonth": "",
                     "day": "Sat",
-                    "tamilday": "சனி"
+                    "tamilday": "சனி",
+                    "special_day": [
+                        {
+                            "name": "அமாவாசை",
+                            "icon": "அமாவாசை"
+                        }
+                    ]
                 }
             ]
         },
@@ -364,6 +416,14 @@
                         {
                             "name": "சதுர்த்தி",
                             "icon": "சதுர்த்தி"
+                        },
+                        {
+                            "name": "திருவோணம்",
+                            "icon": "திருவோணம்"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -374,10 +434,6 @@
                     "day": "Fri",
                     "tamilday": "வெள்ளி",
                     "special_day": [
-                        {
-                            "name": "திருவோணம்",
-                            "icon": "திருவோணம்"
-                        },
                         {
                             "name": "சஷ்டி",
                             "icon": "சஷ்டி"
@@ -407,7 +463,7 @@
                 {
                     "date": "9",
                     "tamil_date": "24",
-                    "tamilmonth": "சித்திரை",
+                    "tamilmonth": "",
                     "day": "Mon",
                     "tamilday": "திங்கள்",
                     "special_day": [
@@ -440,7 +496,7 @@
                 {
                     "date": "12",
                     "tamil_date": "27",
-                    "tamilmonth": "வைகாசி",
+                    "tamilmonth": "",
                     "day": "Thu",
                     "tamilday": "வியாழன்"
                 },
@@ -452,8 +508,8 @@
                     "tamilday": "வெள்ளி",
                     "special_day": [
                         {
-                            "name": "கிருத்திகை",
-                            "icon": "கிருத்திகை"
+                            "name": "பிரதோஷம்",
+                            "icon": "பிரதோஷம்"
                         }
                     ]
                 },
@@ -523,7 +579,13 @@
                     "tamil_date": "6",
                     "tamilmonth": "",
                     "day": "Sat",
-                    "tamilday": "சனி"
+                    "tamilday": "சனி",
+                    "special_day": [
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        }
+                    ]
                 },
                 {
                     "date": "22",
@@ -563,7 +625,8 @@
                     "tamil_date": "10",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "govtholiday": "yes"
                 },
                 {
                     "date": "26",
@@ -590,7 +653,13 @@
                     "tamil_date": "13",
                     "tamilmonth": "",
                     "day": "Sat",
-                    "tamilday": "சனி"
+                    "tamilday": "சனி",
+                    "special_day": [
+                        {
+                            "name": "பிரதோஷம்",
+                            "icon": "பிரதோஷம்"
+                        }
+                    ]
                 },
                 {
                     "date": "29",
@@ -697,7 +766,6 @@
                     "tamilmonth": "",
                     "day": "Mon",
                     "tamilday": "திங்கள்"
-
                 },
                 {
                     "date": "7",
@@ -711,7 +779,6 @@
                             "icon": "அஷ்டமி"
                         }
                     ]
-
                 },
                 {
                     "date": "8",
@@ -791,6 +858,7 @@
                     "tamil_date": "1",
                     "day": "Tue",
                     "tamilday": "செவ்வாய்",
+                    "govtholiday": "yes",
                     "special_day": [
                         {
                             "name": "பொங்கல்",
@@ -804,6 +872,7 @@
                     "tamilmonth": "",
                     "day": "Wed",
                     "tamilday": "புதன்",
+                    "govtholiday": "yes",
                     "special_day": [
                         {
                             "name": "மாட்டுப் பொங்கல்",
@@ -816,7 +885,8 @@
                     "tamil_date": "3",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
+                    "tamilday": "வியாழன்",
+                    "govtholiday": "yes"
                 },
                 {
                     "date": "17",
@@ -843,14 +913,26 @@
                     "tamil_date": "6",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "20",
                     "tamil_date": "7",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
+                    "tamilday": "திங்கள்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "21",
@@ -967,7 +1049,13 @@
                     "tamil_date": "18",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
+                    "tamilday": "வெள்ளி",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 }
             ]
         },
@@ -981,24 +1069,24 @@
                     "tamil_date": "19",
                     "tamilmonth": "தை",
                     "day": "Sat",
-                    "tamilday": "சனி",
-                    "special_day": [
-                        {
-                            "name": "சங்கடஹர சதுர்த்தி",
-                            "icon": "சங்கடஹர_சதுர்த்தி"
-                        },
-                        {
-                            "name": "சதுர்த்தி",
-                            "icon": "சதுர்த்தி"
-                        }
-                    ]
+                    "tamilday": "சனி"
                 },
                 {
                     "date": "2",
                     "tamil_date": "20",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "சதுர்த்தி",
+                            "icon": "சதுர்த்தி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "3",
@@ -1010,6 +1098,10 @@
                         {
                             "name": "சஷ்டி",
                             "icon": "சஷ்டி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -1087,6 +1179,10 @@
                         {
                             "name": "பிரதோஷம்",
                             "icon": "பிரதோஷம்"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -1095,7 +1191,8 @@
                     "tamilmonth": "",
                     "tamil_date": "29",
                     "day": "Tue",
-                    "tamilday": "செவ்வாய்"
+                    "tamilday": "செவ்வாய்",
+                    "govtholiday": "yes"
                 },
                 {
                     "date": "12",
@@ -1136,21 +1233,39 @@
                     "tamil_date": "4",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "17",
                     "tamil_date": "5",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
+                    "tamilday": "திங்கள்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "18",
                     "tamil_date": "6",
                     "tamilmonth": "",
                     "day": "Tue",
-                    "tamilday": "செவ்வாய்"
+                    "tamilday": "செவ்வாய்",
+                    "special_day": [
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        }
+                    ]
                 },
                 {
                     "date": "19",
@@ -1191,22 +1306,32 @@
                             "icon": "நவமி"
                         }
                     ]
-
-
                 },
                 {
                     "date": "23",
                     "tamil_date": "11",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "24",
                     "tamil_date": "12",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
+                    "tamilday": "திங்கள்",
+                    "special_day": [
+                        {
+                            "name": "ஏகாதசி",
+                            "icon": "ஏகாதசி"
+                        }
+                    ]
                 },
                 {
                     "date": "25",
@@ -1229,8 +1354,8 @@
                     "tamilday": "புதன்",
                     "special_day": [
                         {
-                            "name": "திருவோணம்",
-                            "icon": "திருவோணம்"
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         },
                         {
                             "name": "மாத சிவராத்திரி",
@@ -1277,7 +1402,13 @@
                     "tamil_date": "18",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "3",
@@ -1289,6 +1420,10 @@
                         {
                             "name": "சதுர்த்தி",
                             "icon": "சதுர்த்தி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -1354,7 +1489,13 @@
                     "tamil_date": "25",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "10",
@@ -1366,6 +1507,10 @@
                         {
                             "name": "ஏகாதசி",
                             "icon": "ஏகாதசி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -1387,27 +1532,33 @@
                     "tamil_date": "28",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "13",
                     "tamil_date": "29",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
-                },
-                {
-                    "date": "14",
-                    "tamil_date": "30",
-                    "tamilmonth": "",
-                    "day": "Fri",
-                    "tamilday": "வெள்ளி",
+                    "tamilday": "வியாழன்",
                     "special_day": [
                         {
                             "name": "பௌர்ணமி",
                             "icon": "பௌர்ணமி"
                         }
                     ]
+                },
+                {
+                    "date": "14",
+                    "tamil_date": "30",
+                    "tamilmonth": "",
+                    "day": "Fri",
+                    "tamilday": "வெள்ளி"
                 },
                 {
                     "date": "15",
@@ -1421,27 +1572,37 @@
                     "tamil_date": "2",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "17",
                     "tamil_date": "3",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
+                    "tamilday": "திங்கள்",
+                    "special_day": [
+                        {
+                            "name": "சங்கடஹர சதுர்த்தி",
+                            "icon": "சங்கடஹர_சதுர்த்தி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "18",
                     "tamil_date": "4",
                     "tamilmonth": "",
                     "day": "Tue",
-                    "tamilday": "செவ்வாய்",
-                    "special_day": [
-                        {
-                            "name": "சங்கடஹர சதுர்த்தி",
-                            "icon": "சங்கடஹர_சதுர்த்தி"
-                        }
-                    ]
+                    "tamilday": "செவ்வாய்"
                 },
                 {
                     "date": "19",
@@ -1455,7 +1616,8 @@
                     "tamil_date": "6",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
+                    "tamilday": "வியாழன்",
+                    "special_day": [{ "name": "சஷ்டி", "icon": "சஷ்டி" }]
                 },
                 {
                     "date": "21",
@@ -1570,7 +1732,8 @@
                     "tamil_date": "17",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
+                    "tamilday": "திங்கள்",
+                    "govtholiday": "yes"
                 }
             ]
         },
@@ -1625,7 +1788,13 @@
                     "tamil_date": "21",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
+                    "tamilday": "வெள்ளி",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "5",
@@ -1658,7 +1827,13 @@
                     "tamil_date": "24",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
+                    "tamilday": "திங்கள்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "8",
@@ -1678,7 +1853,13 @@
                     "tamil_date": "26",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "10",
@@ -1686,6 +1867,7 @@
                     "tamilmonth": "",
                     "day": "Thu",
                     "tamilday": "வியாழன்",
+                    "govtholiday": "yes",
                     "special_day": [
                         {
                             "name": "பிரதோஷம்",
@@ -1698,7 +1880,13 @@
                     "tamil_date": "28",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
+                    "tamilday": "வெள்ளி",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "12",
@@ -1724,6 +1912,7 @@
                     "date": "14",
                     "tamil_date": "1",
                     "tamilmonth": "சித்திரை",
+                    "govtholiday": "yes",
                     "day": "Mon",
                     "tamilday": "திங்கள்"
                 },
@@ -1744,6 +1933,10 @@
                         {
                             "name": "சங்கடஹர சதுர்த்தி",
                             "icon": "சங்கடஹர_சதுர்த்தி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -1759,14 +1952,27 @@
                     "tamil_date": "5",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
+                    "tamilday": "வெள்ளி",
+                    "govtholiday": "yes",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "19",
                     "tamil_date": "6",
                     "tamilmonth": "",
                     "day": "Sat",
-                    "tamilday": "சனி"
+                    "tamilday": "சனி",
+                    "special_day": [
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        }
+                    ]
                 },
                 {
                     "date": "20",
@@ -1783,6 +1989,10 @@
                     "tamilday": "திங்கள்",
                     "special_day": [
                         {
+                            "name": "திருவோணம்",
+                            "icon": "திருவோணம்"
+                        },
+                        {
                             "name": "அஷ்டமி",
                             "icon": "அஷ்டமி"
                         }
@@ -1796,10 +2006,6 @@
                     "tamilday": "செவ்வாய்",
                     "special_day": [
                         {
-                            "name": "திருவோணம்",
-                            "icon": "திருவோணம்"
-                        },
-                        {
                             "name": "நவமி",
                             "icon": "நவமி"
                         }
@@ -1810,7 +2016,13 @@
                     "tamil_date": "10",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "24",
@@ -1830,7 +2042,13 @@
                     "tamil_date": "12",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
+                    "tamilday": "வெள்ளி",
+                    "special_day": [
+                        {
+                            "name": "பிரதோஷம்",
+                            "icon": "பிரதோஷம்"
+                        }
+                    ]
                 },
                 {
                     "date": "26",
@@ -1870,14 +2088,26 @@
                     "tamil_date": "16",
                     "tamilmonth": "",
                     "day": "Tue",
-                    "tamilday": "செவ்வாய்"
+                    "tamilday": "செவ்வாய்",
+                    "special_day": [
+                        {
+                            "name": "கிருத்திகை",
+                            "icon": "கிருத்திகை"
+                        }
+                    ]
                 },
                 {
                     "date": "30",
                     "tamil_date": "17",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 }
             ]
         },
@@ -1892,6 +2122,7 @@
                     "tamilmonth": "சித்திரை ",
                     "day": "Thu",
                     "tamilday": "வியாழன்",
+                    "govtholiday": "yes",
                     "special_day": [
                         {
                             "name": "சதுர்த்தி",
@@ -1901,7 +2132,6 @@
                             "name": "தொழிலாளர் தினம்",
                             "icon": "தொழிலாளர் தினம்"
                         }
-
                     ]
                 },
                 {
@@ -1909,7 +2139,14 @@
                     "tamil_date": "19",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி",
+                    "tamilday": "வெள்ளி"
+                },
+                {
+                    "date": "3",
+                    "tamil_date": "20",
+                    "tamilmonth": "",
+                    "day": "Sat",
+                    "tamilday": "சனி",
                     "special_day": [
                         {
                             "name": "சஷ்டி",
@@ -1918,18 +2155,17 @@
                     ]
                 },
                 {
-                    "date": "3",
-                    "tamil_date": "20",
-                    "tamilmonth": "",
-                    "day": "Sat",
-                    "tamilday": "சனி"
-                },
-                {
                     "date": "4",
                     "tamil_date": "21",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "5",
@@ -1985,8 +2221,8 @@
                     "tamilday": "வெள்ளி",
                     "special_day": [
                         {
-                            "name": "பிரதோஷம்",
-                            "icon": "பிரதோஷம்"
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -1998,8 +2234,8 @@
                     "tamilday": "சனி",
                     "special_day": [
                         {
-                            "name": "அமாவாசை",
-                            "icon": "அமாவாசை"
+                            "name": "பிரதோஷம்",
+                            "icon": "பிரதோஷம்"
                         }
                     ]
                 },
@@ -2008,7 +2244,13 @@
                     "tamil_date": "28",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "12",
@@ -2035,7 +2277,13 @@
                     "tamil_date": "31",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "15",
@@ -2049,7 +2297,13 @@
                     "tamil_date": "2",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
+                    "tamilday": "வெள்ளி",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "17",
@@ -2063,7 +2317,17 @@
                     "tamil_date": "4",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        },
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        }
+                    ]
                 },
                 {
                     "date": "19",
@@ -2073,8 +2337,8 @@
                     "tamilday": "திங்கள்",
                     "special_day": [
                         {
-                            "name": "திருவோணம்",
-                            "icon": "திருவோணம்"
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -2121,6 +2385,10 @@
                         {
                             "name": "ஏகாதசி",
                             "icon": "ஏகாதசி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -2145,16 +2413,8 @@
                     "tamilday": "ஞாயிறு",
                     "special_day": [
                         {
-                            "name": "பிரதோஷம்",
-                            "icon": "பிரதோஷம்"
-                        },
-                        {
                             "name": "மாத சிவராத்திரி",
                             "icon": "மாத_சிவராத்திரி"
-                        },
-                        {
-                            "name": "சங்கடஹர சதுர்த்தி",
-                            "icon": "சங்கடஹர_சதுர்த்தி"
                         }
                     ]
                 },
@@ -2166,8 +2426,8 @@
                     "tamilday": "திங்கள்",
                     "special_day": [
                         {
-                            "name": "கிருத்திகை",
-                            "icon": "கிருத்திகை"
+                            "name": "அமாவாசை",
+                            "icon": "அமாவாசை"
                         }
                     ]
                 },
@@ -2183,7 +2443,13 @@
                     "tamil_date": "14",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "29",
@@ -2270,7 +2536,13 @@
                     "tamil_date": "22",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
+                    "tamilday": "வியாழன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "6",
@@ -2282,6 +2554,10 @@
                         {
                             "name": "ஏகாதசி",
                             "icon": "ஏகாதசி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -2302,6 +2578,10 @@
                         {
                             "name": "பிரதோஷம்",
                             "icon": "பிரதோஷம்"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -2317,20 +2597,20 @@
                     "tamilmonth": "",
                     "tamil_date": "27",
                     "day": "Tue",
-                    "tamilday": "செவ்வாய்"
-                },
-                {
-                    "date": "11",
-                    "tamil_date": "28",
-                    "tamilmonth": "",
-                    "day": "Wed",
-                    "tamilday": "புதன்",
+                    "tamilday": "செவ்வாய்",
                     "special_day": [
                         {
                             "name": "பௌர்ணமி",
                             "icon": "பௌர்ணமி"
                         }
                     ]
+                },
+                {
+                    "date": "11",
+                    "tamil_date": "28",
+                    "tamilmonth": "",
+                    "day": "Wed",
+                    "tamilday": "புதன்"
                 },
                 {
                     "date": "12",
@@ -2377,14 +2657,26 @@
                     "tamil_date": "2",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
+                    "tamilday": "திங்கள்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "17",
                     "tamil_date": "3",
                     "tamilmonth": "",
                     "day": "Tue",
-                    "tamilday": "செவ்வாய்"
+                    "tamilday": "செவ்வாய்",
+                    "special_day": [
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        }
+                    ]
                 },
                 {
                     "date": "18",
@@ -2437,7 +2729,13 @@
                     "tamil_date": "8",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "கிருத்திகை",
+                            "icon": "கிருத்திகை"
+                        }
+                    ]
                 },
                 {
                     "date": "23",
@@ -2481,20 +2779,20 @@
                     "tamil_date": "12",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்",
-                    "special_day": [
-                        {
-                            "name": "சதுர்த்தி",
-                            "icon": "சதுர்த்தி"
-                        }
-                    ]
+                    "tamilday": "வியாழன்"
                 },
                 {
                     "date": "27",
                     "tamil_date": "13",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
+                    "tamilday": "வெள்ளி",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "28",
@@ -2508,7 +2806,13 @@
                     "tamil_date": "15",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "சதுர்த்தி",
+                            "icon": "சதுர்த்தி"
+                        }
+                    ]
                 },
                 {
                     "date": "30",
@@ -2542,7 +2846,13 @@
                     "tamil_date": "18",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "3",
@@ -2595,7 +2905,13 @@
                     "tamil_date": "23",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
+                    "tamilday": "திங்கள்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "8",
@@ -2642,7 +2958,13 @@
                     "tamil_date": "28",
                     "tamilmonth": "",
                     "day": "Sat",
-                    "tamilday": "சனி"
+                    "tamilday": "சனி",
+                    "special_day": [
+                        {
+                            "name": "திருவோணம்",
+                            "icon": "திருவோணம்"
+                        }
+                    ]
                 },
                 {
                     "date": "13",
@@ -2652,8 +2974,8 @@
                     "tamilday": "ஞாயிறு",
                     "special_day": [
                         {
-                            "name": "திருவோணம்",
-                            "icon": "திருவோணம்"
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -2667,6 +2989,10 @@
                         {
                             "name": "சங்கடஹர சதுர்த்தி",
                             "icon": "சங்கடஹர_சதுர்த்தி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -2682,7 +3008,17 @@
                     "tamil_date": "1",
                     "tamilmonth": "ஆடி",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "17",
@@ -2928,20 +3264,20 @@
                     "tamil_date": "24",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
-                },
-                {
-                    "date": "9",
-                    "tamil_date": "25",
-                    "tamilmonth": "",
-                    "day": "Sat",
-                    "tamilday": "சனி",
+                    "tamilday": "வெள்ளி",
                     "special_day": [
                         {
                             "name": "பௌர்ணமி",
                             "icon": "பௌர்ணமி"
                         }
                     ]
+                },
+                {
+                    "date": "9",
+                    "tamil_date": "25",
+                    "tamilmonth": "",
+                    "day": "Sat",
+                    "tamilday": "சனி"
                 },
                 {
                     "date": "10",
@@ -2982,14 +3318,21 @@
                     "tamil_date": "30",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
+                    "tamilday": "வியாழன்",
+                    "special_day": [
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        }
+                    ]
                 },
                 {
                     "date": "15",
                     "tamil_date": "31",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
+                    "tamilday": "வெள்ளி",
+                    "govtholiday": "yes"
                 },
                 {
                     "date": "16",
@@ -2999,12 +3342,12 @@
                     "tamilday": "சனி",
                     "special_day": [
                         {
-                            "name": "அஷ்டமி",
-                            "icon": "அஷ்டமி"
-                        },
-                        {
                             "name": "கிருத்திகை",
                             "icon": "கிருத்திகை"
+                        },
+                        {
+                            "name": "அஷ்டமி",
+                            "icon": "அஷ்டமி"
                         }
                     ]
                 },
@@ -3051,6 +3394,10 @@
                         {
                             "name": "பிரதோஷம்",
                             "icon": "பிரதோஷம்"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -3064,29 +3411,32 @@
                         {
                             "name": "மாத சிவராத்திரி",
                             "icon": "மாத_சிவராத்திரி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
-
                 },
                 {
                     "date": "22",
                     "tamil_date": "6",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
-                },
-                {
-                    "date": "23",
-                    "tamil_date": "7",
-                    "tamilmonth": "",
-                    "day": "Sat",
-                    "tamilday": "சனி",
+                    "tamilday": "வெள்ளி",
                     "special_day": [
                         {
                             "name": "அமாவாசை",
                             "icon": "அமாவாசை"
                         }
                     ]
+                },
+                {
+                    "date": "23",
+                    "tamil_date": "7",
+                    "tamilmonth": "",
+                    "day": "Sat",
+                    "tamilday": "சனி"
                 },
                 {
                     "date": "24",
@@ -3115,10 +3465,15 @@
                     "tamilmonth": "",
                     "day": "Wed",
                     "tamilday": "புதன்",
+                    "govtholiday": "yes",
                     "special_day": [
                         {
                             "name": "சதுர்த்தி",
                             "icon": "சதுர்த்தி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -3127,7 +3482,13 @@
                     "tamil_date": "12",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
+                    "tamilday": "வியாழன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "29",
@@ -3139,6 +3500,10 @@
                         {
                             "name": "சஷ்டி",
                             "icon": "சஷ்டி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -3207,7 +3572,13 @@
                     "tamil_date": "19",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
+                    "tamilday": "வியாழன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "5",
@@ -3298,7 +3669,13 @@
                     "tamil_date": "28",
                     "tamilmonth": "",
                     "day": "Sat",
-                    "tamilday": "சனி"
+                    "tamilday": "சனி",
+                    "special_day": [
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        }
+                    ]
                 },
                 {
                     "date": "14",
@@ -3310,6 +3687,10 @@
                         {
                             "name": "அஷ்டமி",
                             "icon": "அஷ்டமி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -3363,10 +3744,6 @@
                         {
                             "name": "பிரதோஷம்",
                             "icon": "பிரதோஷம்"
-                        },
-                        {
-                            "name": "மாத சிவராத்திரி",
-                            "icon": "மாத_சிவராத்திரி"
                         }
                     ]
                 },
@@ -3375,7 +3752,13 @@
                     "tamil_date": "4",
                     "tamilmonth": "",
                     "day": "Sat",
-                    "tamilday": "சனி"
+                    "tamilday": "சனி",
+                    "special_day": [
+                        {
+                            "name": "மாத சிவராத்திரி",
+                            "icon": "மாத_சிவராத்திரி"
+                        }
+                    ]
                 },
                 {
                     "date": "21",
@@ -3475,7 +3858,7 @@
         },
         {
             "month": "10",
-            "month_name": "October 2025",
+            "month_name": "அக்டோபர் - 2025",
             "month_name_tamil": "விசுவாசுவ புரட்டாசி - ஐப்பசி",
             "days": [
                 {
@@ -3484,6 +3867,8 @@
                     "tamilmonth": "புரட்டாசி ",
                     "day": "Wed",
                     "tamilday": "புதன்",
+
+                    "govtholiday": "yes",
                     "special_day": [
                         {
                             "name": "ஆயுத பூஜை ",
@@ -3498,14 +3883,21 @@
                             "icon": "நவமி"
                         }
                     ]
-
                 },
                 {
                     "date": "2",
                     "tamil_date": "16",
+
+                    "govtholiday": "yes",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
+                    "tamilday": "வியாழன்",
+                    "special_day": [
+                        {
+                            "name": "ஏகாதசி",
+                            "icon": "ஏகாதசி"
+                        }
+                    ]
                 },
                 {
                     "date": "3",
@@ -3517,10 +3909,6 @@
                         {
                             "name": "திருவோணம்",
                             "icon": "திருவோணம்"
-                        },
-                        {
-                            "name": "ஏகாதசி",
-                            "icon": "ஏகாதசி"
                         }
                     ]
                 },
@@ -3549,20 +3937,20 @@
                     "tamil_date": "20",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
-                },
-                {
-                    "date": "7",
-                    "tamil_date": "21",
-                    "tamilmonth": "",
-                    "day": "Tue",
-                    "tamilday": "செவ்வாய்",
+                    "tamilday": "திங்கள்",
                     "special_day": [
                         {
                             "name": "பௌர்ணமி",
                             "icon": "பௌர்ணமி"
                         }
                     ]
+                },
+                {
+                    "date": "7",
+                    "tamil_date": "21",
+                    "tamilmonth": "",
+                    "day": "Tue",
+                    "tamilday": "செவ்வாய்"
                 },
                 {
                     "date": "8",
@@ -3586,8 +3974,8 @@
                     "tamilday": "வெள்ளி",
                     "special_day": [
                         {
-                            "name": "சங்கடஹர சதுர்த்தி",
-                            "icon": "சங்கடஹர_சதுர்த்தி"
+                            "name": "கிருத்திகை",
+                            "icon": "கிருத்திகை"
                         }
                     ]
                 },
@@ -3603,7 +3991,13 @@
                     "tamil_date": "26",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        }
+                    ]
                 },
                 {
                     "date": "13",
@@ -3647,8 +4041,8 @@
                 },
                 {
                     "date": "17",
-                    "tamil_date": "1",
-                    "tamilmonth": "ஐப்பசி",
+                    "tamil_date": "31",
+                    "tamilmonth": "",
                     "day": "Fri",
                     "tamilday": "வெள்ளி",
                     "special_day": [
@@ -3660,8 +4054,8 @@
                 },
                 {
                     "date": "18",
-                    "tamil_date": "2",
-                    "tamilmonth": "",
+                    "tamil_date": "1",
+                    "tamilmonth": "ஐப்பசி",
                     "day": "Sat",
                     "tamilday": "சனி",
                     "special_day": [
@@ -3673,7 +4067,7 @@
                 },
                 {
                     "date": "19",
-                    "tamil_date": "3",
+                    "tamil_date": "2",
                     "tamilmonth": "",
                     "day": "Sun",
                     "tamilday": "ஞாயிறு",
@@ -3681,19 +4075,29 @@
                         {
                             "name": "மாத சிவராத்திரி",
                             "icon": "மாத_சிவராத்திரி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
                 {
                     "date": "20",
-                    "tamil_date": "4",
+                    "tamil_date": "3",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
+                    "tamilday": "திங்கள்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "21",
-                    "tamil_date": "5",
+                    "tamil_date": "4",
                     "tamilmonth": "",
                     "day": "Tue",
                     "tamilday": "செவ்வாய்",
@@ -3706,33 +4110,38 @@
                             "name": "தீபாவளி",
                             "icon": "தீபாவளி"
                         }
-
                     ]
                 },
                 {
                     "date": "22",
-                    "tamil_date": "6",
+                    "tamil_date": "5",
                     "tamilmonth": "",
                     "day": "Wed",
                     "tamilday": "புதன்"
                 },
                 {
                     "date": "23",
-                    "tamil_date": "7",
+                    "tamil_date": "6",
                     "tamilmonth": "",
                     "day": "Thu",
                     "tamilday": "வியாழன்"
                 },
                 {
                     "date": "24",
-                    "tamil_date": "8",
+                    "tamil_date": "7",
                     "tamilmonth": "",
                     "day": "Fri",
-                    "tamilday": "வெள்ளி"
+                    "tamilday": "வெள்ளி",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "25",
-                    "tamil_date": "9",
+                    "tamil_date": "8",
                     "tamilmonth": "",
                     "day": "Sat",
                     "tamilday": "சனி",
@@ -3745,14 +4154,14 @@
                 },
                 {
                     "date": "26",
-                    "tamil_date": "10",
+                    "tamil_date": "9",
                     "tamilmonth": "",
                     "day": "Sun",
                     "tamilday": "ஞாயிறு"
                 },
                 {
                     "date": "27",
-                    "tamil_date": "11",
+                    "tamil_date": "10",
                     "tamilmonth": "",
                     "day": "Mon",
                     "tamilday": "திங்கள்",
@@ -3760,34 +4169,40 @@
                         {
                             "name": "சஷ்டி",
                             "icon": "சஷ்டி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
                 {
                     "date": "28",
-                    "tamil_date": "12",
+                    "tamil_date": "11",
                     "tamilmonth": "",
                     "day": "Tue",
                     "tamilday": "செவ்வாய்"
                 },
                 {
                     "date": "29",
-                    "tamil_date": "13",
+                    "tamil_date": "12",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
-                },
-                {
-                    "date": "30",
-                    "tamil_date": "14",
-                    "tamilmonth": "",
-                    "day": "Thu",
-                    "tamilday": "வியாழன்",
+                    "tamilday": "புதன்",
                     "special_day": [
                         {
                             "name": "திருவோணம்",
                             "icon": "திருவோணம்"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "date": "30",
+                    "tamil_date": "13",
+                    "tamilmonth": "",
+                    "day": "Thu",
+                    "tamilday": "வியாழன்",
+                    "special_day": [
                         {
                             "name": "அஷ்டமி",
                             "icon": "அஷ்டமி"
@@ -3797,7 +4212,7 @@
 
                 {
                     "date": "31",
-                    "tamil_date": "15",
+                    "tamil_date": "14",
                     "tamilmonth": "",
                     "day": "Fri",
                     "tamilday": "வெள்ளி",
@@ -3805,6 +4220,10 @@
                         {
                             "name": "நவமி",
                             "icon": "நவமி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 }
@@ -3817,17 +4236,10 @@
             "days": [
                 {
                     "date": "1",
-                    "tamil_date": "16",
+                    "tamil_date": "15",
                     "tamilmonth": "ஐப்பசி",
                     "day": "Sat",
-                    "tamilday": "சனி"
-                },
-                {
-                    "date": "2",
-                    "tamil_date": "17",
-                    "tamilmonth": "",
-                    "day": "Sun",
-                    "tamilday": "ஞாயிறு",
+                    "tamilday": "சனி",
                     "special_day": [
                         {
                             "name": "ஏகாதசி",
@@ -3836,8 +4248,15 @@
                     ]
                 },
                 {
+                    "date": "2",
+                    "tamil_date": "16",
+                    "tamilmonth": "",
+                    "day": "Sun",
+                    "tamilday": "ஞாயிறு"
+                },
+                {
                     "date": "3",
-                    "tamil_date": "18",
+                    "tamil_date": "17",
                     "tamilmonth": "",
                     "day": "Mon",
                     "tamilday": "திங்கள்",
@@ -3845,19 +4264,23 @@
                         {
                             "name": "பிரதோஷம்",
                             "icon": "பிரதோஷம்"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
                 {
                     "date": "4",
-                    "tamil_date": "19",
+                    "tamil_date": "18",
                     "tamilmonth": "",
                     "day": "Tue",
                     "tamilday": "செவ்வாய்"
                 },
                 {
                     "date": "5",
-                    "tamil_date": "20",
+                    "tamil_date": "19",
                     "tamilmonth": "",
                     "day": "Wed",
                     "tamilday": "புதன்",
@@ -3870,7 +4293,7 @@
                 },
                 {
                     "date": "6",
-                    "tamil_date": "21",
+                    "tamil_date": "20",
                     "tamilmonth": "",
                     "day": "Thu",
                     "tamilday": "வியாழன்",
@@ -3883,14 +4306,14 @@
                 },
                 {
                     "date": "7",
-                    "tamil_date": "22",
+                    "tamil_date": "21",
                     "tamilmonth": "",
                     "day": "Fri",
                     "tamilday": "வெள்ளி"
                 },
                 {
                     "date": "8",
-                    "tamil_date": "23",
+                    "tamil_date": "22",
                     "tamilmonth": "",
                     "day": "Sat",
                     "tamilday": "சனி",
@@ -3903,28 +4326,38 @@
                 },
                 {
                     "date": "9",
-                    "tamil_date": "24",
+                    "tamil_date": "23",
                     "tamilmonth": "",
                     "day": "Sun",
                     "tamilday": "ஞாயிறு"
                 },
                 {
                     "date": "10",
-                    "tamil_date": "25",
+                    "tamil_date": "24",
                     "tamilmonth": "",
                     "day": "Mon",
-                    "tamilday": "திங்கள்"
+                    "tamilday": "திங்கள்",
+                    "special_day": [
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "11",
                     "tamilmonth": "",
-                    "tamil_date": "26",
+                    "tamil_date": "25",
                     "day": "Tue",
                     "tamilday": "செவ்வாய்"
                 },
                 {
                     "date": "12",
-                    "tamil_date": "27",
+                    "tamil_date": "26",
                     "tamilmonth": "",
                     "day": "Wed",
                     "tamilday": "புதன்",
@@ -3937,7 +4370,7 @@
                 },
                 {
                     "date": "13",
-                    "tamil_date": "28",
+                    "tamil_date": "27",
                     "tamilmonth": "",
                     "day": "Thu",
                     "tamilday": "வியாழன்",
@@ -3950,14 +4383,14 @@
                 },
                 {
                     "date": "14",
-                    "tamil_date": "29",
+                    "tamil_date": "28",
                     "tamilmonth": "",
                     "day": "Fri",
                     "tamilday": "வெள்ளி"
                 },
                 {
                     "date": "15",
-                    "tamil_date": "30",
+                    "tamil_date": "29",
                     "tamilmonth": "",
                     "day": "Sat",
                     "tamilday": "சனி",
@@ -3970,15 +4403,21 @@
                 },
                 {
                     "date": "16",
-                    "tamil_date": "1",
-                    "tamilmonth": "கார்த்திகை",
+                    "tamil_date": "30",
+                    "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "17",
-                    "tamil_date": "2",
-                    "tamilmonth": "",
+                    "tamil_date": "1",
+                    "tamilmonth": "கார்த்திகை",
                     "day": "Mon",
                     "tamilday": "திங்கள்",
                     "special_day": [
@@ -3990,7 +4429,7 @@
                 },
                 {
                     "date": "18",
-                    "tamil_date": "3",
+                    "tamil_date": "2",
                     "tamilmonth": "",
                     "day": "Tue",
                     "tamilday": "செவ்வாய்",
@@ -4003,17 +4442,10 @@
                 },
                 {
                     "date": "19",
-                    "tamil_date": "4",
+                    "tamil_date": "3",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
-                },
-                {
-                    "date": "20",
-                    "tamil_date": "5",
-                    "tamilmonth": "",
-                    "day": "Thu",
-                    "tamilday": "வியாழன்",
+                    "tamilday": "புதன்",
                     "special_day": [
                         {
                             "name": "அமாவாசை",
@@ -4022,29 +4454,42 @@
                     ]
                 },
                 {
+                    "date": "20",
+                    "tamil_date": "4",
+                    "tamilmonth": "",
+                    "day": "Thu",
+                    "tamilday": "வியாழன்"
+                },
+                {
                     "date": "21",
-                    "tamil_date": "6",
+                    "tamil_date": "5",
                     "tamilmonth": "",
                     "day": "Fri",
                     "tamilday": "வெள்ளி"
                 },
                 {
                     "date": "22",
-                    "tamil_date": "7",
+                    "tamil_date": "6",
                     "tamilmonth": "",
                     "day": "Sat",
                     "tamilday": "சனி"
                 },
                 {
                     "date": "23",
-                    "tamil_date": "8",
+                    "tamil_date": "7",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "24",
-                    "tamil_date": "9",
+                    "tamil_date": "8",
                     "tamilmonth": "",
                     "day": "Mon",
                     "tamilday": "திங்கள்",
@@ -4057,14 +4502,14 @@
                 },
                 {
                     "date": "25",
-                    "tamil_date": "10",
+                    "tamil_date": "9",
                     "tamilmonth": "",
                     "day": "Tue",
                     "tamilday": "செவ்வாய்"
                 },
                 {
                     "date": "26",
-                    "tamil_date": "11",
+                    "tamil_date": "10",
                     "tamilmonth": "",
                     "day": "Wed",
                     "tamilday": "புதன்",
@@ -4081,14 +4526,20 @@
                 },
                 {
                     "date": "27",
-                    "tamil_date": "12",
+                    "tamil_date": "11",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
+                    "tamilday": "வியாழன்",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "28",
-                    "tamil_date": "13",
+                    "tamil_date": "12",
                     "tamilmonth": "",
                     "day": "Fri",
                     "tamilday": "வெள்ளி",
@@ -4101,7 +4552,7 @@
                 },
                 {
                     "date": "29",
-                    "tamil_date": "14",
+                    "tamil_date": "13",
                     "tamilmonth": "",
                     "day": "Sat",
                     "tamilday": "சனி",
@@ -4114,10 +4565,16 @@
                 },
                 {
                     "date": "30",
-                    "tamil_date": "15",
+                    "tamil_date": "14",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 }
             ]
         },
@@ -4128,7 +4585,7 @@
             "days": [
                 {
                     "date": "1",
-                    "tamil_date": "16",
+                    "tamil_date": "15",
                     "tamilmonth": "கார்த்திகை",
                     "day": "Mon",
                     "tamilday": "திங்கள்",
@@ -4136,12 +4593,16 @@
                         {
                             "name": "ஏகாதசி",
                             "icon": "ஏகாதசி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
                 {
                     "date": "2",
-                    "tamil_date": "17",
+                    "tamil_date": "16",
                     "tamilmonth": "",
                     "day": "Tue",
                     "tamilday": "செவ்வாய்",
@@ -4154,22 +4615,11 @@
                 },
                 {
                     "date": "3",
-                    "tamil_date": "18",
+                    "tamil_date": "17",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
-                },
-                {
-                    "date": "4",
-                    "tamil_date": "19",
-                    "tamilmonth": "",
-                    "day": "Thu",
-                    "tamilday": "வியாழன்",
+                    "tamilday": "புதன்",
                     "special_day": [
-                        {
-                            "name": "பௌர்ணமி",
-                            "icon": "பௌர்ணமி"
-                        },
                         {
                             "name": "கிருத்திகை",
                             "icon": "கிருத்திகை"
@@ -4177,63 +4627,90 @@
                     ]
                 },
                 {
+                    "date": "4",
+                    "tamil_date": "18",
+                    "tamilmonth": "",
+                    "day": "Thu",
+                    "tamilday": "வியாழன்",
+                    "special_day": [
+                        {
+                            "name": "பௌர்ணமி",
+                            "icon": "பௌர்ணமி"
+                        }
+                    ]
+                },
+                {
                     "date": "5",
-                    "tamil_date": "20",
+                    "tamil_date": "19",
                     "tamilmonth": "",
                     "day": "Fri",
                     "tamilday": "வெள்ளி"
                 },
                 {
                     "date": "6",
-                    "tamil_date": "21",
+                    "tamil_date": "20",
                     "tamilmonth": "",
                     "day": "Sat",
                     "tamilday": "சனி"
                 },
                 {
                     "date": "7",
-                    "tamil_date": "22",
+                    "tamil_date": "21",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு",
+                    "tamilday": "ஞாயிறு"
+                },
+                {
+                    "date": "8",
+                    "tamil_date": "22",
+                    "tamilmonth": "",
+                    "day": "Mon",
+                    "tamilday": "திங்கள்",
                     "special_day": [
                         {
                             "name": "சங்கடஹர சதுர்த்தி",
                             "icon": "சங்கடஹர_சதுர்த்தி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
                 {
-                    "date": "8",
-                    "tamil_date": "23",
-                    "tamilmonth": "",
-                    "day": "Mon",
-                    "tamilday": "திங்கள்"
-                },
-                {
                     "date": "9",
                     "tamilmonth": "",
-                    "tamil_date": "24",
+                    "tamil_date": "23",
                     "day": "Tue",
                     "tamilday": "செவ்வாய்"
                 },
                 {
                     "date": "10",
-                    "tamil_date": "25",
+                    "tamil_date": "24",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "சஷ்டி",
+                            "icon": "சஷ்டி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "11",
-                    "tamil_date": "26",
+                    "tamil_date": "25",
                     "tamilmonth": "",
                     "day": "Thu",
                     "tamilday": "வியாழன்"
                 },
                 {
                     "date": "12",
-                    "tamil_date": "27",
+                    "tamil_date": "26",
                     "tamilmonth": "",
                     "day": "Fri",
                     "tamilday": "வெள்ளி",
@@ -4246,7 +4723,7 @@
                 },
                 {
                     "date": "13",
-                    "tamil_date": "28",
+                    "tamil_date": "27",
                     "tamilmonth": "",
                     "day": "Sat",
                     "tamilday": "சனி",
@@ -4254,23 +4731,25 @@
                         {
                             "name": "நவமி",
                             "icon": "நவமி"
-                        },
-                        {
-                            "name": "பிரதோஷம்",
-                            "icon": "பிரதோஷம்"
                         }
                     ]
                 },
                 {
                     "date": "14",
-                    "tamil_date": "29",
+                    "tamil_date": "28",
                     "tamilmonth": "",
                     "day": "Sun",
-                    "tamilday": "ஞாயிறு"
+                    "tamilday": "ஞாயிறு",
+                    "special_day": [
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
+                        }
+                    ]
                 },
                 {
                     "date": "15",
-                    "tamil_date": "30",
+                    "tamil_date": "29",
                     "tamilmonth": "",
                     "day": "Mon",
                     "tamilday": "திங்கள்",
@@ -4278,6 +4757,10 @@
                         {
                             "name": "ஏகாதசி",
                             "icon": "ஏகாதசி"
+                        },
+                        {
+                            "name": "முகுர்த்தம்",
+                            "icon": "முகுர்த்தம்"
                         }
                     ]
                 },
@@ -4379,20 +4862,21 @@
                     "tamil_date": "10",
                     "tamilmonth": "",
                     "day": "Thu",
-                    "tamilday": "வியாழன்"
-                },
-                {
-                    "date": "26",
-                    "tamil_date": "11",
-                    "tamilmonth": "",
-                    "day": "Fri",
-                    "tamilday": "வெள்ளி",
+                    "tamilday": "வியாழன்",
+                    "govtholiday": "yes",
                     "special_day": [
                         {
                             "name": "சஷ்டி",
                             "icon": "சஷ்டி"
                         }
                     ]
+                },
+                {
+                    "date": "26",
+                    "tamil_date": "11",
+                    "tamilmonth": "",
+                    "day": "Fri",
+                    "tamilday": "வெள்ளி"
                 },
                 {
                     "date": "27",
@@ -4411,10 +4895,6 @@
                         {
                             "name": "அஷ்டமி",
                             "icon": "அஷ்டமி"
-                        },
-                        {
-                            "name": "பிரதோஷம்",
-                            "icon": "பிரதோஷம்"
                         }
                     ]
                 },
@@ -4449,7 +4929,13 @@
                     "tamil_date": "16",
                     "tamilmonth": "",
                     "day": "Wed",
-                    "tamilday": "புதன்"
+                    "tamilday": "புதன்",
+                    "special_day": [
+                        {
+                            "name": "கிருத்திகை",
+                            "icon": "கிருத்திகை"
+                        }
+                    ]
                 }
             ]
         }

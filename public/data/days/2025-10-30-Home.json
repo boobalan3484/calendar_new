@@ -8,7 +8,7 @@
         "Parikaram": "தைலம்",
         "Namyogam": "இன்று அதிகாலை 04:27 வரை சூலம் பின்பு கண்டம்",
         "Amirthathiyogam": "இன்று முழுவதும் சித்தயோகம்",
-        "Nethiram": "இன்று பிற்பகல் 02 24 வரை ஒரு கண் பின்பு இரண்டு கண்",
+        "Nethiram": "இன்று பிற்பகல் 02.24 வரை ஒரு கண் பின்பு இரண்டு கண்",
         "Jeevan": "இன்று முழுவதும் அரை வாழ்க்கை",
         "MainDays": "நவமி(இன்று அதிகாலை 05.33 முதல் நாளை அதிகாலை 05.17 வரை)",
         "SubDays": "பசும்பொன் முத்துராமலிங்க தேவர் பிறந்த தினம்",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 13,
         "dayAuspicious": null,
-        "nneram_mrg": "10:45 - 11:45",
+        "nneram_mrg": "10.45-11.45",
         "nneram_eve": "-",
-        "gneram_mrg": "12:15 - 01:15",
-        "gneram_eve": null,
+        "gneram_mrg": "12.15-01.15",
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "uparrow,valarpirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று பிற்பகல் 02.56 வரை திருவாதிரை பின்பு புனர்பூசம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "06:31 AM",
         "sun_set": "05:38 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "09:00 AM - 10:30 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "1.30 PM-3.00 PM",
+        "yama": "6.00 AM-7.30 AM",
+        "kuligai": "9.00 AM-10.30 AM"
     },
     "gpanchangamDay": [
         {

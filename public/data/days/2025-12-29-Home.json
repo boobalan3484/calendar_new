@@ -9,7 +9,7 @@
         "Namyogam": "இன்று அதிகாலை 04:19 வரை பரிகம் பின்பு சிவம்",
         "Amirthathiyogam": "இன்று அதிகாலை 04.04 வரை அமிர்தயோகம் பின்பு சித்தயோகம்",
         "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
-        "Jeevan": "இன்று அதிகாலை 03.48 வரை அரை வாழ்க்கை பின்பு பிற்பக",
+        "Jeevan": "இன்று அதிகாலை 03.48 வரை அரை வாழ்க்கை பின்பு பிற்பகல் 02.08 வரை உயிரற்றவை பின்பு அரை வாழ்க்கை",
         "MainDays": "தசமி(இன்று அதிகாலை 04.42 முதல் நாளை அதிகாலை 03.50 வரை)",
         "SubDays": "கெர்போட்ட ஆரம்பம்",
         "DayDetails": "வளர்பிறை சம நோக்கு நாள்",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 14,
         "dayAuspicious": null,
-        "nneram_mrg": "06:15 - 07:15",
-        "nneram_eve": "04:45 - 05:45",
-        "gneram_mrg": "09:15 - 10:15",
-        "gneram_eve": null,
+        "nneram_mrg": "06.15-07.15",
+        "nneram_eve": "04.45-05.45",
+        "gneram_mrg": "09.15-10.15",
+        "gneram_eve": "07.30-08.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "bothside_arrow,valarpirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று அதிகாலை 04.04 வரை பூரம் பின்பு உத்திரம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "07:13 AM",
         "sun_set": "05:33 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "",
         "kuligai_e": "01:30 PM - 03:00 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "7.30 AM-9.00 AM",
+        "yama": "10.30 AM-12.00 PM",
+        "kuligai": "1.30 PM-3.00 PM"
     },
     "gpanchangamDay": [
         {

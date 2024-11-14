@@ -1,0 +1,9 @@
+.day_modal .modal-dialog {
+    max-width: 80% !important;
+}
+
+@media (max-width:576) {
+    .day_modal .modal-dialog {
+        max-width: 100% !important;
+    }
+}

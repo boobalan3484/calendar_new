@@ -10,7 +10,7 @@
         "Amirthathiyogam": "இன்று காலை 06.03 வரை அமிர்தயோகம் பின்பு சித்தயோகம்",
         "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
         "Jeevan": "இன்று முழுவதும் முழுவாழ்க்கை",
-        "MainDays": "இன்று காலை 06.03 வரை அமிர்தயோகம் பின்பு சித்தயோகம்",
+        "MainDays": "கிரிவலம், பெளர்ணமி(இன்று அதிகாலை 01.49 முதல் நாளை அதிகாலை 12.32 வரை)",
         "SubDays": "-",
         "DayDetails": "மேல் நோக்கு நாள்",
         "Pirai": "-"
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 22,
         "dayAuspicious": null,
-        "nneram_mrg": "08:30 - 09:00",
-        "nneram_eve": "03:15 - 04:15",
-        "gneram_mrg": "10:45 - 11:45",
-        "gneram_eve": null,
+        "nneram_mrg": "08.30-09.00",
+        "nneram_eve": "03.15-04.15",
+        "gneram_mrg": "10.45-11.45",
+        "gneram_eve": "01.30-02.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "uparrow,fullmoon,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று இரவு 11.13 வரை பூசம் பின்பு ஆயில்யம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "06:02 AM",
         "sun_set": "06:36 PM",
@@ -105,6 +109,11 @@
         "yama_e": "12:00 PM - 01:30 PM",
         "kuligai_m": "",
         "kuligai_e": "03:00 PM - 04:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "4.30 PM-6.00 PM",
+        "yama": "12.00 PM-1.30 PM",
+        "kuligai": "3.00 PM-4.30 PM"
     },
     "gpanchangamDay": [
         {

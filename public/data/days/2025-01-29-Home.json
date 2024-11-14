@@ -32,16 +32,20 @@
         "tyear": "குரோதி",
         "tdate": 16,
         "dayAuspicious": null,
-        "nneram_mrg": "09:30 - 10:30",
-        "nneram_eve": "04:30 - 05:30",
-        "gneram_mrg": "10:30 - 11:30",
-        "gneram_eve": null,
+        "nneram_mrg": "09.30-10.30",
+        "nneram_eve": "04.30-05.30",
+        "gneram_mrg": "10.30-11.30",
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "N",
         "festival_info": "தை அமாவாசை,",
         "thithiimages": "uparrow,blackmoon,thiruvonam,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று காலை 09:20 வரை மிருகசீரிடம் பின்பு திருவாதிரை "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "07:11 AM",
         "sun_set": "05:58 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "10:30 AM - 12:00 PM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "12.00 PM-1.30 PM",
+        "yama": "7.30 AM-9.00 AM",
+        "kuligai": "10.30 AM-12.00 PM"
     },
     "gpanchangamDay": [
         {

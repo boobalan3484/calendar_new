@@ -32,16 +32,20 @@
         "tyear": "குரோதி",
         "tdate": 24,
         "dayAuspicious": null,
-        "nneram_mrg": "06:30 - 07:30",
-        "nneram_eve": "04:30 - 05:30",
-        "gneram_mrg": "09:30 - 10:30",
-        "gneram_eve": null,
+        "nneram_mrg": "06.30-07.30",
+        "nneram_eve": "04.30-05.30",
+        "gneram_mrg": "09.30-10.30",
+        "gneram_eve": "07.30-08.30",
         "muhurtham": "Y",
         "festival_info": "",
         "thithiimages": "uparrow,valarpirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று காலை 10.39 வரை மூலம் பின்பு பூராடம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "06:05 AM",
         "sun_set": "06:42 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "",
         "kuligai_e": "01:30 PM - 03:00 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "7.30 AM-9.00 AM",
+        "yama": "10.30 AM-12.00 PM",
+        "kuligai": "1.30 PM-3.00 PM"
     },
     "gpanchangamDay": [
         {

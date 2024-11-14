@@ -32,10 +32,10 @@
         "tyear": "குரோதி",
         "tdate": 21,
         "dayAuspicious": null,
-        "nneram_mrg": "10:45 - 11:45",
+        "nneram_mrg": "10.45-11.45",
         "nneram_eve": "-",
-        "gneram_mrg": "12:15 - 01:15",
-        "gneram_eve": null,
+        "gneram_mrg": "12.15-01.15",
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "Y",
         "festival_info": "கந்த சஷ்டி,",
         "thithiimages": "downarrow,valarpirai,shasti,,"
@@ -49,7 +49,7 @@
     },
     "chandrastamam": [
         {
-            "details": "இன்று, காலை 09.55, வரை, ரோகிணி, பின்பு, மிருகசீரிடம்"
+            "details": "இன்று காலை 09.55 வரை ரோகிணி பின்பு மிருகசீரிஷம் "
         }
     ],
     "sunmoon": {
@@ -115,6 +115,11 @@
         "yama_e": "",
         "kuligai_m": "09:00 AM - 10:30 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "1.30 PM-3.00 PM",
+        "yama": "6.00 AM-7.30 AM",
+        "kuligai": "9.00 AM-10.30 AM"
     },
     "gpanchangamDay": [
         {

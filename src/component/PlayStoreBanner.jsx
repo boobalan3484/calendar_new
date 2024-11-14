@@ -4,7 +4,7 @@ import "@/style/dayPageStyle.css";
 const PlayStoreBanner = () => {
     return (
         <div className='col-12 col-lg-2 bg-white shadow-sm rounded text-dark'>
-            <div className='h-100 py-4 d-flex flex-column justify-content-center gap-4 align-items-center'>
+            <div className='h-100 py-4 px-2 d-flex flex-column justify-content-center gap-4 align-items-center'>
                 <div className="brand" style={{ width: '170px' }}>
                     <img src="/images/Makkal_Naalkaati_Logo1.png" alt="" />
                 </div>

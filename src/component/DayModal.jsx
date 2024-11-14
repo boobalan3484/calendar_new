@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Modal } from 'react-bootstrap'
 import DayCard from './DayCard';
 import '@/style/Modal.css'
-const DayModal = ({ showModal, selectedDate, handleClose }) => {
-    const [currentDate, setCurrentDate] = useState(selectedDate);
-
-    console.log(selectedDate);
+const DayModal = ({ showModal, selectedDate,humanFormatDate, handleClose }) => {
 
     const [dayData, setDayData] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -57,7 +54,7 @@ const DayModal = ({ showModal, selectedDate, handleClose }) => {
             </Modal.Header>
             <Modal.Body>
                 <DayCard
-                    formatDate={selectedDate}
+                    formatDate={humanFormatDate}
                     dayData={dayData}
                     isThithi={isThithi}
                 />

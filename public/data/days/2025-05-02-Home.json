@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 19,
         "dayAuspicious": null,
-        "nneram_mrg": "09:30 - 10:30",
-        "nneram_eve": "04:30 - 05:30",
-        "gneram_mrg": "12:30 - 01:30",
-        "gneram_eve": null,
+        "nneram_mrg": "09.30-10.30",
+        "nneram_eve": "04.30-05.30",
+        "gneram_mrg": "12.30-01.30",
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "N",
         "festival_info": "ஸ்ரீமத் சங்கரஜெயந்தி,",
         "thithiimages": "uparrow,valarpirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று மாலை 06.40 வரை அனுஷம் பின்பு கேட்டை "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "05:40 AM",
         "sun_set": "06:57 PM",
@@ -105,6 +109,11 @@
         "yama_e": "03:00 PM - 04:30 PM",
         "kuligai_m": "07:30 AM - 09:00 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "10.30 AM-12.00 PM",
+        "yama": "3.00 PM-4.30 PM",
+        "kuligai": "7.30 AM-9.00 AM"
     },
     "gpanchangamDay": [
         {

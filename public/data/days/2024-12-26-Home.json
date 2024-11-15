@@ -32,10 +32,10 @@
         "tyear": "குரோதி",
         "tdate": 11,
         "dayAuspicious": null,
-        "nneram_mrg": "10:45 - 11:45",
+        "nneram_mrg": "10.45-11.45",
         "nneram_eve": "-",
-        "gneram_mrg": "12:15 - 01:15",
-        "gneram_eve": null,
+        "gneram_mrg": "12.15-01.15",
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "N",
         "festival_info": "கரி நாள்",
         "thithiimages": "bothside_arrow,theipirai,ekadasi,,"
@@ -49,7 +49,7 @@
     },
     "chandrastamam": [
         {
-            "details": "இன்று, அதிகாலை 06.00, வரை, பூரட்டாதி, பின்பு, உத்திரட்டாதி"
+            "details": "இன்று மாலை 06.51 வரை உத்திரட்டாதி பின்பு ரேவதி "
         }
     ],
     "sunmoon": {
@@ -115,6 +115,11 @@
         "yama_e": "",
         "kuligai_m": "09:00 AM - 10:30 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "1.30 PM-3.00 PM",
+        "yama": "6.00 AM-7.30 AM",
+        "kuligai": "9.00 AM-10.30 AM"
     },
     "gpanchangamDay": [
         {

@@ -8,7 +8,7 @@
         "Parikaram": "வெல்லம்",
         "Namyogam": "இன்று இரவு 08:18 வரை சித்தம் பின்பு சாத்தியம்",
         "Amirthathiyogam": "இன்று காலை 08.14 வரை சித்தயோகம் பின்பு அமிர்தயோகம்",
-        "Nethiram": "இன்று காலை 07.00 வரை இரண்டு கண் பின்பு ஒருகண்",
+        "Nethiram": "இன்று காலை 07.40 வரை இரண்டு கண் பின்பு ஒருகண்",
         "Jeevan": "இன்று முழுவதும் அரை வாழ்க்கை",
         "MainDays": "தேய்பிறை அஷ்டமி(இன்று மாலை 03.03 முதல் நாளை பிற்பகல் 02.33 வரை",
         "SubDays": "ஈஸ்டர் டே ஹிட்லர் பிறந்த தினம் ",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 7,
         "dayAuspicious": null,
-        "nneram_mrg": "07:30 - 08:30",
-        "nneram_eve": "03:00 - 04:00",
-        "gneram_mrg": "10:30 - 11:30",
-        "gneram_eve": null,
+        "nneram_mrg": "07.30-08.30",
+        "nneram_eve": "03.00-04.00",
+        "gneram_mrg": "10.30-11.30",
+        "gneram_eve": "01.30-02.30",
         "muhurtham": "N",
         "festival_info": "ஈஸ்டர்,",
         "thithiimages": "downarrow,theipirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": " இன்று காலை 08.14 வரை ரோகிணி பின்பு மிருகசீரிடம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "05:51 AM",
         "sun_set": "06:50 PM",
@@ -105,6 +109,11 @@
         "yama_e": "12:00 PM - 01:30 PM",
         "kuligai_m": "",
         "kuligai_e": "03:00 PM - 04:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "4.30 PM-6.00 PM",
+        "yama": "12.00 PM-1.30 PM",
+        "kuligai": "3.00 PM-4.30 PM"
     },
     "gpanchangamDay": [
         {

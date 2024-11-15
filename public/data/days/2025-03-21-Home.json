@@ -7,11 +7,11 @@
         "Sulam": "மேற்கு ",
         "Parikaram": "வெல்லம்",
         "Namyogam": "இன்று மாலை 03:18 வரை சித்தி பின்பு வ்யதீபாதம்",
-        "Amirthathiyogam": "இன்று காலை 06.19 சித்தயோகம் பின்பு இரவு 10.42 வரை மரணயோகம் பின்பு அமிர்தயோகம்",
+        "Amirthathiyogam": "இன்று காலை 06.19 சித்தயோகம் பின்பு இரவு 10.44 வரை மரணயோகம் பின்பு அமிர்தயோகம்",
         "Nethiram": "இன்று இரவு 09.52 வரை இரண்டு கண் பின்பு ஒரு கண்",
         "Jeevan": "இன்று முழுவதும் அரை வாழ்க்கை",
         "MainDays": "-",
-        "SubDays": "-",
+        "SubDays": "மௌலானா அலி உரூஸ், உலக பொம்மலாட்ட தினம், உலக கவிதைகள் தினம், உலக காடுகள் தினம், சர்வதேச இனப்பாகுபாடு நிராகரிப்பு தினம்",
         "DayDetails": "தேய்பிறை சம நோக்கு நாள்",
         "Pirai": "தேய்பிறை"
     },
@@ -32,16 +32,20 @@
         "tyear": "குரோதி",
         "tdate": 7,
         "dayAuspicious": null,
-        "nneram_mrg": "09:30 - 10:30",
-        "nneram_eve": "04:30 - 05:30",
-        "gneram_mrg": "12:30 - 01:30",
-        "gneram_eve": null,
+        "nneram_mrg": "09.30-10.30",
+        "nneram_eve": "04.30-05.30",
+        "gneram_mrg": "12.30-01.30",
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "bothside_arrow,theipirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று இரவு 10.44 வரை பரணி பின்பு கிருத்திகை "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "06:25 AM",
         "sun_set": "06:33 PM",
@@ -105,6 +109,11 @@
         "yama_e": "03:00 PM - 04:30 PM",
         "kuligai_m": "07:30 AM - 09:00 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "10.30 AM-12.00 PM",
+        "yama": "3.00 PM-4.30 PM",
+        "kuligai": "7.30 AM-9.00 AM"
     },
     "gpanchangamDay": [
         {

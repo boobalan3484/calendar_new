@@ -3,7 +3,7 @@
         "Karanan": "03.00-04.30",
         "Sunrise": "06.34",
         "StarDetails": "இன்று பிற்பகல் 12.54 வரை ஆயில்யம் பின்பு மகம்",
-        "KaranamDetails": "இன்று அதிகாலை 05.46 வரை கரசை பின்பு மாலை 05.10 வரை வணிசை பின்பு பத்திரை",
+        "KaranamDetails": "இன்று அதிகாலை 04.44 வரை கரசை பின்பு மாலை 05.10 வரை வணிசை பின்பு பத்திரை",
         "Sulam": "தெற்கு ",
         "Parikaram": "தைலம் ",
         "Namyogam": "இன்று அதிகாலை 02:37 வரை ப்ரீதி பின்பு ஆயுஷ்மான்",
@@ -32,16 +32,20 @@
         "tyear": "குரோதி",
         "tdate": 3,
         "dayAuspicious": null,
-        "nneram_mrg": "10:30 - 11:30",
+        "nneram_mrg": "10.30-11.30",
         "nneram_eve": "-",
-        "gneram_mrg": "12:30 - 01:30",
-        "gneram_eve": null,
+        "gneram_mrg": "12.30-01.30",
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "N",
         "festival_info": "காணும் பொங்கல், உழவர் திருநாள்,கரி நாள்",
         "thithiimages": "downarrow,theipirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று பிற்பகல் 12.54 வரை பூராடம் பின்பு உத்திராடம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "07:15 AM",
         "sun_set": "05:47 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "09:00 AM - 10:30 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "1.30 PM-3.00 PM",
+        "yama": "6.00 AM-7.30 AM",
+        "kuligai": "9.00 AM-10.30 AM"
     },
     "gpanchangamDay": [
         {

@@ -7,11 +7,11 @@
         "Sulam": "மேற்கு ",
         "Parikaram": "வெல்லம்",
         "Namyogam": "இன்று பிற்பகல் 02:28 வரை சுபம் பின்பு சுப்பிரம்",
-        "Amirthathiyogam": "இன்று காலை 06.32 வரை மரணயோகம் பின்பு பிற்பகல் 01.01 வரை சித்தயோகம் பின்பு மரணயோகம்",
+        "Amirthathiyogam": "இன்று காலை 06.32 வரை மரணயோகம் பின்பு பிற்பகல் 01.41 வரை சித்தயோகம் பின்பு மரணயோகம்",
         "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
         "Jeevan": "இன்று முழுவதும் முழுவாழ்க்கை",
         "MainDays": "ஏகாதசி",
-        "SubDays": "வைகுண்ட ஏகாதசி, ஜெர்போட்ட நிவர்த்தி",
+        "SubDays": "வைகுண்ட ஏகாதசி, கெர்போட்ட நிவர்த்தி",
         "DayDetails": "வளர்பிறை கீழ் நோக்கு நாள்",
         "Pirai": "வளர்பிறை"
     },
@@ -32,16 +32,20 @@
         "tyear": "குரோதி",
         "tdate": 26,
         "dayAuspicious": null,
-        "nneram_mrg": "09:30 - 10:30",
-        "nneram_eve": "04:30 - 05:30",
-        "gneram_mrg": "12:30 - 01:30",
-        "gneram_eve": null,
+        "nneram_mrg": "09.30-10.30",
+        "nneram_eve": "04.30-05.30",
+        "gneram_mrg": "12.30-01.30",
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "N",
         "festival_info": "வைகுண்ட ஏகாதசி,",
         "thithiimages": "downarrow,valarpirai,ekadasi,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று பிற்பகல் 01:41 வரை சித்திரை பின்பு சுவாதி "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "07:15 AM",
         "sun_set": "05:42 PM",
@@ -105,6 +109,11 @@
         "yama_e": "03:00 PM - 04:30 PM",
         "kuligai_m": "07:30 AM - 09:00 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "10.30 AM-12.00 PM",
+        "yama": "3.00 PM-4.30 PM",
+        "kuligai": "7.30 AM-9.00 AM"
     },
     "gpanchangamDay": [
         {

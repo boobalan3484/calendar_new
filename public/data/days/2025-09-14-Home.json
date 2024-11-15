@@ -8,7 +8,7 @@
         "Parikaram": "வெல்லம்",
         "Namyogam": "இன்று பிற்பகல் 12:28 வரை வஜ்ரம் பின்பு சித்தி",
         "Amirthathiyogam": "இன்று பிற்பகல் 01.17 வரை அமிர்தயோகம் பின்பு சித்தயோகம்",
-        "Nethiram": "இன்று காலை 07.24 வரை ஒரு கண் பின்பு பிற்பகல் 12.54",
+        "Nethiram": "இன்று காலை 07.24 வரை ஒரு கண் பின்பு பிற்பகல் 12.54 வரை இரண்டு கண் பின்பு ஒரு கண் ",
         "Jeevan": "இன்று முழுவதும் அரை வாழ்க்கை",
         "MainDays": "சுபமுகூர்த்தம், தேய்பிறை அஷ்டமி(இன்று காலை 09.16 முதல் நாளை காலை 07.01 வரை)",
         "SubDays": "ஹோலி ரூட்டே, சர்வதேச கலாச்சார ஒற்றுமை தினம்",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 29,
         "dayAuspicious": null,
-        "nneram_mrg": "06:00 - 07:00",
-        "nneram_eve": "03:15 - 04:15",
-        "gneram_mrg": "10:45 - 11:45",
-        "gneram_eve": null,
+        "nneram_mrg": "06.00-07.00",
+        "nneram_eve": "03.15-04.15",
+        "gneram_mrg": "10.45-11.45",
+        "gneram_eve": "01.30-02.30",
         "muhurtham": "Y",
         "festival_info": "",
         "thithiimages": "uparrow,theipirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று பிற்பகல் 01.17 வரை சுவாதி பின்பு விசாகம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "06:05 AM",
         "sun_set": "06:28 PM",
@@ -105,6 +109,11 @@
         "yama_e": "12:00 PM - 01:30 PM",
         "kuligai_m": "",
         "kuligai_e": "03:00 PM - 04:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "4.30 PM-6.00 PM",
+        "yama": "12.00 PM-1.30 PM",
+        "kuligai": "3.00 PM-4.30 PM"
     },
     "gpanchangamDay": [
         {

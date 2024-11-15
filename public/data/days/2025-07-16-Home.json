@@ -9,7 +9,7 @@
         "Namyogam": "இன்று பிற்பகல் 12:37 வரை சோபனம் பின்பு அதிகண்டம்",
         "Amirthathiyogam": "இன்று அதிகாலை 05.59 வரை மரணயோகம் பின்பு காலை 06.12 வரை அமிர்தயோகம் பின்பு சித்தயோகம்",
         "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
-        "Jeevan": "இன்று அதிகாலை 05.49 வரை உயிரற்றவை பின்பு அரை வாழ்க",
+        "Jeevan": "இன்று அதிகாலை 05.49 வரை உயிரற்றவை பின்பு அரை வாழ்க்கை",
         "MainDays": "தேய்பிறை சஷ்டி, சுபமுகூர்த்தம்",
         "SubDays": "கும்பகோணம் தீ விபத்து நினைவு தினம்",
         "DayDetails": "தேய்பிறை மேல் நோக்கு நாள்",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 32,
         "dayAuspicious": null,
-        "nneram_mrg": "09:15 - 10:15",
-        "nneram_eve": "04:45 - 05:45",
-        "gneram_mrg": "10:45 - 11:45",
-        "gneram_eve": null,
+        "nneram_mrg": "09.15-10.15",
+        "nneram_eve": "04.45-05.45",
+        "gneram_mrg": "10.45-11.45",
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "Y",
         "festival_info": "",
         "thithiimages": "uparrow,theipirai,shasti_holo,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று காலை 06:12 வரை ஆயில்யம் பின்பு மகம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "05:33 AM",
         "sun_set": "07:21 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "10:30 AM - 12:00 PM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "12.00 PM-1.30 PM",
+        "yama": "7.30 AM-9.00 AM",
+        "kuligai": "10.30 AM-12.00 PM"
     },
     "gpanchangamDay": [
         {

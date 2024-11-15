@@ -1,14 +1,63 @@
 'use client'
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import '@/style/CalendarSection.css'
+// import calendarData from '../../public/data/month2025.json'; // Adjust the path as necessary
+import { data } from '@/utils/Data';
 
-import calendarData from '../../public/data/month2025.json'; // Adjust the path as necessary
 import MonthList from './MonthList';
 
 const WeeklyCalendar = () => {
 
+    const { specialDayImages } = data
+
+    const [calendarData, setCalendarData] = useState(null);
+
     const [currentMonthIndex, setCurrentMonthIndex] = useState(0); // Default to the first month
     const [currentWeekIndex, setCurrentWeekIndex] = useState(0); // Default to the first week
+
+    // Get today's date details for initial selection
+    useEffect(() => {
+        if (calendarData) {
+            const today = new Date();
+            const currentMonth = today.getMonth() + 1;
+            const initialMonthIndex = calendarData.cal.findIndex(
+                month => parseInt(month.month) === currentMonth
+            );
+
+            if (initialMonthIndex !== -1) {
+                setCurrentMonthIndex(initialMonthIndex);
+                const weeks = createWeeks(calendarData.cal[initialMonthIndex].days);
+                const initialWeekIndex = weeks.findIndex(week =>
+                    week.some(day => day && day.date === today.getDate())
+                );
+                setCurrentWeekIndex(initialWeekIndex !== -1 ? initialWeekIndex : 0);
+            }
+        }
+    }, [calendarData]);
+
+    useEffect(() => {
+        fetch('/data/month2025.json') // Adjust the path as necessary
+            .then((response) => response.json())
+            .then((data) => {
+                setCalendarData(data); // Store the fetched data in state
+                // Automatically select the current month when the component loads
+                const today = new Date();
+                const currentMonth = today.getMonth() + 1; // Months are zero-indexed, add 1
+                const currentMonthIndex = data.cal.findIndex(
+                    month => parseInt(month.month) === currentMonth
+                );
+                if (currentMonthIndex !== -1) {
+                    setCurrentMonthIndex(currentMonthIndex);
+                }
+            })
+            .catch((error) => {
+                console.error('Error fetching the calendar data:', error);
+            });
+    }, []);
+
+    if (!calendarData) {
+        return <p>Loading...</p>; // Show loading indicator while data is being fetched
+    }
 
     // Helper function to create weeks from days in the month
     const createWeeks = (daysInMonth) => {
@@ -28,8 +77,8 @@ const WeeklyCalendar = () => {
     };
 
     // Get the current month's data and create weeks from it
-    const calendar = calendarData.cal[currentMonthIndex];
-    const weeks = createWeeks(calendar.days);
+    const currentMonthData = calendarData.cal[currentMonthIndex];
+    const weeks = createWeeks(currentMonthData.days);
 
     // Function to handle moving to the previous week
     const handlePrevWeek = () => {
@@ -37,8 +86,10 @@ const WeeklyCalendar = () => {
             setCurrentWeekIndex(currentWeekIndex - 1);
         } else if (currentMonthIndex > 0) {
             // Move to the last week of the previous month
-            setCurrentMonthIndex(currentMonthIndex - 1);
-            setCurrentWeekIndex(createWeeks(calendarData.cal[currentMonthIndex - 1].days).length - 1);
+            const newMonthIndex = currentMonthIndex - 1;
+            const newWeeks = createWeeks(calendarData.cal[newMonthIndex].days);
+            setCurrentMonthIndex(newMonthIndex);
+            setCurrentWeekIndex(newWeeks.length - 1);
         }
     };
 
@@ -58,18 +109,84 @@ const WeeklyCalendar = () => {
     const isNextDisabled = currentMonthIndex === calendarData.cal.length - 1 &&
         currentWeekIndex === weeks.length - 1;
 
-    const specialDayImages = {
-        "அமாவாசை": "/images/1.png",
-        "பௌர்ணமி": "/images/2.png",
-        "ஏகாதசி": "/images/3.png",
-        "சஷ்டி": "/images/4.png",
-        "பிரதோஷம்": "/images/5.png",
-        "சதுர்த்தி": "/images/6.png",
-    };
 
-    const handleMonthChange = (index) => {
-        setCurrentMonthIndex(index);
-    };
+    // const [calendarData, setCalendarData] = useState(null);
+    // const [currentMonthIndex, setCurrentMonthIndex] = useState(0);
+
+    // useEffect(() => {
+    //     fetch('/data/month2025.json') // Adjust the path as necessary
+    //         .then((response) => response.json())
+    //         .then((data) => {
+    //             setCalendarData(data); // Store the fetched data in state
+    //             // Automatically select the current month when the component loads
+    //             const today = new Date();
+    //             const currentMonth = today.getMonth() + 1; // Months are zero-indexed, add 1
+    //             const currentMonthIndex = data.cal.findIndex(
+    //                 month => parseInt(month.month) === currentMonth
+    //             );
+    //             if (currentMonthIndex !== -1) {
+    //                 setCurrentMonthIndex(currentMonthIndex);
+    //             }
+    //         })
+    //         .catch((error) => {
+    //             console.error('Error fetching the calendar data:', error);
+    //         });
+    // }, []);
+
+    // const [currentWeekIndex, setCurrentWeekIndex] = useState(0); // Default to the first week
+
+    // // Helper function to create weeks from days in the month
+    // const createWeeks = (daysInMonth) => {
+    //     const weekDays = calendarData.calendarDays;
+    //     const startDayIndex = weekDays.findIndex(day => day === daysInMonth[0].tamilday);
+    //     const weeks = [];
+    //     let week = new Array(startDayIndex).fill(null); // Fill with `null` for initial empty slots
+
+    //     daysInMonth.forEach((day, index) => {
+    //         week.push(day);
+    //         if (week.length === 7 || index === daysInMonth.length - 1) {
+    //             weeks.push(week);
+    //             week = [];
+    //         }
+    //     });
+    //     return weeks;
+    // };
+
+    // // Get the current month's data and create weeks from it
+    // const calendar = calendarData.cal[currentMonthIndex];
+    // const weeks = createWeeks(calendar.days);
+
+    // // Function to handle moving to the previous week
+    // const handlePrevWeek = () => {
+    //     if (currentWeekIndex > 0) {
+    //         setCurrentWeekIndex(currentWeekIndex - 1);
+    //     } else if (currentMonthIndex > 0) {
+    //         // Move to the last week of the previous month
+    //         setCurrentMonthIndex(currentMonthIndex - 1);
+    //         setCurrentWeekIndex(createWeeks(calendarData.cal[currentMonthIndex - 1].days).length - 1);
+    //     }
+    // };
+
+    // // Function to handle moving to the next week
+    // const handleNextWeek = () => {
+    //     if (currentWeekIndex < weeks.length - 1) {
+    //         setCurrentWeekIndex(currentWeekIndex + 1);
+    //     } else if (currentMonthIndex < calendarData.cal.length - 1) {
+    //         // Move to the first week of the next month
+    //         setCurrentMonthIndex(currentMonthIndex + 1);
+    //         setCurrentWeekIndex(0);
+    //     }
+    // };
+
+    // // Determine if buttons should be disabled
+    // const isPrevDisabled = currentMonthIndex === 0 && currentWeekIndex === 0;
+    // const isNextDisabled = currentMonthIndex === calendarData.cal.length - 1 &&
+    //     currentWeekIndex === weeks.length - 1;
+
+
+    // const handleMonthChange = (index) => {
+    //     setCurrentMonthIndex(index);
+    // };
 
     return (
         <div className='calendar-section my-4 p-3 py-xl-4 px-xl-4'>
@@ -83,10 +200,10 @@ const WeeklyCalendar = () => {
                         </div>
                         <div className="col middle">
                             <div className="title-month">
-                                {calendar.month_name}
+                                {currentMonthData.month_name}
                             </div>
                             <div className="title-desc">
-                                {calendar.month_name_tamil}
+                                {currentMonthData.month_name_tamil}
                             </div>
                             <h6 className="fw-semibold">
                                 வாரம் {currentWeekIndex + 1}
@@ -109,8 +226,9 @@ const WeeklyCalendar = () => {
                                 </div>
                             ))}
                             {weeks[currentWeekIndex].map((day, dayIndex) => (
-                                <div className="day" valign="bottom"
+                                <div  valign="bottom"
                                     key={dayIndex}
+                                    className={`day ${day && day.date === new Date().getDate() ? 'highlight-today' : ''}`}
                                 >
                                     {day ? (
                                         <>

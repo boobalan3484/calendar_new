@@ -8,7 +8,7 @@
         "Parikaram": "பால் ",
         "Namyogam": "இன்று காலை 08:42 வரை விருத்தி பின்பு துருவம்",
         "Amirthathiyogam": "இன்று முழுவதும் சித்தயோகம்",
-        "Nethiram": "இன்று காலை 08.13 வரை இரண்டு கண் பின்பு மாலை 03.34 ",
+        "Nethiram": "இன்று காலை 08.13 வரை இரண்டு கண் பின்பு மாலை 03.34 வரை ஒரு கண் பின்பு இரண்டு கண்",
         "Jeevan": "இன்று முழுவதும் அரை வாழ்க்கை",
         "MainDays": "-",
         "SubDays": "-",
@@ -32,16 +32,20 @@
         "tyear": "குரோதி",
         "tdate": 7,
         "dayAuspicious": null,
-        "nneram_mrg": "09:30 - 10:30",
-        "nneram_eve": "01:30 - 02:30",
-        "gneram_mrg": "10:30 - 11:30",
-        "gneram_eve": null,
+        "nneram_mrg": "09.30-10.30",
+        "nneram_eve": "01.30-02.30",
+        "gneram_mrg": "10.30-11.30",
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "bothside_arrow,theipirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று காலை 09.27 வரை உத்திரட்டாதி பின்பு ரேவதி "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "06:57 AM",
         "sun_set": "06:14 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "10:30 AM - 12:00 PM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "12.00 PM-1.30 PM",
+        "yama": "7.30 AM-9.00 AM",
+        "kuligai": "10.30 AM-12.00 PM"
     },
     "gpanchangamDay": [
         {

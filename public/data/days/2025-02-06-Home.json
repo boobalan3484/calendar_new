@@ -8,7 +8,7 @@
         "Parikaram": "தைலம் ",
         "Namyogam": "இன்று இரவு 08:39 வரை பிராம்யம் பின்பு ஐந்திரம்",
         "Amirthathiyogam": "இன்று காலை 06.35 வரை அமிர்தயோகம் பின்பு மரணயோகம்",
-        "Nethiram": "இன்று காலை 11.49 வரை இரண்டு கண் பின்பு இரவு 09.23 ",
+        "Nethiram": "இன்று காலை 11.49 வரை இரண்டு கண் பின்பு இரவு 09.23 வரை ஒரு கண் பின்பு இரண்டு கண்",
         "Jeevan": "இன்று முழுவதும் அரை வாழ்க்கை",
         "MainDays": "கிருத்திகை, நவமி|இன்று அதிகாலை 03.21 முதல் நாளை அதிகாலை 01.17 வரை",
         "SubDays": "-",
@@ -32,16 +32,20 @@
         "tyear": "குரோதி",
         "tdate": 24,
         "dayAuspicious": null,
-        "nneram_mrg": "12:30 - 01:30",
+        "nneram_mrg": "12.30-01.30",
         "nneram_eve": "-",
         "gneram_mrg": "-",
-        "gneram_eve": null,
+        "gneram_eve": "06.30-07.30",
         "muhurtham": "N",
         "festival_info": "தை கிருத்திகை,",
         "thithiimages": "downarrow,valarpirai,karthigai,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று இரவு 09.53 வரை சித்திரை பின்பு சுவாதி "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "07:07 AM",
         "sun_set": "06:04 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "09:00 AM - 10:30 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "1.30 PM-3.00 PM",
+        "yama": "6.00 AM-7.30 AM",
+        "kuligai": "9.00 AM-10.30 AM"
     },
     "gpanchangamDay": [
         {

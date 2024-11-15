@@ -10,7 +10,7 @@
         "Amirthathiyogam": "இன்று முழுவதும் சித்தயோகம்",
         "Nethiram": "இன்று முழுவதும் ஒரு கண் ",
         "Jeevan": "இன்று முழுவதும் அரை வாழ்க்கை",
-        "MainDays": "நவமி(நேற்று இரவு 11.46 முதல் நாளை அதிகாலை 01.21 வரை ",
+        "MainDays": "நவமி(நேற்று இரவு 11.46 முதல் நாளை அதிகாலை 01.21 வரை)",
         "SubDays": "அட்வண்ட் முதல் ஞாயிறு, படிவளர்ச்சி தினம் ",
         "DayDetails": "தேய்பிறை கீழ் நோக்கு நாள்",
         "Pirai": "தேய்பிறை"
@@ -32,10 +32,10 @@
         "tyear": "குரோதி",
         "tdate": 9,
         "dayAuspicious": null,
-        "nneram_mrg": "06:00 - 07:00",
-        "nneram_eve": "03:15 - 04:15",
-        "gneram_mrg": "10:45 - 11:45",
-        "gneram_eve": null,
+        "nneram_mrg": "06.00-07.00",
+        "nneram_eve": "03.15-04.15",
+        "gneram_mrg": "10.45-11.45",
+        "gneram_eve": "01.30-02.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "downarrow,theipirai,,,"
@@ -49,7 +49,7 @@
     },
     "chandrastamam": [
         {
-            "details": "இன்று, காலை 12.17, வரை, உத்திராடம், பின்பு, திருவோணம்"
+            "details": "இன்று முழுவதும் திருவோணம் "
         }
     ],
     "sunmoon": {
@@ -115,6 +115,11 @@
         "yama_e": "12:00 PM - 01:30 PM",
         "kuligai_m": "",
         "kuligai_e": "03:00 PM - 04:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "4.30 PM-6.00 PM",
+        "yama": "12.00 PM-1.30 PM",
+        "kuligai": "3.00 PM-4.30 PM"
     },
     "gpanchangamDay": [
         {

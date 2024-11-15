@@ -6,7 +6,7 @@
         "KaranamDetails": "இன்று காலை 10.35 வரை பத்திரை பின்பு இரவு 09.37 வரை பலம் பின்பு பாலவம்",
         "Sulam": "வடக்கு",
         "Parikaram": "பால் ",
-        "Namyogam": "இன்று அதிகாலை 12:10 வரை அதிகண்டம் பின்பு இரவு 09:41 வரை சுகர்மம் பின்பு",
+        "Namyogam": "இன்று அதிகாலை 12:10 வரை அதிகண்டம் பின்பு இரவு 09:41 வரை சுகர்மம் பின்பு திருதி ",
         "Amirthathiyogam": "இன்று பிற்பகல் 02.20 வரை மரணயோகம் பின்பு அமிர்தயோகம்",
         "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
         "Jeevan": "இன்று முழுவதும் முழுவாழ்க்கை",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 27,
         "dayAuspicious": null,
-        "nneram_mrg": "07:45 - 08:45",
-        "nneram_eve": "04:45 - 05:45",
-        "gneram_mrg": "10:45 - 11:45",
-        "gneram_eve": null,
+        "nneram_mrg": "07.45-08.45",
+        "nneram_eve": "04.45-05.45",
+        "gneram_mrg": "10.45-11.45",
+        "gneram_eve": "07.30-08.30",
         "muhurtham": "N",
         "festival_info": "மஹா சங்கடஹர சதுர்த்தி,",
         "thithiimages": "downarrow,theipirai,sankataharachaturti,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று பிற்பகல் 02.20 வரை ஆயில்யம் பின்பு மகம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "05:48 AM",
         "sun_set": "07:04 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "",
         "kuligai_e": "12:00 PM - 01:30 PM"
+    },
+    "inaspiciousDay": {
+        "ragu": "3.00 PM-4.30 PM",
+        "yama": "9.00 AM-10.30 AM",
+        "kuligai": "12.00 PM-1.30 PM"
     },
     "gpanchangamDay": [
         {

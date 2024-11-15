@@ -9,7 +9,7 @@
         "Namyogam": "இன்று மாலை 06.58 வரை திருதி பின்பு சூலம்",
         "Amirthathiyogam": "இன்று காலை 06.03 வரை அமிர்தயோகம் பின்பு பிற்பகல் 01.06 வரை சித்தயோகம் பின்பு மரணயோகம்",
         "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
-        "Jeevan": "இன்று பிற்பகல் 12.40 வரை முழுவாழ்க்கை பின்பு உயிரற",
+        "Jeevan": "இன்று பிற்பகல் 12.40 வரை முழுவாழ்க்கை பின்பு உயிரற்றவை",
         "MainDays": "-",
         "SubDays": "சர்வதேச இடது கைப்பழக்கம் உடையோர் தினம், சர்வதேச உடல் உறுப்பு தான தினம்",
         "DayDetails": "தேய்பிறை மேல் நோக்கு நாள்",
@@ -32,16 +32,20 @@
         "tyear": "விசுவாசுவ",
         "tdate": 28,
         "dayAuspicious": null,
-        "nneram_mrg": "09:15 - 10:15",
-        "nneram_eve": "04:45 - 05:45",
-        "gneram_mrg": "10:45 - 11:45",
-        "gneram_eve": null,
+        "nneram_mrg": "09.15-10.15",
+        "nneram_eve": "04.45-05.45",
+        "gneram_mrg": "10.45-11.45",
+        "gneram_eve": "07.30-08.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "uparrow,theipirai,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": "இன்று பிற்பகல் 01.06 வரை மகம் பின்பு பூரம் "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "05:49 AM",
         "sun_set": "07:03 PM",
@@ -105,6 +109,11 @@
         "yama_e": "",
         "kuligai_m": "10:30 AM - 12:00 PM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "12.00 PM-1.30 PM",
+        "yama": "7.30 AM-9.00 AM",
+        "kuligai": "10.30 AM-12.00 PM"
     },
     "gpanchangamDay": [
         {

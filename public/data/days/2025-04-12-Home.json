@@ -7,7 +7,7 @@
         "Sulam": "கிழக்கு ",
         "Parikaram": "தயிர் ",
         "Namyogam": "இன்று இரவு 08:05 வரை வ்யாகாதம் பின்பு ஹர்ஷணம்",
-        "Amirthathiyogam": "இன்று காலை 06.00 வரை அமிர்தயோகம் பின்பு மரணயோகம்",
+        "Amirthathiyogam": "இன்று காலை 06.04 வரை அமிர்தயோகம் பின்பு மரணயோகம்",
         "Nethiram": "இன்று முழுவதும் இரண்டு கண்",
         "Jeevan": "இன்று முழுவதும் முழுவாழ்க்கை",
         "MainDays": "கிரிவலம், பெளர்ணமி(இன்று அதிகாலை 04.13 முதல் நாளை காலை 06.03 வரை)",
@@ -32,16 +32,20 @@
         "tyear": "குரோதி",
         "tdate": 29,
         "dayAuspicious": null,
-        "nneram_mrg": "07:30 - 08:30",
-        "nneram_eve": "04:30 - 05:30",
-        "gneram_mrg": "10:30 - 11:30",
-        "gneram_eve": null,
+        "nneram_mrg": "07.30-08.30",
+        "nneram_eve": "04.30-05.30",
+        "gneram_mrg": "10.30-11.30",
+        "gneram_eve": "09.30-10.30",
         "muhurtham": "N",
         "festival_info": "",
         "thithiimages": "bothside_arrow,fullmoon,,,"
     },
     "chandrastamamRasi": [],
-    "chandrastamam": [],
+    "chandrastamam": [
+        {
+            "details": " இன்று மாலை 06.31 வரை சதயம் பின்பு பூரட்டாதி "
+        }
+    ],
     "sunmoon": {
         "sun_rise": "06:00 AM",
         "sun_set": "06:45 PM",
@@ -105,6 +109,11 @@
         "yama_e": "01:30 PM - 03:00 PM",
         "kuligai_m": "06:00 AM - 07:30 AM",
         "kuligai_e": ""
+    },
+    "inaspiciousDay": {
+        "ragu": "9.00 AM-10.30 AM",
+        "yama": "1.30 PM-3.00 PM",
+        "kuligai": "6.00 AM-7.30 AM"
     },
     "gpanchangamDay": [
         {

@@ -4,13 +4,14 @@ import "@/style/dayPageStyle.css";
 import "@/style/pagenationStyle.css";
 import PlayStoreBanner from './PlayStoreBanner';
 import DayCard from './DayCard';
+import Spinner from '../../public/icon/Spinner';
 
 const DayCalendar = () => {
 
     const [currentDate, setCurrentDate] = useState(new Date());
     const [dayData, setDayData] = useState(null);
     const [loading, setLoading] = useState(false);
-    
+
     const [isThithi, setIsThithi] = useState([])
     // const [isFestival, setIsFestival] = useState('')
     // const [isAuspicious, setIsAuspicious] = useState('')
@@ -22,6 +23,13 @@ const DayCalendar = () => {
     //     return filteredParts.join(' | ');
     // };
 
+    const transformImages = (items) => {
+        const imagesArray = items.split(',')
+            .map(imageName => imageName.trim())
+            .filter(imageName => imageName !== '');
+        return imagesArray
+    }
+    
     useEffect(() => {
         async function fetchDayData(date) {
             setLoading(true);
@@ -53,6 +61,10 @@ const DayCalendar = () => {
         fetchDayData(currentDate);
     }, [currentDate]);
 
+    if (!dayData) {
+        return <div className='w-100 d-flex justify-content-center align-items-center' style={{ height: '80vh' }}> <Spinner /> </div>; // Show loading indicator while data is being fetched
+    }
+
     const handleNextDay = () => {
         setCurrentDate((prevDate) => {
             const nextDate = new Date(prevDate);
@@ -76,12 +88,7 @@ const DayCalendar = () => {
         return `${day}-${month}-${year}`;
     }
 
-    const transformImages = (items) => {
-        const imagesArray = items.split(',')
-            .map(imageName => imageName.trim())
-            .filter(imageName => imageName !== '');
-        return imagesArray
-    }
+
 
     return (
         <>
@@ -331,7 +338,9 @@ const DayCalendar = () => {
                         //     </div>
                         // </div>
                     )}
-                    <PlayStoreBanner />
+                    <div className='col-12 col-lg-2 bg-white shadow-sm rounded text-dark'>
+                        <PlayStoreBanner />
+                    </div>
                 </div>
 
 

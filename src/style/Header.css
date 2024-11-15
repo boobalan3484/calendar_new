@@ -46,6 +46,9 @@
     color: #e92227;
 }
 
+.share.calandar-icons a:active {
+    color: #e92227;
+}
 /* .share.calandar-icons a:hover span{
     position: absolute;
     display: flex;

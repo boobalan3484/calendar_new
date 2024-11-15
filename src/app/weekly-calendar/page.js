@@ -13,7 +13,7 @@ const page = () => {
   return (
     <div>
       <Header />
-      <main className={`d-flex h-100 justify-content-center align-items-center my-2`}>
+      <main className={`d-flex h-100 justify-content-center align-items-center my-5`}>
         <div className='container-xl'>
           <WeeklyCalendar />
         </div>

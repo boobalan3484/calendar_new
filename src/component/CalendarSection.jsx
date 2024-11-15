@@ -5,6 +5,7 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6';
 import PlayStoreBanner from './PlayStoreBanner';
 import { data } from '@/utils/Data';
 import DayModal from './DayModal';
+import Spinner from '../../public/icon/Spinner';
 
 const CalendarSection = () => {
     const { specialDayImages } = data
@@ -36,7 +37,7 @@ const CalendarSection = () => {
     }, []);
 
     if (!calendarData) {
-        return <p>Loading...</p>; // Show loading indicator while data is being fetched
+        return <div className='w-100 d-flex justify-content-center align-items-center' style={{ height: '80vh' }}> <Spinner /> </div>; // Show loading indicator while data is being fetched
     }
 
     const calendar = calendarData.cal[currentMonthIndex];
@@ -200,7 +201,10 @@ const CalendarSection = () => {
                     handleClose={handleClose}
                 />
             </div>
+        <div className='col-12 col-lg-2 bg-white shadow-sm rounded text-dark'>
+
             <PlayStoreBanner />
+            </div>
         </div>
     );
 };

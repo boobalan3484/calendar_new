@@ -46,6 +46,7 @@ export const data = {
         "சதுர்த்தி": "/images/special_days/6.png",
     },
 
+    weekDays: ['ஞாயிறு', 'திங்கள்', 'செவ்வாய்', 'புதன்', 'வியாழன்', 'வெள்ளி', 'சனி']
     // muhurtham_img : 'https://www.omtamilcalendar.com/auspicious_icons/subamuhurtham.png',
     // muhurtham_img : '/images/thithi_images/subamuhurtham.svg'
     // data : ['thiruvonam' ,'pradosham', 'pradosham_holo', 'ekadasi', 'shivaratri', 'chaturthi', 'sankataharachaturti', 'shashti', 'shashti_hole', 'karthigai']

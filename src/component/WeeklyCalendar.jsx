@@ -6,7 +6,6 @@ import { data } from '@/utils/Data';
 import DayModal from '@/component/DayModal';
 import PlayStoreBanner from '@/component/PlayStoreBanner';
 import Spinner from '../../public/icon/Spinner';
-// import InfinitySVG from '../../public/icon/Infinity';
 
 const WeeklyCalendar = () => {
 
@@ -54,11 +53,7 @@ const WeeklyCalendar = () => {
             fetch(fileName)
                 .then((response) => response.json())
                 .then((monthData) => {
-                    // console.log('Fetched month data:', monthData);
-                    // Optionally store the month data in state here
-
                     setViradhamData(monthData.viradhamDays)
-
                 })
                 .catch((error) => {
                     console.error('Error fetching the specific month data:', error);
@@ -105,17 +100,21 @@ const WeeklyCalendar = () => {
         }
     }, [calendarData, currentMonthIndex]); // Trigger fetch when both states change
 
-
     if (!calendarData) {
         return <div className='w-100 d-flex justify-content-center align-items-center' style={{ height: '80vh' }}>
             <Spinner />
-            {/* <InfinitySVG /> */}
         </div>; // Show loading indicator while data is being fetched
     }
 
     const currentMonthData = calendarData.cal[currentMonthIndex];
     const weeks = createWeeks(currentMonthData.days);
     const currentWeek = weeks[currentWeekIndex] || [];
+
+    console.log('currentMonthData', currentMonthData);
+    console.log('weeks', weeks);
+    console.log('currentWeek', currentWeek);
+
+
 
     const handleDateClick = (formattedDate, humanFormattedDate) => {
         setSelectedDate(formattedDate);
@@ -155,6 +154,13 @@ const WeeklyCalendar = () => {
     const isPrevDisabled = currentMonthIndex === 0 && currentWeekIndex === 0;
     const isNextDisabled = currentMonthIndex === calendarData.cal.length - 1 &&
         currentWeekIndex === weeks.length - 1;
+
+    const currentWeekDays = currentWeek.map(day => day ? day.date : null); // Extract day numbers of the current week
+    console.log('currentWeekDays', currentWeekDays);
+
+    const filteredViradhamData = viradhamData.filter(item =>
+        currentWeekDays.includes(item.day_no.toString()) // Check if day_no matches any of the current week days
+    );
 
     return (
         <div className='d-flex flex-column flex-xl-row gap-2 justify-content-between'>
@@ -270,7 +276,7 @@ const WeeklyCalendar = () => {
                     </div>
                     <div className='special-days mt-3'>
                         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4">
-                            {viradhamData.map((item, idx) => (
+                            {filteredViradhamData.map((item, idx) => (
                                 <div className="col d-flex align-items-center gap-2" key={idx}>
                                     <div className='rounded-circle bg-secondary-subtle d-flex justify-content-center align-items-center my-2' style={{ width: '30px', height: '30px' }}>
                                         <p className='text-dark fw-bold' style={{ fontSize: '12px' }} >{item.day_no}</p>

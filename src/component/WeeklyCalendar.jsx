@@ -164,8 +164,8 @@ const WeeklyCalendar = () => {
         currentWeekIndex === weeks.length - 1;
 
     return (
-        <div className='d-flex flex-column flex-lg-row gap-2 justify-content-between'>
-            <div className='col-12 col-lg-9 calendar-section pt-2 pb-xl-3 px-xl-3 mx-0 '>
+        <div className='d-flex flex-column flex-xl-row gap-2 justify-content-between'>
+            <div className='col-12 col-xl-9 calendar-section pt-2 pb-xl-3 px-xl-3 mx-0 '>
                 <div className="p-2 p-md-3 pb-xl-3 px-xl-3">
                     <div>
                         <div className="row align-items-center justify-content-center calendar-header pb-2 position-relative">
@@ -268,7 +268,7 @@ const WeeklyCalendar = () => {
                     handleClose={handleClose}
                 />
             </div>
-            <div className='col-12 col-lg-3 bg-white shadow-sm rounded text-dark'>
+            <div className='col-12 col-xl-3 bg-white shadow-sm rounded text-dark'>
                 <PlayStoreBanner />
             </div>
         </div>

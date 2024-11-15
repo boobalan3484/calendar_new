@@ -88,8 +88,6 @@ const DayCalendar = () => {
         return `${day}-${month}-${year}`;
     }
 
-
-
     return (
         <>
             <div className="container-xl position-relative">

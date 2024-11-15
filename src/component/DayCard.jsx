@@ -3,6 +3,8 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
 import { LuAlarmClock } from 'react-icons/lu'
 import { data } from '@/utils/Data.js'
 import Reusable from './Reusable'
+import Sticky from './Sticky'
+import '@/style/Sticky.css'
 
 const DayCard = ({ formatDate, dayData, isThithi, handlePreviousDay, handleNextDay }) => {
 
@@ -10,13 +12,23 @@ const DayCard = ({ formatDate, dayData, isThithi, handlePreviousDay, handleNextD
 
     return (
         <div className={` ${Reusable({ one: 'col col-lg-10', two: 'col-12', three: 'col-12 mx-0' })} row main-section p-3`}>
-            <div className="mb-0 mb-lg-3 col-12 ps-0 pe-3 col-lg-5 d-flex flex-column justify-content-between align-items-center position-relative">
+            <div className="mb-0 mb-lg-3 col-12 ps-0 pe-0 pe-lg-3 col-lg-5 d-flex flex-column justify-content-between align-items-center position-relative">
                 {/* Date Container section */}
-                <div className="date-container mb-0 mb-lg-3">
-                    <h1 className="text-center fs-1">{formatDate}</h1>
-                    <h6 className="text-center">
-                        <span>{dayData.homedates.tamilWeekDay}</span> <span>{dayData.homedates.tamilYear}</span> - <span>{dayData.homedates.tamilMonth}</span><span>{dayData.homedates.tamilDate}</span>
-                    </h6>
+                <div className="date-container date-day-section mb-0 mb-lg-3 w-100">
+                    <div className='date-day-wrapper text-center rounded-top w-100 py-1 text-dark d-flex flex-column justify-content-center align-items-center gap-1'>
+                        <h1 className="text-center fs-1 text-dark">{formatDate}</h1>
+                        <h5 className='fw-semibold'>{dayData.homedates.tamilWeekDay}</h5>
+                    </div>
+
+                    <div className='date-day-tamil-wrapper text-white d-flex align-items-center justify-content-between px-3 rounded-bottom'>
+                        <h5 className='fw-bold fs-6'> {dayData.homedates.tamilYear} </h5>
+                        <h5 className='bg-white text-danger fs-5 p-1 px-2 m-1 rounded fw-bold'> {dayData.homedates.tamilDate}</h5>
+                        <h5 className='fw-bold fs-6'> {dayData.homedates.tamilMonth} </h5>
+                    </div>
+
+                    {/* <h6 className="text-center">
+                        <span>{dayData.homedates.tamilYear}</span> - <span>{dayData.homedates.tamilMonth}</span><span>{dayData.homedates.tamilDate}</span>
+                    </h6> */}
                     {/* {dayData.dailyInfo.MainDays} */}
                     {/* <div className='text-center'>
                         {specialDayImages[dayData?.panchangamInfo?.thithiimages] && (
@@ -225,34 +237,34 @@ const DayCard = ({ formatDate, dayData, isThithi, handlePreviousDay, handleNextD
                     </div>
                 </div>
 
-                
+
             </div>
 
             <div className="star-cards w-100 d-flex d-lg-none order-2 flex-column px-0 my-2">
-                    <h5 className='fw-bold'>சந்திராஷ்டமம்</h5>
-                    <div className="calender-time-desc p-2 d-flex flex-column flex-sm-row">
-                        <div className='col'>
-                            <div className='text-center'><b>ராசி</b></div>
-                            <div className='d-flex flex-column  justify-content-center align-items-center'>
-                                <p className='text-center fw-semibold'>{dayData.chandrastamamRasi.rashi_name}</p>
-                                <time className='d-flex gap-2'>
-                                    {dayData.chandrastamamRasi.start_date && <p className='text-start'>{dayData.chandrastamamRasi.start_date}</p>}
-                                    - {dayData.chandrastamamRasi.start_time && <p className='text-start'>{dayData.chandrastamamRasi.start_date}</p>}
-                                </time>
-                                {/* - */}
-                                <time className='d-flex gap-2'>
-                                    {dayData.chandrastamamRasi.end_date && <p className='text-start'>{dayData.chandrastamamRasi.end_date}</p>}
-                                    - {dayData.chandrastamamRasi.end_time && <p className='text-start'>{dayData.chandrastamamRasi.end_time}</p>}
-                                </time>
-                            </div>
-                        </div>
-                        <hr />
-                        <div className='col'>
-                            <div className='text-center'><b>நட்சத்திரம்</b></div>
-                            <div className='my-3'>{dayData.chandrastamam.map((detail, idx) => (<p key={idx} className='d-flex flex-wrap'>{detail.details}</p>))}</div>
+                <h5 className='fw-bold'>சந்திராஷ்டமம்</h5>
+                <div className="calender-time-desc p-2 d-flex flex-column flex-sm-row">
+                    <div className='col'>
+                        <div className='text-center'><b>ராசி</b></div>
+                        <div className='d-flex flex-column  justify-content-center align-items-center'>
+                            <p className='text-center fw-semibold'>{dayData.chandrastamamRasi.rashi_name}</p>
+                            <time className='d-flex gap-2'>
+                                {dayData.chandrastamamRasi.start_date && <p className='text-start'>{dayData.chandrastamamRasi.start_date}</p>}
+                                - {dayData.chandrastamamRasi.start_time && <p className='text-start'>{dayData.chandrastamamRasi.start_date}</p>}
+                            </time>
+                            {/* - */}
+                            <time className='d-flex gap-2'>
+                                {dayData.chandrastamamRasi.end_date && <p className='text-start'>{dayData.chandrastamamRasi.end_date}</p>}
+                                - {dayData.chandrastamamRasi.end_time && <p className='text-start'>{dayData.chandrastamamRasi.end_time}</p>}
+                            </time>
                         </div>
                     </div>
+                    <hr />
+                    <div className='col'>
+                        <div className='text-center'><b>நட்சத்திரம்</b></div>
+                        <div className='my-3'>{dayData.chandrastamam.map((detail, idx) => (<p key={idx} className='d-flex flex-wrap'>{detail.details}</p>))}</div>
+                    </div>
                 </div>
+            </div>
         </div>
     )
 }

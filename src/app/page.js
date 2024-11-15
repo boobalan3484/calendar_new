@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <main className={`d-flex h-100 justify-content-center align-items-center my-4 `}>
+      <main className={`d-flex h-100 justify-content-center align-items-center my-3 `}>
         <div className='container-xl'>
           <DayCalendar />
         </div>

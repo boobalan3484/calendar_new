@@ -268,6 +268,9 @@ tr {
     display: block;
     color: rgba(0, 0, 0, .51);
     font-size: 11px;
+    position: absolute;
+    top:2%;
+    left: 2%;
 }
 
 .top-position {
@@ -286,9 +289,9 @@ tr {
     /* justify-content: space-between; */
     /* align-items: center; */
 
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    /* display: flex; */
+    /* align-items: baseline; */
+    /* justify-content: space-between; */
 }
 
 .tamil_date {
@@ -297,16 +300,25 @@ tr {
     /* font-size: 24px; */
     /* font-size: clamp(0.75rem, -0.1875rem + 3vw, 1.5rem); */
     font-size: clamp(0.5rem, -0.75rem + 4vw, 1.5rem);
+    position: absolute;
+    top: 0%;
+    right: 2%;
 }
 
 .special-event-img {
-    height: 30px;
+    height: 26px;
+}
+
+.special-event-img {
+   position: absolute;
+   bottom: 2%;
+   left: 2%;
 }
 
 .special-event-img img {
-    width: 30px;
+    width: 26px;
     /* height: 30px; */
-    margin: 0 4px;
+    /* margin: 0 4px; */
     /* padding-top: 6px; */
     /* padding-bottom: 6px; */
 }

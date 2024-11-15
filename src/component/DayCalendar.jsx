@@ -5,6 +5,7 @@ import "@/style/pagenationStyle.css";
 import PlayStoreBanner from './PlayStoreBanner';
 import DayCard from './DayCard';
 import Spinner from '../../public/icon/Spinner';
+import InfinitySVG from '../../public/icon/Infinity';
 
 const DayCalendar = () => {
 
@@ -62,7 +63,10 @@ const DayCalendar = () => {
     }, [currentDate]);
 
     if (!dayData) {
-        return <div className='w-100 d-flex justify-content-center align-items-center' style={{ height: '80vh' }}> <Spinner /> </div>; // Show loading indicator while data is being fetched
+        return <div className='w-100 d-flex justify-content-center align-items-center' style={{ height: '80vh' }}> 
+        <Spinner /> 
+        {/* <InfinitySVG /> */}
+        </div>; // Show loading indicator while data is being fetched
     }
 
     const handleNextDay = () => {
@@ -91,7 +95,6 @@ const DayCalendar = () => {
     return (
         <>
             <div className="container-xl position-relative">
-
                 <div className='row justify-content-center gap-4'>
                     {dayData && (
                         <DayCard
@@ -107,13 +110,7 @@ const DayCalendar = () => {
                         <PlayStoreBanner />
                     </div>
                 </div>
-
-
             </div >
-
-            <div>
-
-            </div>
         </>
     )
 }

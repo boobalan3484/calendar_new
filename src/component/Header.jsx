@@ -14,7 +14,9 @@ const Header = () => {
         <header className='header p-0'>
             <div className='container header-wrapper px-2 px-lg-3 py-1'>
                 <div className="logo">
-                    <img src="/images/Makkal_Naalkaati_Logo.png" alt="" />
+                    <Link href='/'>
+                        <img src="/images/Makkal_Naalkaati_Logo.png" alt="" />
+                    </Link>
                 </div>
                 <div className="brand d-none d-lg-block" style={{ width: '300px' }}>
                     <img src="/images/Makkal_Naalkaati_Logo1.png" alt="" />

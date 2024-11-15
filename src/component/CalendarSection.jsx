@@ -6,27 +6,60 @@ import PlayStoreBanner from './PlayStoreBanner';
 import { data } from '@/utils/Data';
 import DayModal from './DayModal';
 import Spinner from '../../public/icon/Spinner';
+// import InfinitySVG from '../../public/icon/Infinity';
 
 const CalendarSection = () => {
-    const { specialDayImages } = data
+    const { specialDayImages, month_list } = data
     const [calendarData, setCalendarData] = useState(null);
     const [currentMonthIndex, setCurrentMonthIndex] = useState(0);
 
     const [showModal, setShowModal] = useState(false);
-    const [selectedDate, setSelectedDate] = useState('2024-11-14');
+    const [selectedDate, setSelectedDate] = useState('2024-11-01');
     const [humanFormatDate, setHumanFormatDate] = useState('');
 
+    const [viradhamData, setViradhamData] = useState([]);
+
+    const fetchMonthData = (monthIndex) => {
+        if (monthIndex !== -1 && calendarData) {
+            const selectedMonth = calendarData.cal[monthIndex].month; // Get month number (e.g., "11")
+            const selectedMonthName = calendarData.cal[monthIndex].month_name; // Get full month name
+            const selectedYear = selectedMonthName.split(' ')[1]; // Extract year (e.g., "2024")
+
+            // Construct the file name based on the month and year
+            const fileName = `/data/month_special_days/month-data-${month_list[parseInt(selectedMonth)]}-${selectedYear}.json`;
+            console.log('Fetching month data from:', fileName);
+
+            fetch(fileName)
+                .then((response) => response.json())
+                .then((monthData) => {
+                    // console.log('Fetched month data:', monthData);
+                    // Optionally store the month data in state here
+
+                    setViradhamData(monthData.viradhamDays)
+
+                })
+                .catch((error) => {
+                    console.error('Error fetching the specific month data:', error);
+                });
+        }
+    };
+
     useEffect(() => {
-        fetch('/data/month2025.json') // Adjust the path as necessary
+        // First fetch the `month2025.json` file
+        fetch('/data/month2025.json')
             .then((response) => response.json())
             .then((data) => {
-                setCalendarData(data); // Store the fetched data in state
-                // Automatically select the current month when the component loads
+                // Set calendarData state
+                setCalendarData(data);
+
+                // Get today's date details
                 const today = new Date();
-                const currentMonth = today.getMonth() + 1; // Months are zero-indexed, add 1
+                const currentMonth = today.getMonth() + 1; // Get current month (1-indexed)
                 const currentMonthIndex = data.cal.findIndex(
                     month => parseInt(month.month) === currentMonth
                 );
+
+                // Update the currentMonthIndex state
                 if (currentMonthIndex !== -1) {
                     setCurrentMonthIndex(currentMonthIndex);
                 }
@@ -34,10 +67,22 @@ const CalendarSection = () => {
             .catch((error) => {
                 console.error('Error fetching the calendar data:', error);
             });
-    }, []);
+    }, []); // Only run once on component mount
 
+    useEffect(() => {
+        // Only fetch month data when calendarData is loaded and currentMonthIndex is available
+        if (calendarData && currentMonthIndex !== null) {
+            fetchMonthData(currentMonthIndex);
+        }
+    }, [calendarData, currentMonthIndex]); // Trigger fetch when both states change
+
+
+    // =============================
     if (!calendarData) {
-        return <div className='w-100 d-flex justify-content-center align-items-center' style={{ height: '80vh' }}> <Spinner /> </div>; // Show loading indicator while data is being fetched
+        return <div className='w-100 d-flex justify-content-center align-items-center' style={{ height: '80vh' }}>
+            <Spinner />
+            {/* <InfinitySVG /> */}
+        </div>; // Show loading indicator while data is being fetched
     }
 
     const calendar = calendarData.cal[currentMonthIndex];
@@ -51,6 +96,7 @@ const CalendarSection = () => {
     const today = new Date();
     const currentDate = today.getDate();
     const currentMonth = today.getMonth() + 1;
+    const currentYear = today.getFullYear();
 
     // Organize the days into weeks
     const weeks = [];
@@ -79,13 +125,14 @@ const CalendarSection = () => {
     const handleDateClick = (formattedDate, humanFormattedDate) => {
         setSelectedDate(formattedDate);
         setHumanFormatDate(humanFormattedDate);
-         // Store the formatted date in state
+        // Store the formatted date in state
         setShowModal(true); // Open the modal
     };
 
     const handleClose = () => {
         setShowModal(false);
     };
+
 
     return (
         <div className='d-flex flex-column flex-lg-row gap-2 justify-content-between'>
@@ -133,7 +180,7 @@ const CalendarSection = () => {
                                 <div key={index}
                                     style={{ fontWeight: 'bold', textAlign: 'center', backgroundColor: '#929292', color: '#fff' }}
                                     className={`week-day d-flex d-md-none justify-content-center align-items-center ${day === 'ஞாயிறு' ? 'sunday' : ''}`}>
-                                    {day.slice(0,2) + '.'}
+                                    {day.slice(0, 2) + '.'}
                                 </div>
                             ))}
                             {weeks.map((week, weekIndex) => (
@@ -157,38 +204,38 @@ const CalendarSection = () => {
                                         >
                                             {day ? (
                                                 <>
-                                                    <span className="tamil_month position-relative">{day.tamilmonth}</span>
+                                                    <span className="tamil_month">{day.tamilmonth}</span>
+                                                    <span className="tamil_date">{day.tamil_date}</span>
                                                     {day.special_day && day.special_day.length > 0 && (
                                                         <>
                                                             {day.special_day.map((special, idx) => (
-                                                                <span className="d-none d-md-flex d-lg-none special-event-img position-absolute end-0 top-0" key={idx}>
+                                                                <span className="special-event-img d-none d-lg-flex" key={idx}>
                                                                     {specialDayImages[special.name] && (
-                                                                        <img src={specialDayImages[special.name]} alt={special.name} />)
-                                                                    }
+                                                                        <img src={specialDayImages[special.name]} alt={special.name} />
+                                                                    )}
                                                                 </span>
                                                             ))}
                                                         </>
                                                     )}
-                                                    <div className="date-grid"
-                                                    >
-                                                        <span className="tamil_date">{day.tamil_date}</span>
-                                                        {day.special_day && day.special_day.length > 0 && (
-                                                            <>
-                                                                {day.special_day.map((special, idx) => (
-                                                                    <span className="special-event-img d-none d-lg-flex position-relative" key={idx}>
-                                                                        {specialDayImages[special.name] && (
-                                                                            <img src={specialDayImages[special.name]} alt={special.name} />
-                                                                        )}
-                                                                    </span>
-                                                                ))}
-                                                            </>
-                                                        )}
-                                                        <span className={`english_date ${day?.tamilday === 'ஞாயிறு' ? 'sunday' : ''}`}>{day.date}</span>
-                                                    </div>
+                                                    <span className={`english_date d-flex justify-content-center w-100 align-items-baseline ${day?.tamilday === 'ஞாயிறு' ? 'sunday' : ''}`}>{day.date}</span>
                                                 </>
                                             ) : null}
                                         </div>
                                     ))}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className='special-days mt-3'>
+                        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+                            {viradhamData.map((item, idx) => (
+                                <div className="col d-flex align-items-center gap-2" key={idx}>
+                                    <div className='rounded-circle bg-secondary-subtle d-flex justify-content-center align-items-center my-2' style={{width:'30px', height:'30px'}}>
+                                        <p className='text-dark fw-bold' style={{fontSize:'12px'}} >{item.day_no}</p>
+                                    </div>
+                                    <div className='my-2'>
+                                        <p style={{fontSize:'12px'}} className='fw-bold text-start'>{item.day_name}</p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -201,9 +248,8 @@ const CalendarSection = () => {
                     handleClose={handleClose}
                 />
             </div>
-        <div className='col-12 col-lg-2 bg-white shadow-sm rounded text-dark'>
-
-            <PlayStoreBanner />
+            <div className='col-12 col-lg-2 bg-white shadow-sm rounded text-dark'>
+                <PlayStoreBanner />
             </div>
         </div>
     );

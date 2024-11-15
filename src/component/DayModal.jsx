@@ -50,7 +50,7 @@ const DayModal = ({ showModal, selectedDate,humanFormatDate, handleClose }) => {
     return (
         <Modal show={showModal} onHide={handleClose} className='day_modal' centered>
             <Modal.Header closeButton>
-                <Modal.Title className='fs-5 fw-bold'>இன்றைய நாள்</Modal.Title>
+                <Modal.Title className='fs-5 fw-bold'>நாளின் விவரங்கள்</Modal.Title>
             </Modal.Header>
             <Modal.Body>
                 <DayCard

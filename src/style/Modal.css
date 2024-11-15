@@ -1,9 +1,10 @@
 .day_modal .modal-dialog {
     max-width: 80% !important;
+    margin: auto
 }
 
-@media (max-width:576) {
+@media only screen and (max-width: 576px) {
     .day_modal .modal-dialog {
-        max-width: 100% !important;
+        max-width: 90% !important;
     }
 }

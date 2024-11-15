@@ -36,7 +36,6 @@ const WeeklyCalendar = () => {
         return weeks;
     };
 
-
     useEffect(() => {
         fetch('/data/month2025.json')
             .then((response) => response.json())
@@ -63,31 +62,6 @@ const WeeklyCalendar = () => {
                         setCurrentWeekIndex(0); // Fallback if the current date is not found
                     }
                 }
-
-                // const currentMonthIndex = data.cal.findIndex(
-                //     month => parseInt(month.month) === currentMonth
-                // );
-
-                // if (currentMonthIndex !== -1) {
-                //     const month = data.cal[currentMonthIndex];
-                //     const weekIndex = Math.floor(
-                //         month.days.findIndex(day => parseInt(day.date) === currentDate) / 7
-                //     );
-                //     setCurrentWeekIndex(weekIndex);
-                // }
-
-                // const initialMonthIndex = data.cal.findIndex(
-                //     month => parseInt(month.month) === currentMonth
-                // );
-
-                // if (initialMonthIndex !== -1) {
-                //     setCurrentMonthIndex(initialMonthIndex);
-                //     const weeks = createWeeks(data.cal[initialMonthIndex].days);
-                //     const initialWeekIndex = weeks.findIndex(week =>
-                //         week.some(day => day && day.date === currentDate)
-                //     );
-                //     setCurrentWeekIndex(initialWeekIndex !== -1 ? initialWeekIndex : 0);
-                // }
             })
             .catch((error) => {
                 console.error('Error fetching the calendar data:', error);
@@ -99,30 +73,8 @@ const WeeklyCalendar = () => {
     }
 
     const currentMonthData = calendarData.cal[currentMonthIndex];
-    // const weekDays = calendarData.calendarDays;
     const weeks = createWeeks(currentMonthData.days);
     const currentWeek = weeks[currentWeekIndex] || [];
-
-    // const calendar = calendarData.cal.find(month => parseInt(month.month) === new Date().getMonth() + 1);
-    // const daysInMonth = calendar.days;
-
-    // const startDayIndex = weekDays.findIndex(day => day === daysInMonth[0].tamilday);
-
-    // const weeks = [];
-    // // // let week = [];
-    // let week = new Array(startDayIndex).fill(null);
-
-
-    // // // // Organize the days into weeks
-    // daysInMonth.forEach((day, index) => {
-    //     week.push(day);
-    //     if (week.length === 7 || index === daysInMonth.length - 1) {
-    //         weeks.push(week);
-    //         week = [];
-    //     }
-    // });
-
-    // const currentWeek = weeks[currentWeekIndex] || [];
 
     const handleDateClick = (formattedDate, humanFormattedDate) => {
         setSelectedDate(formattedDate);

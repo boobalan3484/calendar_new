@@ -45,11 +45,8 @@ const WeeklyCalendar = () => {
             const selectedMonth = calendarData.cal[monthIndex].month; // Get month number (e.g., "11")
             const selectedMonthName = calendarData.cal[monthIndex].month_name; // Get full month name
             const selectedYear = selectedMonthName.split(' ')[1]; // Extract year (e.g., "2024")
-
             // Construct the file name based on the month and year
             const fileName = `/data/month_special_days/month-data-${month_list[parseInt(selectedMonth)]}-${selectedYear}.json`;
-            console.log('Fetching month data from:', fileName);
-
             fetch(fileName)
                 .then((response) => response.json())
                 .then((monthData) => {
@@ -69,7 +66,6 @@ const WeeklyCalendar = () => {
                 const today = new Date();
                 const currentMonth = today.getMonth() + 1;
                 const currentDate = today.getDate();
-
                 const initialMonthIndex = data.cal.findIndex(
                     month => parseInt(month.month) === currentMonth
                 );
@@ -80,7 +76,6 @@ const WeeklyCalendar = () => {
                     const initialWeekIndex = weeks.findIndex(week =>
                         week.some(day => day && parseInt(day.date) === currentDate)
                     );
-
                     if (initialWeekIndex !== -1) {
                         setCurrentWeekIndex(initialWeekIndex);
                     } else {
@@ -110,11 +105,10 @@ const WeeklyCalendar = () => {
     const weeks = createWeeks(currentMonthData.days);
     const currentWeek = weeks[currentWeekIndex] || [];
 
-    console.log('currentMonthData', currentMonthData);
-    console.log('weeks', weeks);
-    console.log('currentWeek', currentWeek);
-
-
+    const currentWeekDays = currentWeek.map(day => day ? day.date : null); // Extract day numbers of the current week
+    const filteredViradhamData = viradhamData.filter(item =>
+        currentWeekDays.includes(item.day_no.toString()) // Check if day_no matches any of the current week days
+    );
 
     const handleDateClick = (formattedDate, humanFormattedDate) => {
         setSelectedDate(formattedDate);
@@ -155,12 +149,7 @@ const WeeklyCalendar = () => {
     const isNextDisabled = currentMonthIndex === calendarData.cal.length - 1 &&
         currentWeekIndex === weeks.length - 1;
 
-    const currentWeekDays = currentWeek.map(day => day ? day.date : null); // Extract day numbers of the current week
-    console.log('currentWeekDays', currentWeekDays);
 
-    const filteredViradhamData = viradhamData.filter(item =>
-        currentWeekDays.includes(item.day_no.toString()) // Check if day_no matches any of the current week days
-    );
 
     return (
         <div className='d-flex flex-column flex-xl-row gap-2 justify-content-between'>
@@ -274,7 +263,7 @@ const WeeklyCalendar = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='special-days mt-3'>
+                    <div className='special-days mt-3 border rounded px-3'>
                         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4">
                             {filteredViradhamData.map((item, idx) => (
                                 <div className="col d-flex align-items-center gap-2" key={idx}>

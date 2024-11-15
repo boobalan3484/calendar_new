@@ -24,19 +24,12 @@ const CalendarSection = () => {
             const selectedMonth = calendarData.cal[monthIndex].month; // Get month number (e.g., "11")
             const selectedMonthName = calendarData.cal[monthIndex].month_name; // Get full month name
             const selectedYear = selectedMonthName.split(' ')[1]; // Extract year (e.g., "2024")
-
             // Construct the file name based on the month and year
             const fileName = `/data/month_special_days/month-data-${month_list[parseInt(selectedMonth)]}-${selectedYear}.json`;
-            console.log('Fetching month data from:', fileName);
-
             fetch(fileName)
                 .then((response) => response.json())
                 .then((monthData) => {
-                    // console.log('Fetched month data:', monthData);
-                    // Optionally store the month data in state here
-
                     setViradhamData(monthData.viradhamDays)
-
                 })
                 .catch((error) => {
                     console.error('Error fetching the specific month data:', error);
@@ -51,14 +44,12 @@ const CalendarSection = () => {
             .then((data) => {
                 // Set calendarData state
                 setCalendarData(data);
-
                 // Get today's date details
                 const today = new Date();
                 const currentMonth = today.getMonth() + 1; // Get current month (1-indexed)
                 const currentMonthIndex = data.cal.findIndex(
                     month => parseInt(month.month) === currentMonth
                 );
-
                 // Update the currentMonthIndex state
                 if (currentMonthIndex !== -1) {
                     setCurrentMonthIndex(currentMonthIndex);
@@ -76,8 +67,6 @@ const CalendarSection = () => {
         }
     }, [calendarData, currentMonthIndex]); // Trigger fetch when both states change
 
-
-    // =============================
     if (!calendarData) {
         return <div className='w-100 d-flex justify-content-center align-items-center' style={{ height: '80vh' }}>
             <Spinner />
@@ -132,7 +121,6 @@ const CalendarSection = () => {
     const handleClose = () => {
         setShowModal(false);
     };
-
 
     return (
         <div className='d-flex flex-column flex-lg-row gap-2 justify-content-between'>
@@ -226,7 +214,7 @@ const CalendarSection = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='special-days mt-3'>
+                    <div className='special-days mt-3 border rounded px-3'>
                         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4">
                             {viradhamData.map((item, idx) => (
                                 <div className="col d-flex align-items-center gap-2" key={idx}>

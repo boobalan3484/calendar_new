@@ -352,3 +352,9 @@ hr {
 .date-day-tamil-wrapper{
     background-color: #707070;
 }
+
+.date-day-tamil-wrapper{
+    h5{
+        font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);;
+    }
+}

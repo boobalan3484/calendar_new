@@ -13,11 +13,11 @@ const PlayStoreBanner = () => {
                     </p>
                 </div>
                 <div className='text-center d-flex flex-column gap-3'>
-                    <p style={{ fontSize: '14px' }}>
+                    {/* <p style={{ fontSize: '14px' }}>
                         ஆயிரக்கணக்கான வாசகர்களை கொண்ட செயலி
-                    </p>
+                    </p> */}
                     <p style={{ fontSize: '14px' }}>
-                        <strong>உடனே பதிவிறக்கம் செய்யவும் </strong>
+                        <strong>உடனே <br /> மக்கள் நாட்காட்டி <br/> செயலி பதிவிறக்கம் செய்யவும் </strong>
                     </p>
                     <a href="https://play.google.com/store/apps/details?id=com.makkal.calendar" target='_blank' className='play-store-a'>
                         <img src="/images/Google_Play.png" alt="" style={{ width: '200px' }} className='' />

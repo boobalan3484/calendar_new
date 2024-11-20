@@ -140,14 +140,14 @@ const CalendarSection = () => {
                             <div className="day_calendar arrows w-100">
                                 <div className="left-arrow">
                                     <a onClick={handlePrevMonth}>
-                                        <span className=' bg-secondary rounded-circle text-white '>
+                                        <span className=' rounded-circle text-white '>
                                             <FaAngleLeft />
                                         </span>
                                     </a>
                                 </div>
                                 <div className="right-arrow">
                                     <a onClick={handleNextMonth}>
-                                        <span className='p-2 bg-secondary rounded-circle text-white'>
+                                        <span className='p-2 rounded-circle text-white'>
                                             <FaAngleRight />
                                         </span>
                                     </a>

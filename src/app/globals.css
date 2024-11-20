@@ -44,3 +44,23 @@ p{
 ul, ol, li, dl {
   list-style: none !important;
 }
+
+.day_calendar div a span{
+  background-color: #e9830c;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #475071;
+  border: 3px solid #eef3f7;
+  border-radius: 7px;
+}
+
+::-webkit-scrollbar-track {
+  /* @apply bg-Track; */
+  background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+
+}

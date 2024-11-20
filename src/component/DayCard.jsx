@@ -5,6 +5,7 @@ import { data } from '@/utils/Data.js'
 import Reusable from './Reusable'
 import Sticky from './Sticky'
 import '@/style/Sticky.css'
+import MyHeader from './Sticky'
 
 const DayCard = ({ formatDate, dayData, isThithi, handlePreviousDay, handleNextDay }) => {
 
@@ -14,6 +15,7 @@ const DayCard = ({ formatDate, dayData, isThithi, handlePreviousDay, handleNextD
         <div className={` ${Reusable({ one: 'col col-lg-10', two: 'col-12', three: 'col-12 mx-0' })} row main-section p-3`}>
             <div className="mb-0 mb-lg-3 col-12 ps-0 pe-0 pe-lg-3 col-lg-5 d-flex flex-column justify-content-between align-items-center position-relative">
                 {/* Date Container section */}
+                {/* <MyHeader /> */}
                 <div className="date-container date-day-section mb-0 mb-lg-3 w-100">
                     <div className='date-day-wrapper text-center rounded-top w-100 py-1 text-dark d-flex flex-column justify-content-center align-items-center gap-1'>
                         <h1 className="text-center fs-1 text-dark">{formatDate}</h1>
@@ -21,9 +23,9 @@ const DayCard = ({ formatDate, dayData, isThithi, handlePreviousDay, handleNextD
                     </div>
 
                     <div className='date-day-tamil-wrapper text-white d-flex align-items-center justify-content-between px-3 rounded-bottom'>
-                        <h5 className='fw-bold fs-6'> {dayData.homedates.tamilYear} </h5>
+                        <h5 className='fw-bold'> {dayData.homedates.tamilYear} </h5>
                         <h5 className='bg-white text-danger fs-5 p-1 px-2 m-1 rounded fw-bold'> {dayData.homedates.tamilDate}</h5>
-                        <h5 className='fw-bold fs-6'> {dayData.homedates.tamilMonth} </h5>
+                        <h5 className='fw-bold'> {dayData.homedates.tamilMonth} </h5>
                     </div>
 
                     {/* <h6 className="text-center">
@@ -81,14 +83,14 @@ const DayCard = ({ formatDate, dayData, isThithi, handlePreviousDay, handleNextD
                 <div className={`${Reusable({ one: 'd-flex', two: 'd-flex', three: 'd-none' })} day_calendar arrows`}>
                     <div className="left-arrow">
                         <a onClick={handlePreviousDay}>
-                            <span className=' bg-secondary rounded-circle text-white '>
+                            <span className='rounded-circle text-white '>
                                 <FaAngleLeft />
                             </span>
                         </a>
                     </div>
                     <div className="right-arrow">
                         <a onClick={handleNextDay}>
-                            <span className='p-2 bg-secondary rounded-circle text-white'>
+                            <span className='p-2 rounded-circle text-white'>
                                 <FaAngleRight />
                             </span>
                         </a>

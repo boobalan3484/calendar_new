@@ -2,6 +2,7 @@ import React from 'react';
 import '@/style/CalendarSection.css'
 import DayCalendar from "@/component/DayCalendar";
 import Header from "@/component/Header";
+import Footer from '@/component/Footer';
 
 export const metadata = {
   title: "Makkal Calendar | Tamil Daily Calendar",
@@ -17,6 +18,7 @@ export default function Home() {
           <DayCalendar />
         </div>
       </main>
+      <Footer />
     </div>
   );
 };

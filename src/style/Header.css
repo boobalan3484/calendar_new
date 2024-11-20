@@ -43,11 +43,11 @@
 }
 
 .share.calandar-icons a:hover {
-    color: #e92227;
+    color: #e9830c;
 }
 
 .share.calandar-icons a.active {
-    color: #e92227;
+    color: #e9830c;
 }
 /* .share.calandar-icons a:hover span{
     position: absolute;
@@ -64,6 +64,6 @@ a {
 }
 
 .logo{
-    width: 120px;
+    width: 80px;
     /* height: 100px; */
 }

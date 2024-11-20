@@ -2,6 +2,7 @@ import React from 'react'
 import '@/style/CalendarSection.css'
 import CalendarSection from '@/component/CalendarSection';
 import Header from '@/component/Header';
+import Footer from '@/component/Footer';
 
 export const metadata = {
   title: "Makkal Calendar | Tamil Monthly Calendar",
@@ -17,6 +18,7 @@ const page = () => {
           <CalendarSection />
         </div>
       </main>
+      <Footer />
     </div>
   )
 }

@@ -78,7 +78,7 @@ const Footer = () => {
                                 <img src="/images/Makkal_Naalkaati_Logo.png" alt="" />
                             </Link>
                         </div>
-                        <p className='col fw-normal text-start text-dark' style={{ letterSpacing: '.8px', fontSize: '14px' }}>
+                        <p className='col d-none d-sm-block fw-normal text-start text-dark' style={{ letterSpacing: '.8px', fontSize: '14px' }}>
                             மக்கள் நாட்காட்டி என்பது இன்றைய மக்களின் அன்றாட சிந்தனையை அறிவூட்டும் ஒரு பயன்பாடாகும். இதில் 12 ராசிகள் 27 நட்சத்திரங்கள் மற்றும் கிரகங்களின் கோணங்களை அறியலாம். பழங்காலக் கோயில்கள் அவற்றின் புராண அம்சங்களுடன் ஆன்மீகத் தகவல்களையும் வழங்குகின்றன.
                         </p>
                     </div>

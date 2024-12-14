@@ -6,6 +6,7 @@ import PlayStoreBanner from './PlayStoreBanner';
 import DayCard from './DayCard';
 import Spinner from '../../public/icon/Spinner';
 import InfinitySVG from '../../public/icon/Infinity';
+import AstroCard from './AstroCard';
 
 const DayCalendar = () => {
 
@@ -106,7 +107,8 @@ const DayCalendar = () => {
                             handleNextDay={handleNextDay}
                         />
                     )}
-                    <div className='col-12 col-lg-2 bg-white shadow-sm rounded text-dark'>
+                    <div className='col-12 col-lg-3 bg-white shadow-sm rounded text-dark'>
+                        {/* <AstroCard /> */}
                         <PlayStoreBanner />
                     </div>
                 </div>

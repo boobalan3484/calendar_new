@@ -64,3 +64,18 @@ ul, ol, li, dl {
   background: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
 
 }
+
+.Toastify__toast-icon{
+  width: 24px !important;
+  height: unset !important;
+}
+
+
+@font-face {
+  font-family: "bamini_tamil_19";
+  src: url('/fonts/BAMINITamil19.ttf');
+}
+
+.bamini_tamil_19 {
+  font-family: "bamini_tamil_19";
+}

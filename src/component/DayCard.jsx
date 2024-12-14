@@ -12,7 +12,7 @@ const DayCard = ({ formatDate, dayData, isThithi, handlePreviousDay, handleNextD
     const { auspiciousDays } = data
 
     return (
-        <div className={` ${Reusable({ one: 'col col-lg-10', two: 'col-12', three: 'col-12 mx-0' })} row main-section p-3`}>
+        <div className={` ${Reusable({ one: 'col col-lg-9', two: 'col-12', three: 'col-12 mx-0' })} row main-section p-3`}>
             <div className="mb-0 mb-lg-3 col-12 ps-0 pe-0 pe-lg-3 col-lg-5 d-flex flex-column justify-content-between align-items-center position-relative">
                 {/* Date Container section */}
                 {/* <MyHeader /> */}
